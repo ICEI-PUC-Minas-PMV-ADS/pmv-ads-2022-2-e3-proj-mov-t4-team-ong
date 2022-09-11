@@ -8,9 +8,31 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+<p align="justify">As personas levantadas durante o processo de entendimento do problema são apresentadas a seguir.</p>
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+|| Alisson Guedes<br><br> Idade: 28 anos<br>Estado Civil: Casado<br>Naturalidade: Belo Horizonte<br>Tipo de moradia atual: Casa alugada<br>Cidade em que reside atualmente: Belo Horizonte<br>Formação: Graduação Licenciatura Física<br>Ocupação: Product Owner | Aplicativos:<br><br> <ul><li>Twitter</li><li>Youtube</li><li>Google</li><li>Facebook</li><li>Instagram </li><li>WhatsApp</li></ul>
+|:----------------|:--------------------|:----------------|
+|**Motivações:**<br><br><ul><li>Tem vontade de ajudar outras pessoas, especialmente as que se encontram em situações de vulnerabilidade</li></ul>|**Frustrações:**<br><br><ul><li> Não ter clareza de onde o dinheiro doado será empregado pelas instituições</li><li> Dificuldade em localizar ONG, instituições ou famílias que necessitam de doações</li></ul>|**Hobbies e História:**<br><br><ul><li>Viajar, andar de bicicleta, jogar vídeo game, ler mangás, brincar com os gatos, fazer trilha e cachoeira</li></ul>|
+
+</br>
+
+|| Maria Marta<br><br> Idade: 68 anos<br>Estado Civil: Separada judicialmente<br>Naturalidade: Belo Horizonte<br>Tipo de moradia atual: Casa própria<br>Cidade em que reside atualmente: Belo Horizonte<br>Formação: Grau Técnico<br>Ocupação: Aposentada | Aplicativos:<br><br> <ul><li>Globoplay</li><li>WhatsApp</li><li>Uber</li><li>Bancos</li><li>Facebook </li><li>Youtube</li></ul>
+|:----------------|:--------------------|:----------------|
+|**Motivações:**<br><br><ul><li>Costuma realizar doações em dinheiro mensalmente para instituições de caridade</li><li>Gosta de ajudar as pessoas mais necessitadas</li><li>Não gosta de passar seus dados por telefone, pois tem medo de golpes</li></ul>|**Frustrações:**<br><br><ul><li> Ter que ficar aguardando o recolhimento da doação, o que a impede de realizar outras atividades</li><li>Ligações constantes de várias instituições solicitando doações</li><li>Ter que informar seus dados a terceiros por telefone, como cpf e dados bancários</li></ul>|**Hobbies e História:**<br><br><ul><li>Colecionar suculentas, cuidar de plantas, fazer caminhada e viajar.</li></ul>|
+
+</br>
+
+|| Ana Karolina<br><br> Idade: 33 anos<br>Estado Civil: Solteira<br>Naturalidade: Belo Horizonte<br>Tipo de moradia atual: Casa própria<br>Cidade em que reside atualmente: Belo Horizonte<br>Formação: Ensino Superior Completo <br>Ocupação: Jornalista e fundadora da ONG Um Lar para Sol | Aplicativos:<br><br> <ul><li>WhatsApp</li><li>Instagram</li><li>Sites de Notícias</li><li>Bancos</li><li>Pinterest</li><li>Linkedin</li><li>Globoplay</li></ul>
+|:----------------|:--------------------|:----------------|
+|**Motivações:**<br><br><ul><li>Resgatou uma gata em 2019, Felv+, que recebeu o nome de Sol. Após ter tido dificuldades para encontrar um lar para ela devido a sua condição, decidiu iniciar um trabalho de resgate de animais em condições vulneráveis. </li><li>Devido a ONG ser recente, tem poucos seguidores nas suas redes sociais, o que dificulta a divulgação de animais disponíveis para adoção. </li><li>Necessidade de arrecadar recursos como ração e remédios, para os animais.  </li></ul>|**Frustrações:**<br><br><ul><li> Dificuldade em conseguir doações para manter os animais da ONG</li><li>Dificuldade em conseguir lares temporários ou adotantes para os animais</li><li>Falta de apoio dos órgãos competentes para ações de resgate e cuidados com os animais</li></ul>|**Hobbies e História:**<br><br><ul><li>Fotografar, viajar, fazer passeios que envolvam contato com a natureza, sair para comer.</li></ul>|
+
+</br>
+
+|| ONG Salvando Vidas<br><br> Idade: 42 anos<br>Estado Civil: Casada<br>Naturalidade: Belo Horizonte<br>Tipo de moradia atual: Casa própria<br>Cidade em que reside atualmente: Belo Horizonte<br>Formação: Ensino Superior Completo <br>Ocupação: Professora e uma das fundadoras da ONG Salvando Vidas | Aplicativos:<br><br> <ul><li>WhatsApp</li><li>Instagram</li><li>Linkedin </li><li>Netflix</li><li>Google Classrrom</li></ul>
+|:----------------|:--------------------|:----------------|
+|**Motivações:**<br><br><ul><li>Vontade de ajudar as famílias de alunos que passam por necessidades </li><li>Necessidade de arrecadar doações e donativos para as famílias </li></ul>|**Frustrações:**<br><br><ul><li> Dificuldade em conseguir doações e donativos para as famílias </li><li>Dificuldade e altos custos para recolher os donativos nas casas das pessoas </li></ul>|**Hobbies e História:**<br><br><ul><li>Viajar, ler e assistir documentários</li></ul>|
+
+</br>
 
 > **Links Úteis**:
 > - [Rock Content](https://rockcontent.com/blog/personas/)
@@ -24,12 +46,19 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Fundador de ONG  | Cadastrar minha ONG no aplicativo         | Facilitar a captação de recursos financeiros               |
+|Fundador de ONG  | Atualizar os dados cadastrais de minha organização          | Corrigir possíveis erros de cadastro               |
+|Fundador de ONG  | Fazer login no aplicativo         | Administrar e divulgar os projetos de minha organização               |
+|Fundador de ONG  | Recuperar minha senha de acesso        | Ter acesso ao aplicativo               |
+|Fundador de ONG  | Alterar minha senha de acesso         | Manter a segurança de minha conta no aplicativo           |
+|Fundador de ONG  | Publicar histórias e projetos         | Divulgar o trabalho feito pela ONG              |
+|Fundador de ONG  | Definir uma meta de arrecadação para cada projeto          | Os doadores ficarem cientes das arrecadações feitas pela ONG               |
+|Possível doador  | Visualizar as ong's cadastradas no aplicativo          | Conhecer as histórias dos projetos               |
+|Possível doador       | Fazer buscas por filtros como nome e categoria               | Encontrar projetos de maneira mais eficiente |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
@@ -79,15 +108,31 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-01| O aplicativo deve permitir o cadastro de usuários do tipo ONG | ALTA | 
+|RF-02| O aplicativo deve permitir a atualização do cadastro de usuários do tipo ONG | MÉDIA |
+|RF-03| O usuário deve conseguir realizar o login no aplicativo utilizando as informações de usuário e senha previamente cadastrados | ALTA |
+|RF-04| O usuário deve conseguir recuperar a senha de acesso | MÉDIA |
+|RF-05| O usuário deve conseguir alterar a senha de acesso | MÉDIA |
+|RF-06| O aplicativo deve permitir a criação e a publicação de histórias/projetos pelas ONGs cadastradas | ALTA |
+|RF-07| As ONGs devem conseguir cadastrar um título, uma descrição e as fotos para cada história/projeto  | ALTA |
+|RF-08| As ONGs devem conseguir cadastrar para cada história/projeto uma meta de arrecadação em reais | ALTA |
+|RF-09| Os usuários do aplicativo devem conseguir visualizar as histórias/projetos vinculados à cada ONG | MÉDIA |
+|RF-10| O aplicativo deve permitir a busca de ONG's por filtros (categoria, palavras-chave etc.) | ALTA |
+|RF-11| Os usuários devem conseguir visualizar a meta de arrecadação e o valor atual arrecadado para cada história/projeto (em reais e percentual) | ALTA |
+|RF-12| Ao selecionar uma determinada história/projeto, o usuário deve conseguir visualizar os detalhes do projeto: descrição, fotos etc. | ALTA |
+|RF-13| O aplicativo deve permitir que os usuários façam doações por meio de transferência bancária (Pix),  boleto ou donativos. | ALTA |
+|RF-14| O aplicativo deve emitir recibo, caso o usuário deseje. | MÉDIA |
+|RF-15| O aplicativo deve listar os donativos que a ONG aceita. | ALTA |
+|RF-16| O aplicativo deve emitir um código de doação, em caso de donativos. | ALTA |
+|RF-17| O aplicativo deve emitir boleto bancário, caso o usuário selecione essa opção. | ALTA |
+
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-01| O aplicativo deve ser implementado utilizando as tecnologias React Native, ..... | ALTA | 
+|RNF-02| A persistência dos dados será feita através da ferramenta JSON server |  ALTA | 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
@@ -120,7 +165,17 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 > - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
-![UseCase Diagram1](https://user-images.githubusercontent.com/93413365/189505421-0ef2e604-9847-4a5e-bae7-38c61032eef1.jpg)
+![UseCase Diagram1](https://user-images.githubusercontent.com/93413365/187797455-7bc69c51-6606-4e7b-a11e-71c7ea0081ea.jpg)
+O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+
+As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
+
+> **Links Úteis**:
+> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
+> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
+> - [Lucidchart](https://www.lucidchart.com/)
+> - [Astah](https://astah.net/)
+> - [Diagrams](https://app.diagrams.net/)
 
 # Matriz de Rastreabilidade
 
@@ -151,6 +206,9 @@ Para permitir a rastreabilidade entre os requisitos e os objetivos de negócio d
 |**RNF-01**|     |      |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |      |      |
 |**RNF-02**|     |      |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |      |      |
 
+</br></br>
+![Exemplo de matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
+
 > **Links Úteis**:
 > - [Artigo Engenharia de Software 13 - Rastreabilidade](https://www.devmedia.com.br/artigo-engenharia-de-software-13-rastreabilidade/12822/)
 > - [Verificação da rastreabilidade de requisitos usando a integração do IBM Rational RequisitePro e do IBM ClearQuest Test Manager](https://developer.ibm.com/br/tutorials/requirementstraceabilityverificationusingrrpandcctm/)
@@ -165,20 +223,18 @@ De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar 
 
 Com diagramas bem organizados que permitem gerenciar o tempo nos projetos, o gerente de projetos agenda e coordena tarefas dentro de um projeto para estimar o tempo necessário de conclusão.
 
-![Diagrama de rede simplificado notação francesa (método francês)](img/02-diagrama-rede-simplificado.png)
-
 O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las.
 
-![Gráfico de Gantt](img/02-grafico-gantt.png)
+![image](https://user-images.githubusercontent.com/91227083/189547737-81e3f8b9-e7e6-4532-b488-d50218e6f2eb.png)
 
 ## Gerenciamento de Equipe
 
 O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
 
-![Simple Project Timeline](img/02-project-timeline.png)
+![image](https://user-images.githubusercontent.com/91227083/189547693-9d5e219e-0915-4a44-9a44-f4bf086ee35b.png)
 
 ## Gestão de Orçamento
 
 O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
 
-![Orçamento](img/02-orcamento.png)
+![image](https://user-images.githubusercontent.com/91227083/189548315-e493d2a7-3a22-4106-af20-78146d1449e1.png)
