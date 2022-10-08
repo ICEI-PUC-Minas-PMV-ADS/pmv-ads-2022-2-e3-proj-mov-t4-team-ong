@@ -60,6 +60,25 @@ No contexto de desenvolvimento de software, qualidade pode ser entendida como um
 A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, define oito características e 30 subcaracterísticas de qualidade para produtos de software.
 Com base nessas características e nas respectivas sub-características, identifique as sub-características que sua equipe utilizará como base para nortear o desenvolvimento do projeto de software considerando-se alguns aspectos simples de qualidade. Justifique as subcaracterísticas escolhidas pelo time e elenque as métricas que permitirão a equipe avaliar os objetos de interesse.
 
+PROCESSO DE AVALIAÇÃO
+--------------------------------------------------
+1) Estabelecimento de requisitos de avaliação
+1.1) Propósito da Avaliação: alcançar uma qualidade de produção boa ao final do projeto.
+1.2) Tipo de Produto: App mobile de doações para ONGs
+1.3) Modelo de Qualidade: ISO 25010
+--------------------------------------------------
+2) Especificação da avaliação
+2.1) Seleção de métricas: Todas as caracteristicas da Iso 25010 serão mensuradas.
+2.2) Estabelecimento da pontuação:
+- Nao atende (0 pts)
+- Atende parcialmente (5 pts)
+- Atende conforme o esperado (10 pts)
+- Atende mais que o esperado (15 pts)
+
+2.3) Estabelecimento dos critérios de julgamento: Caracteristicas que receberem média de pelo menos 10 pontos serão consideradas validadas. Caracteristicas que não atingirem a média 10 pontos retornarão para revisão.
+--------------------------------------------------
+3) Projeto e execução da avaliação: Os avaliadores irão entregar as avaliações que serão tratadas posteriormente.
+
 > **Links Úteis**:
 >
 > - [ISO/IEC 25010:2011 - Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models](https://www.iso.org/standard/35733.html/)
