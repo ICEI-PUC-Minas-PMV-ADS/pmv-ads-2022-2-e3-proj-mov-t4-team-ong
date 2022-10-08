@@ -63,21 +63,25 @@ Com base nessas características e nas respectivas sub-características, identif
 PROCESSO DE AVALIAÇÃO
 --------------------------------------------------
 1) Estabelecimento de requisitos de avaliação
-1.1) Propósito da Avaliação: alcançar uma qualidade de produção boa ao final do projeto.
-1.2) Tipo de Produto: App mobile de doações para ONGs
-1.3) Modelo de Qualidade: ISO 25010
---------------------------------------------------
+<br>
+1.1) Propósito da Avaliação: alcançar uma qualidade de produção boa ao final do projeto.<br>
+1.2) Tipo de Produto: App mobile de doações para ONGs.<br>
+1.3) Modelo de Qualidade: ISO 25010.<br>
+--------------------------------------------------<br>
 2) Especificação da avaliação
-2.1) Seleção de métricas: Todas as caracteristicas da Iso 25010 serão mensuradas.
-2.2) Estabelecimento da pontuação:
-- Nao atende (0 pts)
-- Atende parcialmente (5 pts)
-- Atende conforme o esperado (10 pts)
-- Atende mais que o esperado (15 pts)
-
-2.3) Estabelecimento dos critérios de julgamento: Caracteristicas que receberem média de pelo menos 10 pontos serão consideradas validadas. Caracteristicas que não atingirem a média 10 pontos retornarão para revisão.
---------------------------------------------------
+<br>
+2.1) Seleção de métricas: Todas as caracteristicas da Iso 25010 serão mensuradas.<br>
+2.2) Estabelecimento da pontuação:<br>
+- Nao atende (0 pts)<br>
+- Atende parcialmente (5 pts)<br>
+- Atende conforme o esperado (10 pts)<br>
+- Atende mais que o esperado (15 pts)<br>
+2.3) Estabelecimento dos critérios de julgamento: Caracteristicas que receberem média de pelo menos 10 pontos serão consideradas validadas. Caracteristicas que não atingirem a média de 10 pontos retornarão para revisão.<br>
+--------------------------------------------------<br>
 3) Projeto e execução da avaliação: Os avaliadores irão entregar as avaliações que serão tratadas posteriormente.
+
+<br>
+<br>
 
 > **Links Úteis**:
 >
