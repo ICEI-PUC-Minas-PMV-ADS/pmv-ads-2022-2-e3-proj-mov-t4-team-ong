@@ -32,7 +32,12 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Rel
 
 ## Modelo Físico
 
-Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
+Os scripts de criação das tabelas do banco de dados estão disponíveis em:
+
+> - [ScriptBD](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-team-ong/blob/main/src/ScriptBD.sql)
+
+![bd](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-team-ong/main/docs/img/Estrutura%20BD.png)
+<p align="center">Estrutura do banco de dados</p>
 
 ## Tecnologias Utilizadas
 
