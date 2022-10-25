@@ -1,5 +1,5 @@
 import { Platform, StyleSheet } from "react-native";
-import commomStyles from "./commomStyles";
+import commonStyles from "./commonStyles";
 
 const styles = StyleSheet.create({
     txtColor: {
@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     },
     containerRow: {
         flexDirection: 'row',
-        borderColor: commomStyles.borderClolor,
+        borderColor: commonStyles.borderClolor,
         borderBottomWidth: 1,
         alignItems: 'center',
         paddingVertical: 10,
@@ -33,41 +33,41 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 50,
-        color: commomStyles.txtColor,
+        color: commonStyles.txtColor,
         marginLeft: 20,
         marginBottom: 10,
     },
     subtitle: {
         fontSize: 20,
-        color: commomStyles.txtColor,
+        color: commonStyles.txtColor,
         fontWeight: 'bold',
         marginLeft: 20,
         marginBottom: 20,
     },
     pending: {
-        color: commomStyles.txtColor,
+        color: commonStyles.txtColor,
         height: 25,
         width: 25,
         borderRadius: 13,
         borderWidth: 1,
-        borderColor: commomStyles.borderClolor,
+        borderColor: commonStyles.borderClolor,
     },
     done: {
-        color: commomStyles.txtColor,
+        color: commonStyles.txtColor,
         height: 25,
         width: 25,
         borderRadius: 13,
         borderWidth: 1,
-        backgroundColor: commomStyles.checkedColor,
+        backgroundColor: commonStyles.checkedColor,
         alignItems: 'center',
         justifyContent: 'center',
     },
     description: {
-        color: commomStyles.txtStyle.color,
-        fontSize: commomStyles.txtStyle.fontSize,
+        color: commonStyles.txtStyle.color,
+        fontSize: commonStyles.txtStyle.fontSize,
     },
     date: {
-        color: commomStyles.subTitleColor,
+        color: commonStyles.subTitleColor,
         fontSize: 15,
     },
     iconBar: {
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
         marginTo: Platform.OS === 'ios' ? 40 : 10,
     },
     iconImage: {
-        color: commomStyles.txtColor,
+        color: commonStyles.txtColor,
         fontSize: 35,
     },
     backgroundOverlay: {

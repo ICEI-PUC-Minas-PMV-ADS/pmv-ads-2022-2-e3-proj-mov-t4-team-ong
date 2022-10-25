@@ -1,5 +1,5 @@
 import { Platform, StyleSheet } from "react-native";
-import commomStyles from "./commomStyles";
+import commonStyles from "./commonStyles";
 
 const styleTaskList = StyleSheet.create({
     iconBar: {
@@ -9,12 +9,12 @@ const styleTaskList = StyleSheet.create({
         marginTo: Platform.OS === 'ios' ? 40 : 10,
     },
     iconImage: {
-        color: commomStyles.txtColor,
+        color: commonStyles.txtColor,
         fontSize: 35,
     },
     subtitle: {
         fontSize: 20,
-        color: commomStyles.txtColor,
+        color: commonStyles.txtColor,
         fontWeight: 'bold',
         marginLeft: 20,
         marginBottom: 20,
@@ -32,7 +32,7 @@ const styleTaskList = StyleSheet.create({
     },
     title: {
         fontSize: 50,
-        color: commomStyles.txtColor,
+        color: commonStyles.txtColor,
         marginLeft: 20,
         marginBottom: 10,
     },
@@ -43,7 +43,7 @@ const styleTaskList = StyleSheet.create({
         width: 50,
         height: 50,
         borderRadius: 25,
-        backgroundColor: commomStyles.today,
+        backgroundColor: commonStyles.today,
         justifyContent: 'center',
         alignItems: 'center',
     }

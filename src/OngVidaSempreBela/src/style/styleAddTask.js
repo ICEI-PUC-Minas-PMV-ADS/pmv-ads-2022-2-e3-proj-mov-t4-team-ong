@@ -1,5 +1,5 @@
 import { Platform, StyleSheet } from "react-native";
-import commomStyles from "./commomStyles";
+import commonStyles from "./commonStyles";
 
 const styleAddTask = StyleSheet.create({
 
@@ -9,12 +9,12 @@ const styleAddTask = StyleSheet.create({
 
     },
     backgorundModal: {
-        backgroundColor: commomStyles.modalBackgroundColor,
+        backgroundColor: commonStyles.modalBackgroundColor,
         flex: 1,
     },
     header: {
-        backgroundColor: commomStyles.today,
-        color: commomStyles.txtColor,
+        backgroundColor: commonStyles.today,
+        color: commonStyles.txtColor,
         textAlign: 'center',
         padding: 15,
         fontSize: 18, 
@@ -30,13 +30,13 @@ const styleAddTask = StyleSheet.create({
     button: {
         marginRight: 30,
         marginBottom: 10,
-        color: commomStyles.today,
+        color: commonStyles.today,
         fontSize: 18,
         fontWeight: 'bold'
     },
     dateFormat: {
         fontSize: 20,
-        color: commomStyles.txtColor,
+        color: commonStyles.txtColor,
         margin: 15,
     },
 })

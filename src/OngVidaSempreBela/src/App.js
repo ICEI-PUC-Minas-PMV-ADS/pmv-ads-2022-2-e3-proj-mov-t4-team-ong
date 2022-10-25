@@ -8,6 +8,8 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import UserForm from "./view/UserForm";
 import UserList from "./view/UserList";
 import TaskList from "./screens/TaskList";
+import Auth from "./screens/Auth"
+import HomePage from './screens/HomePage'
 
 const Stack = createNativeStackNavigator()
 
@@ -27,16 +29,28 @@ const App = (props) => {
 
   return (
     <Stack.Navigator
-      initialRouteName="TaskList"
+      initialRouteName="HomePage"
       screenOptions={navigatorOptions}
     >
       <Stack.Screen
-        name='Ong Vida Sempre Bela - TaskList'
+        name='HomePage'
+        component={HomePage}
+        options={{ title: 'OVSB - HomePage'}}
+      />
+      <Stack.Screen
+        name='Login'
+        component={Auth}
+        options={{ title: 'OVSB - Login'}}
+      />
+      <Stack.Screen
+        name='Cadastro'
+        component={Auth}
+        options={{ title: 'OVSB - Cadastro' }}
+      />
+      <Stack.Screen
+        name='TaskLista'
         component={TaskList}
-        options={({ navigation }) => {
-          return {
-          }
-        }}
+        options={{ title: 'Ong Vida Sempre Bela - TaskList'}}
       />
       <Stack.Screen
         name='UserList'

@@ -19,7 +19,7 @@ import ongTaskList from '../../assets/imgs/ong-task-list.png'
 import Task from "../components/screen/Task";
 import Addtask from "./AddTask";
 import styleTaskList from "../style/styleTaskList";
-import commomStyles from "../style/commomStyles";
+import commonStyles from "../style/commonStyles";
 
 initialState = {
     showDoneTasks: true,
@@ -95,7 +95,7 @@ class TaskList extends Component {
         const today = moment().locale('pt-br').format('ddd, D [de] MMMM')
 
         return (
-            <View style={commomStyles.container}>
+            <View style={commonStyles.container}>
                 <Addtask
                     isVisible={this.state.showAddTask}
                     onCancel={() => this.setState({ showAddTask: false })}
@@ -136,7 +136,7 @@ class TaskList extends Component {
                     style={styleTaskList.addButton}
                     onPress={() => this.setState({ showAddTask: true })}
                 >
-                    <Icon name="add-sharp" size={40} color={commomStyles.txtColor} />
+                    <Icon name="add-sharp" size={40} color={commonStyles.txtColor} />
                 </TouchableOpacity>
             </View >
         )

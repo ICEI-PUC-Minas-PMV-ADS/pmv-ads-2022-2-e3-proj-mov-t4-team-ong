@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import { View } from "react-native";
-import ButtonOutline from "../components/button/ButtonOutline";
-import Input from "../components/TextInput/Input";
+import ButtonOutline from "../components/btns/btnOutline";
 import UsersContext from "../context.js/UserContext";
 
 const UserForm = (props) => {
@@ -11,17 +10,17 @@ const UserForm = (props) => {
 
     return (
         <View>
-            <Input
+            {/*            <TextInput   
                 label="Nome"
                 onChangeText={nome => setUser({ ...user, nome })}
                 value={user.nome}
             />
-            <Input
+            <TextInput
                 label="e-mail"
                 onChangeText={email => setUser({ ...user, email })}
                 value={user.email}
             />
-            <Input
+            <TextInput
                 label="URL Avatar"
                 onChangeText={avatarUrl => setUser({ ...user, avatarUrl })}
                 value={user.avatarUrl}
@@ -35,7 +34,7 @@ const UserForm = (props) => {
                     })
                     props.navigation.goBack()
                 }}
-            />
+            /> */}
         </View>
     )
 }

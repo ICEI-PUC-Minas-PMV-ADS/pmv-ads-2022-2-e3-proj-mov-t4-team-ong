@@ -12,7 +12,7 @@ import { Text, TextInput } from "react-native-paper";
 import DateTimePicker from "@react-native-community/datetimepicker";
 import moment from 'moment'
 
-import commomStyles from "../style/commomStyles";
+import commonStyles from "../style/commonStyles";
 import styleAddTask from "../style/styleAddTask";
 
 const initialState = {
@@ -67,7 +67,7 @@ class AddTask extends Component {
 
         return (
             <Modal
-                style={commomStyles.container}
+                style={commonStyles.container}
                 transparent={true}
                 visible={this.props.isVisible}
                 onRquestClose={this.props.onCancel}

@@ -1,11 +1,11 @@
 import { StyleSheet } from "react-native";
-import commomStyles from "./commomStyles";
+import commonStyles from "./commonStyles";
 
 const styleTask = StyleSheet.create({
     containerRow: {
         flex: 1,
         flexDirection: 'row',
-        borderColor: commomStyles.borderClolor,
+        borderColor: commonStyles.borderClolor,
         borderBottomWidth: 1,
         alignItems: 'center',
         paddingVertical: 10,
@@ -16,31 +16,31 @@ const styleTask = StyleSheet.create({
         justifyContent: 'center',
     },
     date: {
-        color: commomStyles.today,
+        color: commonStyles.today,
         fontSize: 15,
     },
     desc: {
-        color: commomStyles.today,
+        color: commonStyles.today,
         fontSize: 18,
         fontWeight: 'bold'
     },
     done: {
-        color: commomStyles.txtColor,
+        color: commonStyles.txtColor,
         height: 25,
         width: 25,
         borderRadius: 13,
         borderWidth: 1,
-        backgroundColor: commomStyles.checkedColor,
+        backgroundColor: commonStyles.checkedColor,
         alignItems: 'center',
         justifyContent: 'center',
     },
     pending: {
-        color: commomStyles.txtColor,
+        color: commonStyles.txtColor,
         height: 25,
         width: 25,
         borderRadius: 13,
         borderWidth: 1,
-        borderColor: commomStyles.borderClolor,
+        borderColor: commonStyles.borderClolor,
     },
     right: {
         flex: 1,
