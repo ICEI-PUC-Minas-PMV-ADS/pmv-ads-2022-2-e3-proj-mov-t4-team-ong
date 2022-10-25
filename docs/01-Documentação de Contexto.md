@@ -1,6 +1,6 @@
 # Introdução
 
-Este trabalho tem por objetivo documentar os artefatos originados em um projeto de desenvolvimento de uma aplicação móvel. O aplicativo ‘Juntos!’ será desenvolvido para permitir um mecanismo de comunicação entre ONGs e possíveis doadores, de forma simples e acessível.
+Este trabalho tem por objetivo documentar os artefatos originados em um projeto de desenvolvimento de uma aplicação móvel. O aplicativo ‘Vida Sempre Bela’ será desenvolvido para permitir um mecanismo de comunicação entre ONGs e possíveis doadores, de forma simples e acessível.
 
 O conceito de organização não governamental (ONG) corresponde a instituições civis não governamentais e que são constituídas de maneira formal e autônoma. São entidades sem fins lucrativos e que atuam em projetos de cunho social e humanitário. O desenvolvimento e a expansão dessas instituições ocorreram na América Latina entre as décadas de 1960 e 1970 e hoje constituem-se como um importante instrumento de transformação social e cooperação entre a sociedade (DIAS, 2003, p.15).
 
