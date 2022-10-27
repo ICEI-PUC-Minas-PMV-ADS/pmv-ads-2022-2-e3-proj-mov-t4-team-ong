@@ -9,7 +9,8 @@ import UserForm from "./view/UserForm";
 import UserList from "./view/UserList";
 import TaskList from "./screens/TaskList";
 import Auth from "./screens/Auth"
-import HomePage from './screens/HomePage'
+import HomePage from './screens/HomePage';
+import PagInicialOng from "./screens/PagInicialOng";
 
 const Stack = createNativeStackNavigator()
 
@@ -29,7 +30,7 @@ const App = (props) => {
 
   return (
     <Stack.Navigator
-      initialRouteName="HomePage"
+      initialRouteName="PagInicialOng"
       screenOptions={navigatorOptions}
     >
       <Stack.Screen
@@ -72,6 +73,11 @@ const App = (props) => {
         name='UserForm'
         component={UserForm}
         options={{ title: 'Formulário de Usuáros' }}
+      />
+      <Stack.Screen
+        name='PagInicialOng'
+        component={PagInicialOng}
+        options={{ title: 'Página Inicial' }}
       />
     </Stack.Navigator>
   )
