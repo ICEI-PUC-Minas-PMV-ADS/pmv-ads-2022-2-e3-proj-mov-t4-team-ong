@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, useEffect } from 'react'
 import {
     Alert,
     ImageBackground,
@@ -17,18 +17,19 @@ import loginImage from '../../assets/imgs/loginOVSB.png'
 import btnInputStyle from '../style/btnInputStyle';
 import { TextInput } from 'react-native-paper';
 
-//import { getUsuarios, insertUsuarios } from '../services/CadastroServiceDb';
 
 import { server, showError, showSucess} from '../common/common'
+import { create } from 'react-test-renderer';
 
 class Auth extends Component {
     state = {
-        name: '',
+        userName: '',
         email: '',
         passowrd: '',
         confirmPassword: '',
         stageNew: null
     }
+
 
     componentDidMount = () => {
         console.log(' mount', this.props.route.params.stageNew, this.state.stageNew)
@@ -41,13 +42,6 @@ class Auth extends Component {
     signinOrSignup = () => {
         console.log(' stageNew2', this.props.route.params.stageNew)
         if (this.state.stageNew) {
-            /*insertUsuarios(
-                {
-                    Nome : name,
-                    Email: email,
-                    Senha: passowrd
-                 }
-            ).then((dados) => {console.log(dados)})*/
             Alert.alert('Sucesso!', 'Criar')
         } else {
             Alert.alert('Sucesso!', 'Entrar')
@@ -75,10 +69,10 @@ class Auth extends Component {
                             <View style={btnInputStyle.container}>
                                 <Icon name='person' size={25} style={btnInputStyle.icon} />
                                 <TextInput
-                                    style={[btnInputStyle.input, this.props.style]}
-                                    value={this.state.name}
                                     label='Nome'
-                                    onChange={name => this.swtState({ name })}
+                                    value={this.state.userName}
+                                    style={[btnInputStyle.input, this.props.style]}
+                                    onChange={userName => this.setState({ userName })}
                                 />
                             </View>
                         }

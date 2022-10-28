@@ -9,5 +9,6 @@ export const getUsuarios = async () => {
 
 export const insertUsuarios = async (params) => {
     let results =  await DbExec('INSERT INTO Cadastro(Nome, Email, Senha) VALUES(?,?,?)', [param.Nome, param.Email, param.Senha]);
+    console.log(results);
     return results.rowsAffected;
 }

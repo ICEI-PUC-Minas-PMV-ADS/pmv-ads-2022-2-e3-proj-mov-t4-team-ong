@@ -1,4 +1,4 @@
-import * as SQLite from 'expo-sqlite';
+/*import * as SQLite from "expo-sqlite"
 
 export const DataBase = {
 
@@ -28,9 +28,4 @@ export const DataBase = {
         return ExecuteQuery;
 
     },
-};
-
-
-
-
-export default DataBase;
+};*/
