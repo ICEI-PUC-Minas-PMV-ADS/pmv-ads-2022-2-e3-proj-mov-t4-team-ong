@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react'
+import React, { Component } from 'react'
 import {
     Alert,
     ImageBackground,
@@ -17,19 +17,16 @@ import loginImage from '../../assets/imgs/loginOVSB.png'
 import btnInputStyle from '../style/btnInputStyle';
 import { TextInput } from 'react-native-paper';
 
-
 import { server, showError, showSucess} from '../common/common'
-import { create } from 'react-test-renderer';
 
-class Auth extends Component {
+class AuthOng extends Component {
     state = {
-        userName: '',
-        email: '',
-        passowrd: '',
-        confirmPassword: '',
+        nameOng: '',
+        emailOng: '',
+        passwordOng: '',
+        confirmPasswordOng: '',
         stageNew: null
     }
-
 
     componentDidMount = () => {
         console.log(' mount', this.props.route.params.stageNew, this.state.stageNew)
@@ -38,7 +35,6 @@ class Auth extends Component {
         }
     }
 
-   
     signinOrSignup = () => {
         console.log(' stageNew2', this.props.route.params.stageNew)
         if (this.state.stageNew) {
@@ -47,7 +43,6 @@ class Auth extends Component {
             Alert.alert('Sucesso!', 'Entrar')
         }
     }
-
     
     render() {
         console.log('stageNew', this.state.stageNew)
@@ -62,36 +57,36 @@ class Auth extends Component {
                     <View style={authStyle.formContainer}>
                         <Text style={authStyle.title}>
                             {this.state.stageNew
-                                ? 'Informe seus dados para cadastro:'
+                                ? 'Informe os dados da ONG para cadastro:'
                                 : 'Informe seus dados para login: '}
                         </Text>
                         {this.state.stageNew &&
                             <View style={btnInputStyle.container}>
                                 <Icon name='person' size={25} style={btnInputStyle.icon} />
                                 <TextInput
-                                    label='Nome'
-                                    value={this.state.userName}
                                     style={[btnInputStyle.input, this.props.style]}
-                                    onChange={userName => this.setState({ userName })}
+                                    value={this.state.nameOng}
+                                    label='Nome da ONG'
+                                    onChange={nameOng => this.swtState({ nameOng })}
                                 />
                             </View>
                         }
                         <View style={btnInputStyle.container}>
                             <Icon name='at' size={25} style={btnInputStyle.icon} />
                             <TextInput
-                                label='E-mail'
-                                value={this.state.email}
+                                label='E-mail da ONG'
+                                value={this.state.emailOng}
                                 style={btnInputStyle.input}
-                                onChangeText={email => this.setState({ email })}
+                                onChangeText={emailOng => this.setState({ emailOng })}
                             />
                         </View>
                         <View style={btnInputStyle.container}>
                             <Icon name='key' size={25} style={btnInputStyle.icon} />
                             <TextInput
                                 label='Senha'
-                                value={this.state.password}
+                                value={this.state.passwordOng}
                                 style={btnInputStyle.input}
-                                onChangeText={password => this.setState({ password })}
+                                onChangeText={passwordOng => this.setState({ passwordOng })}
                                 secureTextEntry={true}
                             />
                         </View>
@@ -100,9 +95,9 @@ class Auth extends Component {
                                 <Icon name='checkmark' size={25} style={btnInputStyle.icon} />
                                 <TextInput
                                     label='Confirmar Senha'
-                                    value={this.state.confirmPassword}
+                                    value={this.state.confirmPasswordOng}
                                     style={btnInputStyle.input}
-                                    onChangeText={confirmPassword => this.setState({ confirmPassword })}
+                                    onChangeText={confirmPasswordOng => this.setState({ confirmPasswordOng })}
                                     secureTextEntry={true}
                                 />
                             </View>
@@ -128,8 +123,6 @@ class Auth extends Component {
 
         )
     }
-
-    
 }
 
-export default Auth
+export default AuthOng

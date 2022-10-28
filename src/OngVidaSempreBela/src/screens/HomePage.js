@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react';
-import { Alert, ImageBackground, TouchableOpacity, View } from 'react-native';
+import { ImageBackground, TouchableOpacity, View } from 'react-native';
 import { Text} from 'react-native-paper';
 
 import backgroundImage from '../../assets/imgs/logoOVSB.png'
@@ -20,11 +20,13 @@ class HomePage extends Component {
             >
 
                 <View style={homePageStyle.background}>
-                    <Text style={homePageStyle.title}>Bem Vindo!!!</Text>
+                    <Text style={homePageStyle.title}>Bem-vindo!</Text>
                     <View>
                         <TouchableOpacity
-                            style={btnOutileStyle.container}
-                            onPress={() => Alert.alert('Função não disponível')}
+                            //style={btnOutileStyle.container}
+                            //onPress={() => Alert.alert('Função não disponível')}
+                            onPress={() => this.props.navigation.navigate('CadastroOng',
+                            { stageNew: true })}
                         >
                             <View style={btnOutileStyle.button}>
                                 <Text style={btnOutileStyle.buttonText}  >
