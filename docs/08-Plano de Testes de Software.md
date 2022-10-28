@@ -1,10 +1,26 @@
 # Plano de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
+Caso de Teste | CT-01: Cadastro usuário do tipo ONG
+---|---
+Requisitos Associados | RF-01: O aplicativo deve permitir o cadastro de usuários do tipo ONG
+Objetivo do Teste | Verificar se a função de cadastro de usuário está funcionando adequadamente
+Passos | 1.	Executar o aplicativo; <br>2.	Clicar no botão 'cadastrar ong'; <br>3.	Preencher formulário com as informações de cadastro; <br>4. Clicar em 'cadastrar'.
+Critérios de Êxito | •	As informações cadastradas devem ser inseridas no banco de dados <br> •	Uma mensagem de sucesso deve ser exibida ao usuário
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
+Caso de Teste | CT-02: Login usuário do tipo ONG
+---|---
+Requisitos Associados | RF-03: O usuário deve conseguir realizar o login no aplicativo utilizando as informações de usuário e senha previamente cadastrados
+Objetivo do Teste | Verificar se a função de login está funcionando adequadamente
+Passos | 1.	Executar o aplicativo; <br>2.	Clicar no botão 'entrar'; <br>3.	Preencher formulário com as informações de usuário e senha; <br>4. Clicar em 'entrar'.
+Critérios de Êxito | •	As informações cadastradas devem ser resgatadas no banco de dados <br> •	Se as informações estiverem corretas, o usuário deve ser direcionado à página inicial do aplicativo <br> • Se as informações estiverem incorretas, uma mensagem de erro deverá ser exibida.
 
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
+
+Caso de Teste | CT-02: Atualização de dados cadastrais
+---|---
+Requisitos Associados | RF-02: O aplicativo deve permitir a atualização do cadastro de usuários do tipo ONG
+Objetivo do Teste | Verificar se o usuário é capaz de alterar seus dados de cadastro
+Passos | 1.	Executar o aplicativo; <br>2.	Clicar no botão 'entrar'; <br>3.	Preencher formulário com as informações de usuário e senha; <br>4. Clicar em 'entrar'; <br>5. Escolher a opção de 'alteração de dados cadastrais'; <br>5. Alterar os dados do formulário; <br>6. Clicar em 'ok'
+Critérios de Êxito | •	As informações cadastradas devem ser atualizadas no banco de dados
  
 ## Ferramentas de Testes (Opcional)
 
