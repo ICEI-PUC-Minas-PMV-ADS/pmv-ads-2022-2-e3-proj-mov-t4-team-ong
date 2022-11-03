@@ -1,0 +1,32 @@
+{
+  "name": "ovsbbackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "1.19.1",
+    "consign": "0.1.6",
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "jwt-simple": "0.5.6",
+    "knex": "0.95.15",
+    "moment": "^2.29.4",
+    "passport": "^0.6.0",
+    "passport-jwt": "4.0.0",
+    "pg": "8.7.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "eslint": "^8.26.0",
+    "eslint-plugin-react": "^7.31.10",
+    "nodemon": "^2.0.20"
+  }
+}
