@@ -17,29 +17,11 @@ class HomePage extends Component {
                     style={homePageStyle.background}
                 >
                     <View style={homePageStyle.background}>
-                        <View style={homePageStyle.iconAlign}>
-                            <TouchableOpacity onPress={() => this.props.navigation.openDrawer()} >
-                                <Icon
-                                    name='bars'
-                                    style={commonStyles.iconImage}
-                                />
-                            </TouchableOpacity>
-                        </View>
                         <Text style={homePageStyle.title}>Bem Vindo!!!</Text>
                         <View>
                             <BtnOutline
                                 onPress={() => Alert.alert('Função não disponível')}
                                 title=' Quero cadastrar minha ONG'
-                            />
-                            <BtnOutline
-                                onPress={() => this.props.navigation.navigate('Cadastro',
-                                    { stageNew: true })}
-                                title='Quero me cadastrar'
-                            />
-                            <BtnOutline
-                                onPress={() => this.props.navigation.navigate('Login',
-                                    { stageNew: false })}
-                                title='Quero entrar'
                             />
                             <BtnOutline
                                 onPress={() => Alert.alert('Função não disponível')}

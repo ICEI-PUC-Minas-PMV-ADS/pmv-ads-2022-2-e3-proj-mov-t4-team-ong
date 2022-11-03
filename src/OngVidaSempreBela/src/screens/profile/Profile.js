@@ -13,6 +13,7 @@ import { server, showError, showSuccess } from '../../common/common'
 
 import BtnOutline from '../../components/btnComponent/BtnOutline';
 import BtnInput from '../../components/btnComponent/BtnInput';
+import BtnLink from '../../components/btnComponent/BtnLink'
 
 import createImage from '../../../assets/imgs/newProfile.png'
 import loginImage from '../../../assets/imgs/login.png'
@@ -212,6 +213,12 @@ class Profile extends Component {
                             onPress={this.signingOrSignup}
                             title={this.getAction()}
                         />
+                        {(!this.state.stageNew && this.state.stageNew !== null) &&
+                            <BtnLink
+                                onPress={() => this.setState({ email: "anonimo@anonimo.br", password: "anonimo" })}
+                                title="Entrar como Anônimo"
+                            />
+                        }
                     </View>
                 </View>
             </View>
