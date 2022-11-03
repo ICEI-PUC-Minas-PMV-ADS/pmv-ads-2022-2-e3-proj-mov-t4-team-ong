@@ -1,0 +1,32 @@
+/**
+ * @format
+ */
+
+import React, { useState } from "react";
+import { AppRegistry } from 'react-native';
+
+import AppNavigator from "./src/AppNavigator";
+
+import { name as appName } from './app.json';
+
+import { NavigationContainer } from "@react-navigation/native";
+import { ThemeProvider } from '@rneui/themed';
+
+import themeContext from "./src/contexts/themeContext";
+
+const Main = (props) => {
+
+    const [theme, setTheme] = useState(themeContext)
+
+    return (
+        <ThemeProvider theme={theme}>
+            <NavigationContainer >
+                <AppNavigator theme={theme} />
+            </NavigationContainer>
+        </ThemeProvider>
+    )
+}
+
+export default Main
+
+AppRegistry.registerComponent(appName, () => Main);
