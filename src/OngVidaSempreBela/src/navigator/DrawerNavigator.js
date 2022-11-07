@@ -25,7 +25,7 @@ const DrawerNavigator = (props) => {
             drawerContent={(props) => <Menu {...props} email={email} name={name} />}
         >
             <Drawer.Screen name='Principal'>
-                {(props) => <HomePage {...props} title='HomePage' />}
+                {(props) => <HomePage {...props} title='Principal' />}
             </Drawer.Screen>
             <Drawer.Screen name="Reminder" options={{ title: 'Agenda' }}>
                 {props => <ReminderNavigator {...props} title='Hoje' daysAhead={0} />}

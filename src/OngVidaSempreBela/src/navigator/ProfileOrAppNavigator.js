@@ -21,6 +21,7 @@ class ProfileOrAppNavigator extends Component {
             // userData está inválido
         }
 
+        console.log('userDataJson', userData)
         if (userData && userData.token) {
             axios.defaults.headers.common['Authorization'] = `bearer ${userData.token}`
             // this.props.navigation.navigate('Home', userData)

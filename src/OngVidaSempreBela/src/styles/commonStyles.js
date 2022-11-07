@@ -20,11 +20,16 @@ const commonStyles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-    ContainerForm: {
+    containerError: {
+        marginTop: -5,
+        marginBottom: 10,
+        marginStart: 47
+    },
+    containerForm: {
         paddingHorizontal: 20,
         width: '100%',
         marginTop: 5,
-        backgroundColor: colors.black
+        backgroundColor: colors.overlay
     },
     containerImage: {
         flex: 7,
@@ -68,6 +73,10 @@ const commonStyles = StyleSheet.create({
         color: colors.white,
         marginBottom: 10,
     },
+    txtError: {
+        marginTop: -5,
+        color: colors.error
+    }
 })
 
 export default commonStyles
