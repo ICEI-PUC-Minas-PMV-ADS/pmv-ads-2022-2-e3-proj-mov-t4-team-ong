@@ -30,7 +30,7 @@ const App = (props) => {
 
   return (
     <Stack.Navigator
-      initialRouteName="PagInicialOng"
+      initialRouteName="HomePage"
       screenOptions={navigatorOptions}
     >
       <Stack.Screen
