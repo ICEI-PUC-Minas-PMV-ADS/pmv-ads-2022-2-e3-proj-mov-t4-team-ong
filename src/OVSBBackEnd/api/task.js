@@ -2,9 +2,9 @@ const moment = require('moment')
 
 module.exports = app => {
     const getTasks = (req, res) => {
-        console.log('get', req.body.date)
         const date = req.query.date ? req.query.date
             : moment().endOf('day').toDate()
+        console.log('get', date)
 
         app.db('tasks')
             .where({ userId: req.user.id })
@@ -47,7 +47,7 @@ module.exports = app => {
         app.db('tasks')
             .where({ id: req.params.id, userId: req.user.id })
             .update({ doneAt })
-            .then(_ => res.status(204).sned())
+            .then(_ => res.status(204).send())
             .catch(err => res.status(400).json(err))
     }
 
@@ -57,7 +57,7 @@ module.exports = app => {
             .first()
             .then(task => {
                 if (!task) {
-                    const msg = `Taks com id ${req.params.id} não encontrada.`
+                    const msg = `Tasks com id ${req.params.id} não encontrada.`
                     return res.status(400).send(msg)
                 }
 

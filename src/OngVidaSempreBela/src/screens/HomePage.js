@@ -1,69 +1,54 @@
-import React, { Component, useState } from 'react';
-import { ImageBackground, TouchableOpacity, View } from 'react-native';
-import { Text} from 'react-native-paper';
+import React, { Component } from 'react';
+import { Alert, ImageBackground, View, Text, TouchableOpacity } from 'react-native';
+import Icon from "react-native-vector-icons/FontAwesome";
 
 import backgroundImage from '../../assets/imgs/logoOVSB.png'
-import homePageStyle from '../style/homePageStyle'
-import btnOutileStyle from '../style/btnOutlineStyle';
+import homePageStyle from '../styles/homePageStyle'
+import BtnOutline from '../components/btnComponent/BtnOutline';
+import commonStyles from '../styles/commonStyles';
 
 class HomePage extends Component {
-    
-    state = {
-    }
-    
     render() {
+        console.log('HomePage: ')
         return (
-            
-            <ImageBackground
-                source={backgroundImage}
-                style={homePageStyle.background}
-            >
-
-                <View style={homePageStyle.background}>
-                    <Text style={homePageStyle.title}>Bem-vindo!</Text>
-                    <View>
-                        <TouchableOpacity
-                            //style={btnOutileStyle.container}
-                            //onPress={() => Alert.alert('Função não disponível')}
-                            onPress={() => this.props.navigation.navigate('CadastroOng',
-                            { stageNew: true })}
-                        >
-                            <View style={btnOutileStyle.button}>
-                                <Text style={btnOutileStyle.buttonText}  >
-                                    Quero cadastrar minha ONG
-                                </Text>
-                            </View>
-                        </TouchableOpacity>
-                        <TouchableOpacity
-                            onPress={() => this.props.navigation.navigate('Cadastro',
-                                { stageNew: true })}
-                        >
-                            <View style={btnOutileStyle.button}>
-                                <Text style={btnOutileStyle.buttonText}  >
-                                    Quero me cadastrar
-                                </Text>
-                            </View>
-                        </TouchableOpacity>
-                        <TouchableOpacity
-                            onPress={() => this.props.navigation.navigate('Login',
-                                { stageNew: false })}
-                        >
-                            <View style={btnOutileStyle.button}>
-                                <Text style={btnOutileStyle.buttonText}  >
-                                    Quero entrar
-                                </Text>
-                            </View>
-                        </TouchableOpacity>
-                        <TouchableOpacity>
-                            <View style={btnOutileStyle.button}>
-                                <Text style={btnOutileStyle.buttonText}  >
-                                    Quero doar
-                                </Text>
-                            </View>
-                        </TouchableOpacity>
+            <View style={commonStyles.containerPage}>
+                <ImageBackground
+                    source={backgroundImage}
+                    style={homePageStyle.background}
+                >
+                    <View style={homePageStyle.background}>
+                        <View style={homePageStyle.iconAlign}>
+                            <TouchableOpacity onPress={() => this.props.navigation.openDrawer()} >
+                                <Icon
+                                    name='bars'
+                                    style={commonStyles.iconImage}
+                                />
+                            </TouchableOpacity>
+                        </View>
+                        <Text style={homePageStyle.title}>Bem Vindo!!!</Text>
+                        <View>
+                            <BtnOutline
+                                onPress={() => Alert.alert('Função não disponível')}
+                                title=' Quero cadastrar minha ONG'
+                            />
+                            <BtnOutline
+                                onPress={() => this.props.navigation.navigate('Cadastro',
+                                    { stageNew: true })}
+                                title='Quero me cadastrar'
+                            />
+                            <BtnOutline
+                                onPress={() => this.props.navigation.navigate('Login',
+                                    { stageNew: false })}
+                                title='Quero entrar'
+                            />
+                            <BtnOutline
+                                onPress={() => Alert.alert('Função não disponível')}
+                                title='Quero doar'
+                            />
+                        </View>
                     </View>
-                </View>
-            </ImageBackground>
+                </ImageBackground>
+            </View>
         )
     }
 }

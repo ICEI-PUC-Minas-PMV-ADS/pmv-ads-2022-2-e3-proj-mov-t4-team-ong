@@ -2,6 +2,11 @@ module.exports = app => {
     app.post('/signup', app.api.user.save)
     app.post('/signin', app.api.auth.signin)
 
+    app.route('/user/:email')
+        .all(app.config.passport.authenticate())
+        .get(app.api.user.getUser)
+        .put(app.api.user.updateUser)
+
     app.route('/tasks')
         .all(app.config.passport.authenticate())
         .get(app.api.task.getTasks)

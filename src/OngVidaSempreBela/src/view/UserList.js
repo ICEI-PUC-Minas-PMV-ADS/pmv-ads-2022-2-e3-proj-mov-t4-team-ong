@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 
 import { Alert, FlatList, View } from "react-native";
-import Icon from 'react-native-vector-icons/Ionicons';
+import { Icon } from "@rneui/themed";
 import { Avatar, ListItem } from "@rneui/themed";
 import { useTheme } from "@react-navigation/native";
 
@@ -74,7 +74,7 @@ const UserList = (props) => {
                                 confirmUserDeletion(user)
                             }
                         }}
-                        seletetIndex={selectedIndex}
+                        selectedIndex={selectedIndex}
                         buttons={buttons}
 
                     />
