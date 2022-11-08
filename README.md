@@ -1,12 +1,12 @@
-# TÍTULO DO PROJETO
+# Canal Vida Sempre Bela
 
-`CURSO`
+`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
-`DISCIPLINA`
+`PROJETO 3: DESENVOLVIMENTO DE UMA APLICAÇÃO MOBILE COM REACT NATIVE`
 
-`SEMESTRE`
+`2022/2`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Desenvolvimento de uma aplicação mobile em React Native para permitir um mecanismo de comunicação entre ONGs e possíveis doadores, de forma simples e acessível.
 
 ## Integrantes
 
@@ -18,7 +18,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Orientador
 
-* Nome completo do professor 1
+* Mateus Curcino De Lima
 
 ## Instruções de utilização
 
