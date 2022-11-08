@@ -131,7 +131,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-01| O aplicativo deve ser implementado utilizando as tecnologias React Native, ..... | ALTA | 
+|RNF-01| O aplicativo deve ser implementado utilizando a tecnologia React Native e a linguagem JavaScript | ALTA | 
 |RNF-02| A persistência dos dados será feita através da ferramenta JSON server |  ALTA | 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
