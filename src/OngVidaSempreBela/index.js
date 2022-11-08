@@ -1,35 +1,32 @@
 /**
  * @format
  */
-
+import React, { useState } from 'react';
+import 'react-native-gesture-handler';
 import { AppRegistry } from 'react-native';
-import App from './src/App';
+
+import AppNavigator from "./src/AppNavigator";
+
 import { name as appName } from './app.json';
 
-import React, { createContext, useState } from "react";
+import { LogBox } from 'react-native';
+import { ThemeProvider } from '@rneui/themed';
+import { NavigationContainer } from '@react-navigation/native';
 
-import { NavigationContainer} from "@react-navigation/native";
+LogBox.ignoreLogs(['Reanimated 2']);
 
-import { MD3DarkTheme as DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
-import { UsersProvider } from './src/context.js/UserContext';
+const Main = () => {
 
-export const ThemeContext = createContext();
+    const [theme, setTheme] = useState(themeContext)
 
-const Main = (props) => {
-
-    const [theme, setTheme] = useState(DefaultTheme)
-
+    console.log('index / Main : ')
     return (
-        <ThemeContext.Provider value={{ theme, setTheme }}>
-            <NavigationContainer theme={theme}>
-                <UsersProvider>
-                    <App />
-                </UsersProvider>
+        <ThemeProvider theme={theme}>
+            <NavigationContainer>
+                <AppNavigator theme={theme} />
             </NavigationContainer>
-        </ThemeContext.Provider>
-    )
-}
-
-export default Main
+        </ThemeProvider>
+    );
+};
 
 AppRegistry.registerComponent(appName, () => Main);

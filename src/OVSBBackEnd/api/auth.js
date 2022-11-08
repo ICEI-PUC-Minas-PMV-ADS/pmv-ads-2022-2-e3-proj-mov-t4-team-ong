@@ -4,6 +4,7 @@ const bcrypt = require('bcrypt-nodejs')
 
 module.exports = app => {
     const signin = async (req, res) => {
+    console.log('signin: ', req.body.email)
         if (!req.body.email || !req.body.password) {
             return res.status(400).send('Dados incompletos')
         }
@@ -15,7 +16,7 @@ module.exports = app => {
         if (user) {
             bcrypt.compare(req.body.password, user.password, (err, isMatch) => {
                 if (err || !isMatch) {
-                    return res.status(401).send()
+                    return res.status(401).send('Senha ou email inválidos!')
                 }
 
                 const payload = { id: user.id }
@@ -26,6 +27,7 @@ module.exports = app => {
                     token: jwt.encode(payload, authSecret)
                 })
             })
+            console.log('loged')
         } else {
             res.status(400).send('Usuário não cadastrado!')
         }
