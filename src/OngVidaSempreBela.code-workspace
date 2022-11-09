@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "OngVidaSempreBela"
+		},
+		{
+			"path": "ongvidasemprebelaBackend"
+		}
+	],
+	"settings": {
+		"cSpell.words": [
+			"datetime",
+			"knexfile",
+			"ongs",
+			"ongvidasemprebelabackend",
+			"ongvidasemprebeladb",
+			"signin"
+		]
+	}
+}
