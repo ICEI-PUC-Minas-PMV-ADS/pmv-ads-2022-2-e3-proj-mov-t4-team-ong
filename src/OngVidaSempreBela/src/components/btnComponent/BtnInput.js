@@ -1,49 +1,34 @@
 import React, { Component } from "react";
 import { StyleSheet, View } from "react-native";
-import { TextInput } from "react-native-paper";
-import Icon  from "react-native-vector-icons/FontAwesome";
+import { Input } from '@rneui/themed';
+import Icon from "react-native-vector-icons/FontAwesome";
 
 class BtnInput extends Component {
 
     render() {
-        console.log('BtnInput')
-       
         const styles = StyleSheet.create({
-            container: {
-                width: '100%',
-                flexDirection: 'row',
-                alignItems: 'center',
-                backgroundColor: this.props.schema.white,
-                borderRadius: 20,
-                marginBottom: 10
-
-            },
-            input: {
-                marginHorizontal: 10,
-                width: '75%',
-                backgroundColor: this.props.schema.white,
-            },
             icon: {
-                marginLeft: 20,
+                marginLeft: 5,
                 color: this.props.schema.today,
             }
         })
 
         return (
-            <View style={[styles.container, this.props.styles]}>
-                <Icon
+            <Input
+                leftIcon={<Icon
                     name={this.props.icon}
-                    size={25}
+                    size={15}
                     style={styles.icon}
-                />
-                <TextInput
-                    {...this.props}
-                    size={20}
-                    style={[styles.input, this.props.styles]}
-                    underlineColor={this.props.schema.white}
-                    activeUnderlineColor={this.props.schema.black}
-                />
-            </View>
+                />}
+                {...this.props}
+                fontSize={15}
+                color={
+                    this.props.error
+                        ? this.props.schema.error
+                        : this.props.schema.white}
+                labelStyle={{ fontSize: 10, margin: 0, padding:0 }}
+                placeholder={this.props.label}
+            />
         )
     }
 }

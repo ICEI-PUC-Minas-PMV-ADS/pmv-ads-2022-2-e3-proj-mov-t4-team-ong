@@ -17,6 +17,7 @@
 			"ongvidasemprebeladb",
 			"rneui",
 			"signin"
-		]
+		],
+		"java.configuration.updateBuildConfiguration": "interactive"
 	}
 }

@@ -6,25 +6,22 @@ class BtnOutline extends Component {
 
     render() {
 
-        console.log('BtnOutline: ')
-
-        const styles = StyleSheet.create({
+         const styles = StyleSheet.create({
             button: {
                 marginBottom: 10,
-                fontSize: 18,
                 borderColor: this.props.schema.white,
                 borderStyle: "solid",
                 borderWidth: 1,
                 borderRadius: 15,
                 padding: 10,
                 paddingHorizontal: 50,
-                with: 100,
+                with: '100%',
                 alignItems: 'center'
             },
             buttonText: {
                 color: this.props.schema.white,
                 fontWeight: 'bold',
-                fontSize: 20,
+                fontSize: 15,
 
             },
             disabled: {

@@ -17,7 +17,7 @@ class AppNavigator extends Component {
 
   render() {
 
-    console.log('AppNavigator', this.props)
+    console.log('AppNavigator')
 
     return (
       <Stack.Navigator

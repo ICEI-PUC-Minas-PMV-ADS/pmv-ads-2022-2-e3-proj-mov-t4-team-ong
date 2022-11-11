@@ -10,16 +10,12 @@ function isValidConfirm(field1, field2) {
     return field1 === field2
 }
 
-function msgError(field, fieldType, fieldLength) {
-    console.log(field,fieldType, fieldLength)
-
-    let msg = ''
-
+function msgError(fieldType, fieldLength) {
     switch (fieldType) {
         case 'txt':
-            return `${field} deve conter no mínimo ${fieldLength} caracteres!`;
+            return `Informar no mínimo ${fieldLength} caracteres!`;
         default:
-            return `${field} com erro!`;
+            return `Campo com preenchimento inválido!`;
     }
 }
 
