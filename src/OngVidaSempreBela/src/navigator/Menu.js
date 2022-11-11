@@ -1,68 +1,131 @@
-import React from 'react'
-import { View, Text, TouchableOpacity } from 'react-native'
-import { DrawerContentScrollView, DrawerItemList } from '@react-navigation/drawer'
+import React, { Component } from "react"
+
+import { StyleSheet, TouchableOpacity, View } from "react-native"
+
+import { DrawerContentScrollView, DrawerItemList } from "@react-navigation/drawer"
+
+import AsyncStorage from '@react-native-community/async-storage'
+
 import { CommonActions } from '@react-navigation/native';
-import { Gravatar } from 'react-native-gravatar'
 
 import axios from 'axios'
-import AsyncStorage from '@react-native-community/async-storage'
-import Icon from 'react-native-vector-icons/FontAwesome'
-import menuStyle from '../styles/menuStyle'
+
+import { Text } from "@rneui/themed"
+
+import Icon from "react-native-vector-icons/FontAwesome";
+
+import { Gravatar } from "react-native-gravatar";
+
 import logo from '../../assets/imgs/logo.png'
+class Menu extends Component {
 
+    render() {
+        console.log('Menu', this.props)
+        const styles = StyleSheet.create({
+            container: {
+                flex: 1,
+                backgroundColor: this.props.schema.grey0
+            },
+            containerHeader: {
+                justifyContent: 'center',
+                alignItems: 'center'
+            },
+            containerTitle: {
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                padding: 5
+            },
+            containerItems: {
+                flex: 2,
+                backgroundColor: this.props.schema.white
+            },
+            title: {
+                color: this.props.schema.white,
+                fontSize: 20,
+                padding: 5
+            },
+            logoutIcon: {
+                margin: 10
+            },
 
+            avatar: {
+                width: 80,
+                height: 80,
+                borderWidth: 3,
+                borderRadius: 40,
+                borderColor: this.props.schema.grey0,
+                margin: 10,
+            },
+            userInfo: {
+                flexDirection: 'column',
+                marginLeft: 10,
+                justifyContent: 'center',
+                alignItems: 'center'
+            },
+            name: {
+                fontSize: 20,
+                color: this.props.schema.white,
+                marginBottom: 5,
+            },
+            email: {
+                fontSize: 15,
+                color: this.props.schema.white,
+                marginBottom: 10,
+            },
+        })
 
-export default props => {
-    console.log('Menu', props)
-    
-    const logout = () => {
-        delete axios.defaults.headers.common['Authorization']
-        AsyncStorage.removeItem('userData')
-        props.navigation.dispatch(
-            CommonActions.reset({
-                index: 0,
-                routes: [
-                    {
-                        name: 'Profile',
-                    },
-                ],
-            })
-        )
-    }
+        logout = () => {
+            delete axios.defaults.headers.common['Authorization']
+            AsyncStorage.removeItem('userData')
+            this.props.navigation.dispatch(
+                CommonActions.reset({
+                    index: 0,
+                    routes: [
+                        {
+                            name: 'Profile',
+                        },
+                    ],
+                })
+            )
+        }
 
-    return (
-        <DrawerContentScrollView>
-            <View style={menuStyle.container}>
-                <TouchableOpacity onPress={logout}>
-                    <View style={menuStyle.containerTitle} >
-                        <Text style={menuStyle.title}>Vida Sempre Bela</Text>
-                        <View style={menuStyle.logoutIcon}>
-                            <Icon name='sign-out' size={25} color={colors.trash} />
+        return (
+            <DrawerContentScrollView>
+                <View style={styles.container}>
+                    <TouchableOpacity onPress={logout}>
+                        <View style={styles.containerTitle} >
+                            <Text style={styles.title}>Vida Sempre Bela</Text>
+                            <View style={styles.logoutIcon}>
+                                <Icon name='sign-out' size={25} color={this.props.schema.trash} />
+                            </View>
+                        </View>
+                    </TouchableOpacity>
+                    <View style={styles.containerHeader} >
+                        <Gravatar
+                            style={styles.avatar}
+                            className={logo}
+                            options={{
+                                email: this.props.email,
+                                secure: true
+                            }}
+                        />
+                        <View style={styles.userInfo}>
+                            <Text style={styles.name}>
+                                {this.props.name}
+                            </Text>
+                            <Text style={styles.email}>
+                                {this.props.email}
+                            </Text>
                         </View>
                     </View>
-                </TouchableOpacity>
-                <View style={menuStyle.containerHeader} >
-                    <Gravatar
-                        style={menuStyle.avatar}
-                        className={logo}
-                        options={{
-                            email: props.email,
-                            secure: true
-                        }} />
-                    <View style={menuStyle.userInfo}>
-                        <Text style={menuStyle.name}>
-                            {props.name}
-                        </Text>
-                        <Text style={menuStyle.email}>
-                            {props.email}
-                        </Text>
+                    <View style={styles.containerItems}>
+                        <DrawerItemList {...this.props} schema={this.props.schema} />
                     </View>
-
                 </View>
-                <View style={menuStyle.containerItems}>
-                    <DrawerItemList {...props} theme={themeContext.lightColors} />
-                </View>
-            </View>
-        </DrawerContentScrollView>
-    )
+            </DrawerContentScrollView>
+        )
+    }
 }
+
+export default Menu
