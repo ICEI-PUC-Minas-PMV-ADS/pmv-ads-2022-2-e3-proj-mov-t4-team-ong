@@ -10,7 +10,7 @@ import BtnOutline from '../components/btnComponent/BtnOutline'
 class HomePage extends Component {
 
     render() {
-        console.log('HomePage: ', this.props)
+        console.log('HomePage: ')
 
         const styles = StyleSheet.create({
             title: {
@@ -23,12 +23,12 @@ class HomePage extends Component {
         })
 
         return (
-            <View style={commonStyles.containerPage}>
+            <View style={commonStyles.container}>
                 <ImageBackground
                     source={backgroundImage}
-                    style={commonStyles.background}
+                    style={commonStyles.containerBackground}
                 >
-                    <View style={commonStyles.background}>
+                    <View style={commonStyles.containerBackground}>
                         <Text style={styles.title}>Bem Vindo!!!</Text>
                         <View>
                             <BtnOutline

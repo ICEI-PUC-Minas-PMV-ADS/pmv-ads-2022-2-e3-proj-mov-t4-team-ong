@@ -1,27 +1,33 @@
 import { StyleSheet } from "react-native"
 
 const commonStyles = StyleSheet.create({
-    background: {
+    container: {
+        flex: 1,
+    },
+    containerBackground: {
         flex: 1,
         width: '100%',
         alignItems: 'center',
         justifyContent: 'center',
-
     },
-    container: {
+    containerForm: {
         flex: 1,
-        padding: 10,
-    },
-    containerPage: {
-        flex: 1,
+        margin: 10,
     },
     containerImage: {
         flex: 4,
     },
     containerScreen: {
         flex: 11,
-        backgroundColor: 'rgba(2, 2, 2, .7)',
     },
+    title: {
+        fontSize: 15,
+        color: 'white',
+        marginBottom: 10,
+        paddingHorizontal: 25,
+
+    },
+
     iconAlign: {
         flexDirection: 'row',
         marginHorizontal: 10,
@@ -32,12 +38,7 @@ const commonStyles = StyleSheet.create({
         color: 'white',
         fontSize: 35,
     },
-    title: {
-        fontSize: 20,
-        color: 'white',
-        marginBottom: 10,
-        paddingHorizontal: 10
-    },
+
 
 
     titleLarge: {
@@ -52,8 +53,10 @@ const commonStyles = StyleSheet.create({
 
 
     containerButtons: {
+        flex: 1,
         flexDirection: 'row',
         justifyContent: 'space-between',
+        marginTop: 10,
     },
 
 

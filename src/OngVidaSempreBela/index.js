@@ -18,7 +18,7 @@ import AppNavigator from "./src/AppNavigator";
 LogBox.ignoreLogs(['Reanimated 2']);
 class Main extends Component {
     render() {
-        console.log('index / Main : ') 
+        console.log('index / Main : ')
 
         const theme = createTheme({
             lightColors: {
@@ -26,7 +26,7 @@ class Main extends Component {
                     default: lightColors.platform.android,
                     ios: lightColors.platform.ios,
                 }),
-                overlay: 'rgba(255, 255, 255, 0.5)',
+                overlay: 'rgba(91, 91, 91, 0.5)',
                 today: '#FF6B6B',
                 tomorrow: '#FEF16B',
                 week: '#C1FFA6',
@@ -34,7 +34,7 @@ class Main extends Component {
                 trash: 'red',
             },
         })
-        return(
+        return (
             <ThemeProvider theme={theme}>
                 <NavigationContainer>
                     <AppNavigator schema={theme.lightColors} />

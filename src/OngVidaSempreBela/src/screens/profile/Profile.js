@@ -12,20 +12,22 @@ import commonStyles from "../../common/styles/commonStyles"
 import createImage from '../../../assets/imgs/cadastroOVSB.png'
 import loginImage from '../../../assets/imgs/loginOVSB.png'
 
-import { isValidConfirm, isValidEmail, isValidField, msgError } from "../../common/error/commonMsgError"
+import {
+    isValidConfirm,
+    isValidEmail,
+    isValidField,
+    msgError
+} from "../../common/error/commonMsgError"
 
 import BtnInput from "../../components/btnComponent/BtnInput"
-import BtnError from "../../components/btnComponent/BtnError"
 import BtnOutline from "../../components/btnComponent/BtnOutline"
 import BtnLink from "../../components/btnComponent/BtnLink"
 
 import { server, showError, showSuccess } from "../../common/configuration/common"
 import AsyncStorage from '@react-native-community/async-storage'
 
-//import axios from "axios"
-
 const initialState = {
-    name: 'Alex de Souza Galdino',
+    name: 'A',
     ongID: 1,
     email: 'alexsgaldino@gmail.com ',
     password: '1234',
@@ -45,7 +47,7 @@ class Profile extends Component {
     }
 
     render() {
-        console.log('Profile: ', this.props)
+        console.log('Profile: ')
 
         const validations = []
 
@@ -106,15 +108,17 @@ class Profile extends Component {
         }
 
         return (
-            <View style={commonStyles.containerPage}>
-                <ImageBackground
-                    source={
-                        this.state.stageNew
-                            ? createImage : loginImage}
-                    style={commonStyles.containerImage}
-                />
-                <View style={commonStyles.containerScreen}>
-                    <View style={commonStyles.container}>
+            <View style={commonStyles.container}>
+                <View style={commonStyles.containerImage}>
+                    <ImageBackground
+                        source={
+                            this.state.stageNew
+                                ? createImage : loginImage}
+                        style={commonStyles.container}
+                    />
+                </View>
+                <View style={[commonStyles.containerScreen, { backgroundColor: this.props.schema.grey0 }]}>
+                    <View style={commonStyles.containerForm}>
                         <Text style={commonStyles.title}>
                             {this.state.stageNew
                                 ? 'Informe seus dados para cadastro:'
@@ -122,27 +126,14 @@ class Profile extends Component {
                         </Text>
                         {
                             this.state.stageNew &&
-                            <View>
-                                {this.state.name && !isValidField(this.state.name, 3) &&
-                                    <BtnError
-                                        msgError={msgError('Nome', 'txt', 3)}
-                                        schema={this.props.schema}
-                                    />
-                                }
-                                <BtnInput
-                                    label='Nome'
-                                    icon='user'
-                                    value={this.state.name}
-                                    onChangeText={name => this.setState({ name: name })}
-                                    schema={this.props.schema}
-                                />
-                            </View>
-                        }
-                        {
-                            this.state.email && !isValidEmail(this.state.email) &&
-                            <BtnError
-                                msgError={msgError('Email')}
+                            <BtnInput
+                                label='Nome'
+                                icon='user'
+                                value={this.state.name}
+                                onChangeText={name => this.setState({ name: name })}
                                 schema={this.props.schema}
+                                errorMessage={this.state.name && !isValidField(this.state.name, 3) ? msgError('txt', 3) : ''}
+                                error={!isValidField(this.state.name, 3)}
                             />
                         }
                         <BtnInput
@@ -151,14 +142,9 @@ class Profile extends Component {
                             value={this.state.email}
                             onChangeText={email => this.setState({ email: email })}
                             schema={this.props.schema}
+                            errorMessage={this.state.email && !isValidEmail(this.state.email) ? msgError() : ''}
+                            error={!isValidEmail(this.state.email)}
                         />
-                        {
-                            this.state.password && !isValidField(this.state.password, 4) &&
-                            <BtnError
-                                msgError={msgError('Senha', 'txt', 4)}
-                                schema={this.props.schema}
-                            />
-                        }
                         <BtnInput
                             label='Senha'
                             icon='lock'
@@ -166,38 +152,35 @@ class Profile extends Component {
                             onChangeText={password => this.setState({ password: password })}
                             secureTextEntry={true}
                             schema={this.props.schema}
+                            errorMessage={this.state.password && !isValidField(this.state.password, 4) ? msgError('txt', 4) : ''}
+                            error={!isValidField(this.state.password, 4)}
                         />
                         {
                             this.state.stageNew &&
-                            <View>
-                                {
-                                    !isValidConfirm(this.state.password, this.state.confirmPassword) &&
-                                    <BtnError
-                                        msgError={msgError('Confirmar Senha')}
-                                        schema={this.props.schema}
-                                    />
-                                }
-                                <BtnInput
-                                    label='Confirmar Senha'
-                                    icon='check'
-                                    value={this.state.confirmPassword}
-                                    onChangeText={(confirmPassword) => this.setState({ confirmPassword: confirmPassword })}
-                                    secureTextEntry={true}
-                                    schema={this.props.schema}
-                                />
-                            </View>
+                            <BtnInput
+                                label='Confirmar Senha'
+                                icon='check'
+                                value={this.state.confirmPassword}
+                                onChangeText={(confirmPassword) => this.setState({ confirmPassword: confirmPassword })}
+                                secureTextEntry={true}
+                                schema={this.props.schema}
+                                errorMessage={!isValidConfirm(this.state.password, this.state.confirmPassword) ? msgError() : ''}
+                                error={!isValidConfirm(this.state.password, this.state.confirmPassword)}
+                            />
                         }
-                        <BtnOutline
-                            disabled={!validationsForm}
-                            onPress={signingOrSignup}
-                            title={this.state.stageNew ? 'Cadastrar' : 'Entrar'}
-                            schema={this.props.schema}
-                        />
-                        <BtnLink
-                            onPress={() => this.setState({ stageNew: !this.state.stageNew })}
-                            title={this.state.stageNew ? 'Já possui conta?' : 'Ainda não possui conta?'}
-                            schema={this.props.schema}
-                        />
+                        <View style={this.state.stageNew ? commonStyles.containerButtons : ''}>
+                            <BtnOutline
+                                disabled={!validationsForm}
+                                onPress={signingOrSignup}
+                                title={this.state.stageNew ? 'Cadastrar' : 'Entrar'}
+                                schema={this.props.schema}
+                            />
+                            <BtnLink
+                                onPress={() => this.setState({ stageNew: !this.state.stageNew })}
+                                title={this.state.stageNew ? 'Já possui conta?' : 'Ainda não possui conta?'}
+                                schema={this.props.schema}
+                            />
+                        </View>
                     </View>
                 </View>
             </View>

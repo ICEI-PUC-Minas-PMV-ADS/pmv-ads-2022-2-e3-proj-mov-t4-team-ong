@@ -3,7 +3,6 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 
 import { Text } from "@rneui/themed";
 
-//const Drawer = createDrawerNavigator();
 
 const drawerNavigatorOptions = {
     headerShown: true,
@@ -11,6 +10,9 @@ const drawerNavigatorOptions = {
 
 class DrawerNavigator extends Component {
     render() {
+        console.log('DrawerNavigator', props)
+        
+        const Drawer = createDrawerNavigator();
         return (
             <Text>Teste 1</Text>
         )
