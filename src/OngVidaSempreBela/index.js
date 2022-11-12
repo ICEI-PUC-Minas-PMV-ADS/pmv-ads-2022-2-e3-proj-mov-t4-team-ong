@@ -9,13 +9,13 @@ import { NavigationContainer } from "@react-navigation/native";
 
 import { createTheme, lightColors, ThemeProvider } from "@rneui/themed";
 
-import { AppRegistry, LogBox } from "react-native";
+import { AppRegistry } from "react-native";
 
 import { name as appName } from './app.json'
 
 import AppNavigator from "./src/AppNavigator";
 
-LogBox.ignoreLogs(['Reanimated 2']);
+
 class Main extends Component {
     render() {
         console.log('index / Main : ')

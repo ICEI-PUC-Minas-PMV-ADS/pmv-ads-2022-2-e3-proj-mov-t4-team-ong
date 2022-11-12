@@ -34,7 +34,7 @@ class AppNavigator extends Component {
           {(props) => <Profile {...props} schema={this.props.schema} stateNew={false} />}
         </Stack.Screen>
         <Stack.Screen name='Agenda'>
-          {(props) => <DrawerNavigator {...props} schema={this.props.schema} stateNew={false} />}
+          {(props) => <DrawerNavigator {...props} schema={this.props.schema} />}
         </Stack.Screen>
       </Stack.Navigator>
     )
