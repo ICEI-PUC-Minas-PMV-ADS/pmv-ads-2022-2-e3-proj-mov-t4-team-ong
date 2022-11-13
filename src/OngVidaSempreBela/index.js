@@ -17,27 +17,29 @@ import AppNavigator from "./src/AppNavigator";
 
 
 class Main extends Component {
+    theme = createTheme({
+        lightColors: {
+            ...Platform.select({
+                default: lightColors.platform.android,
+                ios: lightColors.platform.ios,
+            }),
+            screenBackground: '#393534',
+            overlay: 'rgba(91, 91, 91, 0.5)',
+            today: '#FF6B6B',
+            tomorrow: '#FEF16B',
+            week: '#C1FFA6',
+            month: '#99B7FF',
+            trash: 'red',
+        },
+    })
+
     render() {
         console.log('index / Main : ')
 
-        const theme = createTheme({
-            lightColors: {
-                ...Platform.select({
-                    default: lightColors.platform.android,
-                    ios: lightColors.platform.ios,
-                }),
-                overlay: 'rgba(91, 91, 91, 0.5)',
-                today: '#FF6B6B',
-                tomorrow: '#FEF16B',
-                week: '#C1FFA6',
-                month: '#99B7FF',
-                trash: 'red',
-            },
-        })
         return (
-            <ThemeProvider theme={theme}>
+            <ThemeProvider theme={this.theme}>
                 <NavigationContainer>
-                    <AppNavigator schema={theme.lightColors} />
+                    <AppNavigator schema={this.theme.lightColors} />
                 </NavigationContainer>
             </ThemeProvider>
         )

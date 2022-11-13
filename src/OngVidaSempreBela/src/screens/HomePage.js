@@ -6,7 +6,6 @@ import commonStyles from '../common/styles/commonStyles'
 import backgroundImage from '../../assets/imgs/logoOVSB.png'
 import BtnOutline from '../components/btnComponent/BtnOutline'
 
-
 class HomePage extends Component {
 
     render() {

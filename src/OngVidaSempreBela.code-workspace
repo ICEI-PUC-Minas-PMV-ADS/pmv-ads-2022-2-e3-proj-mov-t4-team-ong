@@ -16,7 +16,8 @@
 			"ongvidasemprebelabackend",
 			"ongvidasemprebeladb",
 			"rneui",
-			"signin"
+			"signin",
+			"Swipeable"
 		],
 		"java.configuration.updateBuildConfiguration": "interactive"
 	}

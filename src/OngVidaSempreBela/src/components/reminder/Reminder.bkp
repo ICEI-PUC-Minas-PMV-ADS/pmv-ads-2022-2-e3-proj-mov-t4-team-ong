@@ -1,0 +1,129 @@
+import React, { Component } from "react";
+
+import { Text } from "@rneui/themed";
+
+import {
+    StyleSheet,
+    TouchableWithoutFeedback,
+    View
+} from "react-native";
+
+import moment from "moment";
+import 'moment/locale/pt-br'
+
+import Icon from "react-native-vector-icons/FontAwesome";
+
+class Reminder extends Component {
+    render() {
+        console.log('Reminder ', this.props)
+
+        const styles = StyleSheet.create({
+            container: {
+                flex: 1,
+                flexDirection: 'row',
+                borderColor: this.props.schema.grey5,
+                borderBottomWidth: 1,
+                alignItems: 'center',
+                paddingVertical: 10,
+            },
+            containerCheck: {
+                width: '20%',
+                alignItems: 'center',
+                justifyContent: 'center',
+            },
+            subtitle: {
+                color: this.props.schema.primary,
+                fontSize: 15,
+            },
+            title: {
+                color: this.props.schema.white,
+                fontSize: 17,
+                fontWeight: 'bold'
+            },
+            done: {
+                color: colors.primary,
+                height: 25,
+                width: 25,
+                borderRadius: 13,
+                borderWidth: 1,
+                borderColor: this.props.schema.primary,
+                backgroundColor: this.props.schema.primary,
+                alignItems: 'center',
+                justifyContent: 'center',
+            },
+            pending: {
+                color: this.props.schema.primary,
+                height: 25,
+                width: 25,
+                borderRadius: 13,
+                borderWidth: 1,
+                borderColor: this.props.schema.primary,
+            },
+            containerIcon: {
+                flex: 1,
+                flexDirection: 'row',
+                alignItems: 'flex-end',
+                justifyContent: 'flex-end',
+                width: '15%'
+            },
+            textAlign: {
+                width: '60%',
+                justifyContent: 'flex-end',
+            },
+            colorTrash: {
+                color: this.props.schema.trash
+            },
+            colorCheck: {
+                color: this.props.schema.white
+            },
+        })
+
+        const doneOrNot = this.props.doneAt != null
+            ? { textDecoration: 'line-through' }
+            : null
+        
+        const date = this.props.doneAt 
+            ? this.props.doneAt
+            : this.props.estimateAt
+        
+        const formatted = moment(date).locale('pt-br').format('ddd, D [de] MMMM')
+
+        getCheckView = (doneAt) => {
+            if (doneAt != null) {
+                return (
+                    <View style={styles.done}>
+                        <Icon name='check' size={20} style={styles.colorCheck}></Icon>
+                    </View>
+                )
+            } else {
+                return (
+                    <View>
+                        <Text style={styles.pending}></Text>
+                    </View>
+                )
+            }
+        }      
+        return (
+            <View style={styles.container}>
+                <TouchableWithoutFeedback
+                onPress={() => this.props.onToggleTasks(props.id)}
+                >
+                    <View style={styles.containerCheck}>
+                        {getCheckView(this.props.doneAt)}
+                    </View>
+                </TouchableWithoutFeedback>
+                <View style={styles.textAlign}>
+                    <Text style={[styles.title, doneOrNot]}>{this.props.desc}</Text>
+                    <Text style={styles.subtitle}>{formattedDate}</Text>
+                </View>
+                <View style={styles.containerIcon}>
+                    <TouchableWithoutFeedback onPress={() => this.props.onDelete && props.onDelete(props.id)}>
+                        <Icon name="trash" size={30} style={taskStyle.colorTrash} />
+                    </TouchableWithoutFeedback>
+                </View>
+            </View>
+        )
+    }
+}
+
+export default Reminder

@@ -3,6 +3,7 @@
         "datetimepicker",
         "Lato",
         "rneui",
-        "signin"
+        "signin",
+        "Swipeable"
     ]
 }

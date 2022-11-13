@@ -4,8 +4,8 @@ import { LogBox } from "react-native"
 
 import { createDrawerNavigator } from "@react-navigation/drawer"
 
-import ReminderList from '../screens/reminder/ReminderList'
 import Menu from '../navigator/Menu'
+import ReminderNavigator from './ReminderNavigator';
 
 LogBox.ignoreLogs(['Reanimated 2']);
 
@@ -13,7 +13,7 @@ class DrawerNavigator extends Component {
     
     render() {
         
-        console.log('DrawerNavigator', this.props)
+        console.log('DrawerNavigator')
 
         const Drawer = createDrawerNavigator()
 
@@ -29,8 +29,8 @@ class DrawerNavigator extends Component {
                 screenOptions={drawerNavigatorOptions}
                 drawerContent={(props) => <Menu {...props} email={email} name={name} schema={this.props.schema} />}
             >
-                <Drawer.Screen name='Agenda' options={{title: 'Agenda'}}>
-                    {(props) => <ReminderList {...props} title='Hoje' daysAhead={0} schema={this.props.schema} />}
+                <Drawer.Screen name='Reminder' options={{title: 'Agenda'}}>
+                    {(props) => <ReminderNavigator {...props} title='Hoje' daysAhead={0} schema={this.props.schema} />}
                 </Drawer.Screen>
             </Drawer.Navigator>
         )
