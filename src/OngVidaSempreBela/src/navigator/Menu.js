@@ -20,7 +20,7 @@ import logo from '../../assets/imgs/logo.png'
 class Menu extends Component {
 
     render() {
-        console.log('Menu', this.props)
+        console.log('Menu')
         const styles = StyleSheet.create({
             container: {
                 flex: 1,
@@ -83,7 +83,7 @@ class Menu extends Component {
                     index: 0,
                     routes: [
                         {
-                            name: 'Profile',
+                            name: 'HomePage',
                         },
                     ],
                 })

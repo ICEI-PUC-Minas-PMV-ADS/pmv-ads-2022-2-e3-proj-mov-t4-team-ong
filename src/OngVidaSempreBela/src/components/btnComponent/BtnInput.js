@@ -9,7 +9,7 @@ class BtnInput extends Component {
         const styles = StyleSheet.create({
             icon: {
                 marginLeft: 5,
-                color: this.props.schema.today,
+                color: this.props.bg,
             }
         })
 
@@ -17,16 +17,16 @@ class BtnInput extends Component {
             <Input
                 leftIcon={<Icon
                     name={this.props.icon}
-                    size={15}
+                    size={20}
                     style={styles.icon}
                 />}
                 {...this.props}
-                fontSize={15}
+                fontSize={20}
                 color={
                     this.props.error
                         ? this.props.schema.error
                         : this.props.schema.white}
-                labelStyle={{ fontSize: 10, margin: 0, padding:0 }}
+                labelStyle={{ fontSize: 15, margin: 0, padding:0 }}
                 placeholder={this.props.label}
             />
         )
