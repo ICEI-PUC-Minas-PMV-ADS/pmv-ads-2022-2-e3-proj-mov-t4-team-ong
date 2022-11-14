@@ -5,6 +5,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import HomePage from "./screens/HomePage";
 import Profile from "./screens/profile/Profile";
 import DrawerNavigator from "./navigator/DrawerNavigator";
+import Payment from "./screens/payment/Payment";
 
 
 const Stack = createStackNavigator()
@@ -35,6 +36,9 @@ class AppNavigator extends Component {
         </Stack.Screen>
         <Stack.Screen name='Agenda'>
           {(props) => <DrawerNavigator {...props} schema={this.props.schema} />}
+        </Stack.Screen>
+        <Stack.Screen name='Payment'>
+          {(props) => <Payment {...props} schema={this.props.schema} stateNew={false}/>}
         </Stack.Screen>
       </Stack.Navigator>
     )

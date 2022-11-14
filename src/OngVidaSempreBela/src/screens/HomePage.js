@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { ImageBackground, View, Text, StyleSheet } from 'react-native'
 
 import commonStyles from '../common/styles/commonStyles'
-import backgroundImage from '../../assets/imgs/logoOVSB.png'
+import backgroundImage from '../../assets/imgs/logoAjustada.png'
 import BtnOutline from '../components/btnComponent/BtnOutline'
 
 
@@ -17,7 +17,7 @@ class HomePage extends Component {
                 padding: 20,
                 color: this.props.schema.white,
                 marginTop: 150,
-                fontSize: 30,
+                fontSize: 25,
                 fontWeight: 'bold',
             },
         })
@@ -29,11 +29,11 @@ class HomePage extends Component {
                     style={commonStyles.containerBackground}
                 >
                     <View style={commonStyles.containerBackground}>
-                        <Text style={styles.title}>Bem Vindo!!!</Text>
+                        <Text style={styles.title}>Bem-vindo!</Text>
                         <View>
                             <BtnOutline
                                 schema={this.props.schema}
-                                onPress={() => this.props.navigation.navigate('Entrar',
+                                onPress={() => this.props.navigation.navigate('Payment',
                                     { stageNew: false })}
                                 title='Já sou cadastrado'
                             />
