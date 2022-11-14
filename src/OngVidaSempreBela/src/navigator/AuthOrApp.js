@@ -1,15 +1,17 @@
-/* import React, { Component } from 'react'
+import React, { Component } from 'react'
 import {
     View,
-    ActivityIndicator
+    ActivityIndicator,
+    StyleSheet
 } from 'react-native'
 import { CommonActions } from '@react-navigation/native';
 
 import axios from 'axios'
 import AsyncStorage from '@react-native-community/async-storage'
-import authOrAppStyle from '../styles/authOrAppStyle';
 
-export default class AuthOrApp extends Component {
+class AuthOrApp extends Component {
+
+
 
     componentDidMount = async () => {
         const userDataJson = await AsyncStorage.getItem('userData')
@@ -23,26 +25,26 @@ export default class AuthOrApp extends Component {
 
         if (userData && userData.token) {
             axios.defaults.headers.common['Authorization'] = `bearer ${userData.token}`
-            // this.props.navigation.navigate('Home', userData)
+            this.props.navigation.navigate('Agenda', userData)
             this.props.navigation.dispatch(
                 CommonActions.reset({
                     index: 0,
                     routes: [
                         {
-                            name: 'HomePage',
+                            name: 'Agenda',
                             params: userData,
                         },
                     ],
                 })
             );
         } else {
-            // this.props.navigation.navigate('Auth')
+            this.props.navigation.navigate('Principal')
             this.props.navigation.dispatch(
                 CommonActions.reset({
                     index: 0,
                     routes: [
                         {
-                            name: 'Auth',
+                            name: 'Principal',
                         },
                     ],
                 })
@@ -51,11 +53,21 @@ export default class AuthOrApp extends Component {
     }
 
     render() {
+        styles = StyleSheet.create({
+            container: {
+                flex: 1,
+                justifyContent: 'center',
+                alignItems: 'center',
+                backgroundColor: this.props.black
+            }
+        })
+        
         return (
-            <View style={authOrAppStyle.container}>
+            <View style={styles.container}>
                 <ActivityIndicator size='large' />
             </View>
         )
     }
 }
-*/
+
+export default AuthOrApp

@@ -26,7 +26,7 @@ class BtnInput extends Component {
                     this.props.error
                         ? this.props.schema.error
                         : this.props.schema.white}
-                labelStyle={{ fontSize: 15, margin: 0, padding:0 }}
+                labelStyle={{ fontSize: 15, margin: 0, padding: 0, color: this.props.bg }}
                 placeholder={this.props.label}
             />
         )

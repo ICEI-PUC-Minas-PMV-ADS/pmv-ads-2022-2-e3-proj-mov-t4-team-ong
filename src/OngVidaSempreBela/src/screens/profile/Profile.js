@@ -33,11 +33,11 @@ import AsyncStorage from '@react-native-community/async-storage'
 
 
 const initialState = {
-    name: 'A',
+    name: '',
     ongID: 1,
-    email: 'alexsgaldino@gmail.com ',
-    password: '1234',
-    confirmPassword: '1234',
+    email: '',
+    password: '',
+    confirmPassword: '',
     stageNew: false
 }
 

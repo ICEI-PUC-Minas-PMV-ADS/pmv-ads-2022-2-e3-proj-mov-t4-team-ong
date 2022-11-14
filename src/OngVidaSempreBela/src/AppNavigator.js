@@ -5,6 +5,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import HomePage from "./screens/HomePage";
 import Profile from "./screens/profile/Profile";
 import DrawerNavigator from "./navigator/DrawerNavigator";
+import AuthOrApp from "./navigator/AuthOrApp";
 
 
 const Stack = createStackNavigator()
@@ -22,8 +23,11 @@ class AppNavigator extends Component {
     return (
       <Stack.Navigator
         screenOptions={stackNavigatorOptions}
-        initialRouteName='Principal'
+        initialRouteName='AuthOrApp'
       >
+        <Stack.Screen name='AuthOrApp'>
+          {(props) => <AuthOrApp {...props} schema={this.props.schema} />}
+        </Stack.Screen>
         <Stack.Screen name='Principal' >
           {(props) => <HomePage {...props} schema={this.props.schema} />}
         </Stack.Screen>

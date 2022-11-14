@@ -8,7 +8,7 @@ import ReminderList from '../screens/reminder/ReminderList'
 
 class ReminderNavigator extends Component {
     render() {
-        console.log('ReminderNavigator', this.props)
+        console.log('ReminderNavigator')
 
         const Tab = createBottomTabNavigator()
 
@@ -17,7 +17,6 @@ class ReminderNavigator extends Component {
             tabBarActiveTintColor: this.props.schema.white,
             tabBarInactiveBackgroundColor: this.props.schema.grey1,
             tabBarActiveBackgroundColor: this.props.schema.grey2,
-           
         }
 
         return (

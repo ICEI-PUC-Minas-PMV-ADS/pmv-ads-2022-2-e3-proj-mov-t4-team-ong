@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
 
-import { Text } from "@rneui/themed";
+import { Text } from "@rneui/themed"
 
 import {
     FlatList,
@@ -8,14 +8,16 @@ import {
     StyleSheet,
     TouchableOpacity,
     View
-} from "react-native";
+} from "react-native"
 
-import Icon from "react-native-vector-icons/FontAwesome";
+import Icon from "react-native-vector-icons/FontAwesome"
 
 import moment from "moment/moment"
 import 'moment/locale/pt-br'
 
-import AsyncStorage from "@react-native-community/async-storage";
+import AsyncStorage from "@react-native-community/async-storage"
+
+import axios from 'axios'
 
 import todayImage from '../../../assets/imgs/todayList.png'
 import tomorrowImage from '../../../assets/imgs/tomorrowList.png'
@@ -26,6 +28,8 @@ import Reminder from '../../components/reminder/Reminder'
 import ReminderAdd from '../reminder/ReminderAdd'
 
 import commonStyles from "../../common/styles/commonStyles"
+
+import { server, showError, showSuccess } from '../../common/configuration/common'
 
 initialState = {
     showDoneReminders: false,
@@ -41,61 +45,84 @@ class ReminderList extends Component {
     }
 
     componentDidMount = async () => {
+        console.log('showDoneReminders 2', this.state.showDoneReminders)
         const stateString = await AsyncStorage.getItem('reminderState')
-        const state = JSON.parse(stateString) || initialState
-        this.setState(state)
-        this.filterReminders()
+        console.log('stateString', stateString)
+        const savedState = JSON.parse(stateString) || initialState
+        this.setState({
+            showDoneReminders: savedState.showDoneReminders
+        }, this.filterReminders)
+        this.loadReminders()
     }
 
-    toggleReminder = reminderId => {
-        const reminders = [...this.state.reminders]
+    loadReminders = async () => {
+        try {
+            const maxDate = moment()
+                .add({ days: this.props.daysAhead })
+                .format('YYYY-MM-DD 23:59:59')
+            const res = await axios.get(`${server}/reminders?date=${maxDate}`)
+            this.setState({ reminders: res.data }, this.filterReminders)
+        } catch (e) {
+            console.log(e)
+            showError(e)
+        }
+    }
 
-        reminders.forEach(reminder => {
-            if (reminder.id === reminderId) {
-                reminder.doneAt = reminder.doneAt ? null : new Date()
-            }
-        })
-
-        this.setState({ reminders }, this.filterReminders)
+    toggleReminder = async reminderId => {
+        try {
+            await axios.put(`${server}/reminders/${reminderId}/toggle`)
+            this.loadReminders()
+        } catch (e) {
+            showError(e)
+        }
     }
 
     toggleFilter = () => {
+        console.log('toggleFilter', this.state.showDoneReminders)
         this.setState({ showDoneReminders: !this.state.showDoneReminders }, this.filterReminders)
     }
 
     filterReminders = () => {
         let visibleReminders = null
 
+        console.log('showDoneReminders 3', this.state.showDoneReminders)
         if (this.state.showDoneReminders) {
             visibleReminders = [...this.state.reminders]
         } else {
             const pending = reminder => reminder.doneAt === null
             visibleReminders = this.state.reminders.filter(pending)
         }
-
         this.setState({ visibleReminders })
-        AsyncStorage.setItem('reminderState', JSON.stringify(this.state))
+        AsyncStorage.setItem('reminderState', JSON.stringify({
+            showDoneReminders: this.state.showDoneReminders
+        }))
     }
 
-    addReminder = (newReminder) => {
+    addReminder = async (newReminder) => {
         if (!newReminder.desc || !newReminder.desc.trim()) {
             Alert.alert('Dados Inválidos', 'Nome da tarefa não informado!')
         }
 
-        const reminders = [...this.state.reminders]
-        reminders.push({
-            id: Math.random(),
-            desc: newReminder.desc,
-            estimateAt: newReminder.date,
-            doneAt: null
-        })
+        try {
+            await axios.post(`${server}/reminders`, {
+                desc: newReminder.desc,
+                estimateAt: newReminder.date
+            })
 
-        this.setState({ reminders, showReminderAdd: false }, this.filterReminders)
+            this.setState({ showReminderAdd: false }, this.loadReminders)
+        } catch (e) {
+            showError(e)
+        }
     }
 
-    deleteReminder = (id) => {
-        const reminders = this.state.reminders.filter(reminder => reminder.id !== id)
-        this.setState({ reminders }, this.filterReminders)
+    deleteReminder = async (reminderId) => {
+        try {
+            await axios.delete(`${server}/reminders/${reminderId}`)
+            this.loadReminders()
+        } catch (e) {
+            showError(e)
+            
+        }
     }
 
     getImage = () => {
@@ -119,7 +146,7 @@ class ReminderList extends Component {
     }
 
     render() {
-        console.log('ReminderList ', this.props)
+        console.log('ReminderList ')
 
         const today = moment().locale('pt-br').format('ddd, D [de] MMMM')
 
@@ -168,10 +195,7 @@ class ReminderList extends Component {
                             />
                         </TouchableOpacity>
                     </View>
-                    <View style={commonStyles.titleAlign}>
-                        <Text style={styles.titleLarge}>{this.props.title ? this.props.title : 'Hoje'}</Text>
-                        <Text style={[commonStyles.subtitle, styles.subtitle]}>{today}</Text>
-                    </View>
+
                 </ImageBackground>
                 <View
                     style={[commonStyles.containerScreen, styles.containerScreen]}
