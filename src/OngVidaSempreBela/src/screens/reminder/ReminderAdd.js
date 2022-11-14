@@ -78,7 +78,7 @@ class ReminderAdd extends Component {
     }
 
     render() {
-        console.log('ReminderAdd', this.props)
+        console.log('ReminderAdd')
 
         const styles = StyleSheet.create({
             backgroundModal: {
@@ -151,8 +151,8 @@ class ReminderAdd extends Component {
                         <BtnOutline
                             onPress={this.saveNewReminder}
                             title='Salvar'
-                            schema={this.props.schema}
                             disabled={!isValidField(this.state.desc, 4)}
+                            schema={this.props.schema}
                         />
                     </View>
                 </View>

@@ -19,6 +19,9 @@ class DrawerNavigator extends Component {
 
         const drawerNavigatorOptions = {
             headerShown: true,
+            headerStyle: { backgroundColor: this.props.schema.grey0 },
+            headerTitleStyle: { color: this.props.schema.white },
+            headerTintColor:  this.props.schema.white ,
         }
         
         const { email, name } = this.props.route.params

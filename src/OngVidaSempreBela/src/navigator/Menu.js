@@ -83,7 +83,7 @@ class Menu extends Component {
                     index: 0,
                     routes: [
                         {
-                            name: 'HomePage',
+                            name: 'Principal',
                         },
                     ],
                 })
