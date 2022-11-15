@@ -24,6 +24,8 @@ import Body from '../../components/paymentComponent/Body';
 import Input from '../../components/paymentComponent/Input';
 import moment from 'moment';
 import { useNavigation } from '@react-navigation/native';
+import commonStyles from "../../common/styles/commonStyles";
+import { server, showError, showSuccess } from "../../common/configuration/common"
 
 const Payment = ({ route }) => {
   const navigation = useNavigation();
@@ -43,7 +45,6 @@ const Payment = ({ route }) => {
 
   return (
     <Container>
-
       <Header title={'Doe e faça a diferença!'} goBack={() => navigation.goBack()}>
       </Header>
 
@@ -63,37 +64,36 @@ const Payment = ({ route }) => {
           left={<TextInput.Icon icon="account-box" />}
         />
 
-        <View>
+        <View style={styles.view}>
+
           <Text style={styles.textFormaPagamento}> Forma de pagamento:</Text>
-        </View>
-
-        <View style={styles.containerRadio}>
-          <View style={styles.containerRadioItem}>
-            <RadioButton
-              value="first"
-              status={tipo === 'Pix' ? 'checked' : 'unchecked'}
-              color={'#CCCCFF'}
-              onPress={() => setTipo('Pix')}
-            />
-            <Text>Pix</Text>
+          <View style={styles.containerRadio}>
+            <View style={styles.containerRadioItem}>
+              <RadioButton
+                value="first"
+                status={tipo === 'Pix' ? 'checked' : 'unchecked'}
+                color={'#CCCCFF'} 
+                uncheckedColor={'white'}
+                onPress={() => setTipo('Pix')}
+              />
+              <Text style={styles.textRadio}>Pix</Text>
+            </View>
+            <View style={styles.containerRadioItem}>
+              <RadioButton style={styles.radio}
+                value="second"
+                status={tipo === 'Boleto' ? 'checked' : 'unchecked'}
+                color={'#CCCCFF'}
+                uncheckedColor={'white'}
+                onPress={() => setTipo('Boleto')}
+              />
+              <Text style={styles.textRadio}>Boleto</Text>
+            </View>
           </View>
-          <View style={styles.containerRadioItem}>
-            <RadioButton
-              value="second"
-              status={tipo === 'Boleto' ? 'checked' : 'unchecked'}
-              color={'#CCCCFF'}
-              onPress={() => setTipo('Boleto')}
-            />
-            <Text>Boleto</Text>
-          </View>
         </View>
 
-        <View >
-          <Text style={styles.textResumo}>Resumo da doação</Text>
-        </View>
-
-        <Card>
+        <Card style={marginTop = 100}>
           <Card.Content>
+            <Title style={styles.textResumo}>Resumo da doação</Title>
             <Title>Valor: {valor}</Title>
             <Paragraph >Forma de pagamento: {tipo}</Paragraph>
             <Paragraph style={styles.paragraph}>Data: {data}</Paragraph>
@@ -139,17 +139,23 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-evenly',
+    color: 'white'
   },
   button: {
     marginBottom: 15,
-    marginTop: 15
+    marginTop: 15,
+    height:43,
+    justifyContent: 'space-evenly'
   },
   textFormaPagamento: {
     margin: 5,
+    color:'white',
+    fontWeight:'bold'
+
   },
   textResumo: {
-    marginTop: 10,
-    marginBottom: 3,
+    marginTop: -3,
+    marginBottom: 7,
     fontWeight: 'bold',
     fontSize: 20,
     alignSelf: 'center',
@@ -158,10 +164,16 @@ const styles = StyleSheet.create({
   textDialog: {
     fontWeight: 'bold',
     fontSize: 17,
-    color: 'white'
   },
   paragraph: {
     marginBottom: 10
+  },
+  textRadio: {
+    color: 'white',
+  },
+  view: {
+    backgroundColor: '#363636',
+    marginBottom:15
   }
 });
 

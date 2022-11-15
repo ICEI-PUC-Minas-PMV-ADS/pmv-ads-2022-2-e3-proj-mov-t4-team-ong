@@ -8,6 +8,7 @@ const Body = ({children}) => {
 const styles = StyleSheet.create({
    body:{
     margin: 8,
+    backgroundColor: '#363636'
   }
 });
 

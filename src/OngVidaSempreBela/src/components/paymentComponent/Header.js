@@ -10,6 +10,7 @@ const Header = ({ title, goBack, children}) => {
       }
       <Appbar.Content title={title} />
       {children}
+      <Appbar.Action icon="account-arrow-left"/>
     </Appbar.Header>
   );
 };
