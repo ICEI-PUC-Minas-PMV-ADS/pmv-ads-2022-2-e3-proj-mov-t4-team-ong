@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
   },
   button: {
     marginBottom: 15,
-    marginTop: 15,
+    marginTop: 10,
     height:43,
     justifyContent: 'space-evenly'
   },
