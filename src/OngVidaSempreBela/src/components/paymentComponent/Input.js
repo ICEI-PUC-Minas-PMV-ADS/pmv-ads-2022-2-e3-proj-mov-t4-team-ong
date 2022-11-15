@@ -14,7 +14,7 @@ const Input = (props) => {
 
 const styles = StyleSheet.create({
   input: {
-    
+    backgroundColor:'white',
     marginBottom: 10,
   },
 });
