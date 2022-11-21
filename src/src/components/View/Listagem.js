@@ -13,6 +13,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
 import Input from "../BtnInput";
+import BtnOutline from '../BtnOutline';
 
 export default () => {
 
@@ -22,14 +23,16 @@ export default () => {
         array: []
     }
 
-    array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
 
     gerarOngs = () => {
         const lista = array
         return lista.map(n => {
             return <View key={n} style={styles.items}>
-                <Text style={styles.itemsText}>Ong {n}</Text>
-                <Button color='#38F' title="Ver" onPress={() => navigation.navigate('PerfilOng')} />
+                <Text style={styles.itemsText}>ONG {n}</Text>
+                <View style={styles.itemsBtn}>
+                <Button color='darkred' title="Ver" onPress={() => navigation.navigate('PerfilOng')} />
+                </View>
             </View>
         })
 
@@ -44,10 +47,10 @@ export default () => {
         <ScrollView style={styles.Wrap}>
 
             <Image
-                // source={require('../outros/fonteAlex/assets/imgs/ong-task-list.png')}
-                source={require('../outros/fonteAlex/assets/imgs/logo.png')}
+                source={require('./logoONG.jpg')}
                 style={{ width: '100%', height: 200 }}
             />
+
             <View style={styles.input}>
                 <Input
                     placeholder="Buscar ONGs"
@@ -71,7 +74,7 @@ const styles = StyleSheet.create({
     Wrap: {
         flex: 1,
         width: '100%',
-        backgroundColor: 'black'
+        backgroundColor: '#393534'
     },
     inputContainer: {
         flex: 1,
@@ -85,6 +88,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         margin: 10,
         fontSize: 36,
+        fontWeight: 'bold',
         color: 'white'
     },
     loadContainer: {
@@ -102,5 +106,10 @@ const styles = StyleSheet.create({
         width: 50,
         height: 50,
         alignSelf: 'center',
+        fontWeight: 'bold'
+    },
+    itemsBtn: {
+        borderRadius: 1,
+        margin: 10
     }
 });
