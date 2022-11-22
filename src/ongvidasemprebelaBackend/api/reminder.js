@@ -15,7 +15,6 @@ module.exports = app => {
     }
 
     const save = (req, res) => {
-        console.log('post')
         if (!req.body.desc) {
             return res.status(400).send('Nome da atividade é um campo obrigatório.')
         }
@@ -29,7 +28,6 @@ module.exports = app => {
     }
 
     const remove = (req, res) => {
-        console.log('delete')
         app.db('reminders')
             .where({ id: req.params.id, userId: req.user.id })
             .del()
@@ -45,7 +43,6 @@ module.exports = app => {
     }
 
     const updateReminderDoneAt = (req, res, doneAt) => {
-        console.log(put)
         app.db('reminders')
             .where({ id: req.params.id, userId: req.user.id })
             .update({ doneAt })
@@ -54,7 +51,6 @@ module.exports = app => {
     }
 
     const toggleReminder = (req, res) => {
-        console.log('toggle')
         app.db('reminders')
             .where({ id: req.params.id, userId: req.user.id })
             .first()

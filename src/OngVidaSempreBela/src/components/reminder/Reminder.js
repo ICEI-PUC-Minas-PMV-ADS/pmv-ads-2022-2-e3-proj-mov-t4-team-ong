@@ -6,7 +6,6 @@ import {
     StyleSheet,
     TouchableWithoutFeedback,
     View,
-    TouchableOpacity
 } from "react-native";
 
 import moment from "moment";
@@ -17,7 +16,6 @@ import Icon from "react-native-vector-icons/FontAwesome";
 class Reminder extends Component {
 
     render() {
-        console.log('Reminder ', this.props)
 
         const styles = StyleSheet.create({
             container: {
@@ -34,6 +32,7 @@ class Reminder extends Component {
             },
             containerTrash: {
                 flex: 1,
+                width: '20%',
                 flexDirection: 'row',
                 alignItems: 'center',
                 justifyContent: 'flex-end',
@@ -60,6 +59,7 @@ class Reminder extends Component {
                 justifyContent: 'center',
             },
             pending: {
+                flexDirection: 'row',
                 color: this.props.schema.primary,
                 height: 25,
                 width: 25,

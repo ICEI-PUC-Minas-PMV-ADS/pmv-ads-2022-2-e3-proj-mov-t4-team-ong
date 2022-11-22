@@ -1,7 +1,6 @@
 const bcrypt = require('bcrypt-nodejs')
 
 module.exports = app => {
-    console.log('saving 1')
     const getHash = (password, callback) => {
         bcrypt.genSalt(10, (err, salt) => {
             bcrypt.hash(password, salt, null, (err, hash) => callback(hash))
@@ -18,6 +17,18 @@ module.exports = app => {
                 .catch(err => res.status(400).json(err))
         })
     }
+
+    const update = (req, res) => {
+        console.log('updating', req.body.imageURL.uri)
+        getHash(req.body.password, hash => {
+            const password = hash
+            app.db('users')
+                .update({ name: req.body.name, password, imageURL: req.body.imageURL })
+                .where({ email: req.body.email})
+                .then(_ => res.status(204).send())
+                .catch(err => res.status(400).json(err))
+        })
+    }
     
-    return { save }
+    return { save, update }
 }

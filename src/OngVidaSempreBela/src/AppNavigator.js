@@ -7,7 +7,6 @@ import Profile from "./screens/profile/Profile";
 import DrawerNavigator from "./navigator/DrawerNavigator";
 import AuthOrApp from "./navigator/AuthOrApp";
 
-
 const Stack = createStackNavigator()
 
 const stackNavigatorOptions = {
@@ -18,8 +17,6 @@ class AppNavigator extends Component {
 
   render() {
 
-    console.log('AppNavigator')
-
     return (
       <Stack.Navigator
         screenOptions={stackNavigatorOptions}
@@ -27,6 +24,9 @@ class AppNavigator extends Component {
       >
         <Stack.Screen name='AuthOrApp'>
           {(props) => <AuthOrApp {...props} schema={this.props.schema} />}
+        </Stack.Screen>
+        <Stack.Screen name='Agenda'>
+          {(props) => <DrawerNavigator {...props} schema={this.props.schema} />}
         </Stack.Screen>
         <Stack.Screen name='Principal' >
           {(props) => <HomePage {...props} schema={this.props.schema} />}
@@ -37,11 +37,9 @@ class AppNavigator extends Component {
         <Stack.Screen name='Entrar'>
           {(props) => <Profile {...props} schema={this.props.schema} stateNew={false} />}
         </Stack.Screen>
-        <Stack.Screen name='Agenda'>
-          {(props) => <DrawerNavigator {...props} schema={this.props.schema} />}
-        </Stack.Screen>
       </Stack.Navigator>
     )
   }
 }
+
 export default AppNavigator;

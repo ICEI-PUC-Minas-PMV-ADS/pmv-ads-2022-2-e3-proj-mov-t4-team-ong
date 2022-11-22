@@ -5,8 +5,7 @@ import { StyleSheet, View } from 'react-native';
 class BtnOutline extends Component {
 
     render() {
-
-         const styles = StyleSheet.create({
+        const styles = StyleSheet.create({
             button: {
                 marginBottom: 5,
                 borderColor: this.props.schema.white,
@@ -15,7 +14,8 @@ class BtnOutline extends Component {
                 borderRadius: 15,
                 padding: 10,
                 paddingHorizontal: 50,
-                alignItems: 'center'
+                alignItems: 'center',
+                backgroundColor: this.props.bg ? this.props.bg : ''
             },
             buttonText: {
                 color: this.props.schema.white,
@@ -24,7 +24,9 @@ class BtnOutline extends Component {
 
             },
             disabled: {
-                backgroundColor: this.props.schema.disabled
+                backgroundColor: this.props.disabled
+                    ? this.props.schema.disabled
+                    : ''
             }
         })
 
@@ -35,6 +37,7 @@ class BtnOutline extends Component {
                     type='clear'
                     buttonStyle={styles.button}
                     titleStyle={styles.buttonText}
+
                     disabledStyle={styles.disabled}
                 />
             </View>

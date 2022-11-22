@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import {
-    Alert,
     Modal,
     Platform,
     StyleSheet,
@@ -78,7 +77,6 @@ class ReminderAdd extends Component {
     }
 
     render() {
-        console.log('ReminderAdd')
 
         const styles = StyleSheet.create({
             backgroundModal: {

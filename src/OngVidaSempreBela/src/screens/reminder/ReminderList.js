@@ -45,7 +45,6 @@ class ReminderList extends Component {
     }
 
     componentDidMount = async () => {
-        console.log('showDoneReminders 2', this.state.showDoneReminders)
         const stateString = await AsyncStorage.getItem('reminderState')
         console.log('stateString', stateString)
         const savedState = JSON.parse(stateString) || initialState
@@ -71,6 +70,7 @@ class ReminderList extends Component {
     toggleReminder = async reminderId => {
         try {
             await axios.put(`${server}/reminders/${reminderId}/toggle`)
+            console.log('toggleReminder')
             this.loadReminders()
         } catch (e) {
             showError(e)
@@ -170,6 +170,8 @@ class ReminderList extends Component {
             },
             subtitle: {
                 color: this.props.schema.white,
+                fontWeight: 'bold',
+                fontSize: 18,
             }
         })
 
@@ -195,7 +197,10 @@ class ReminderList extends Component {
                             />
                         </TouchableOpacity>
                     </View>
-
+                    <View style={commonStyles.titleAlign}>
+                        <Text style={styles.titleLarge}>{this.props.title ? this.props.title : 'Hoje'}</Text>
+                        <Text style={styles.subtitle}>{today}</Text>
+                    </View>
                 </ImageBackground>
                 <View
                     style={[commonStyles.containerScreen, styles.containerScreen]}
