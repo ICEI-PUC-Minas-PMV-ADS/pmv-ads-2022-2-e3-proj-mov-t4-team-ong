@@ -6,14 +6,14 @@ import { createDrawerNavigator } from "@react-navigation/drawer"
 
 import Menu from '../navigator/Menu'
 import ReminderNavigator from './ReminderNavigator';
+import ProfileEdit from '../screens/profile/ProfileEdit'
+import HomePage from '../screens/HomePage'
 
 LogBox.ignoreLogs(['Reanimated 2']);
 
 class DrawerNavigator extends Component {
-    
+
     render() {
-        
-        console.log('DrawerNavigator')
 
         const Drawer = createDrawerNavigator()
 
@@ -21,10 +21,10 @@ class DrawerNavigator extends Component {
             headerShown: true,
             headerStyle: { backgroundColor: this.props.schema.grey0 },
             headerTitleStyle: { color: this.props.schema.white },
-            headerTintColor:  this.props.schema.white ,
+            headerTintColor: this.props.schema.white,
         }
-        
-        const { email, name } = this.props.route.params
+
+        const { email, name, imageURL } = this.props.route.params
 
         return (
             <Drawer.Navigator
@@ -32,8 +32,14 @@ class DrawerNavigator extends Component {
                 screenOptions={drawerNavigatorOptions}
                 drawerContent={(props) => <Menu {...props} email={email} name={name} schema={this.props.schema} />}
             >
-                <Drawer.Screen name='Reminder' options={{title: 'Agenda'}}>
+                <Drawer.Screen name='HomePage' options={{ title: 'Principal' }}>
+                    {(props) => <HomePage {...props} title='Principal' schema={this.props.schema} />}
+                </Drawer.Screen>
+                <Drawer.Screen name='Reminder' options={{ title: 'Agenda' }}>
                     {(props) => <ReminderNavigator {...props} title='Hoje' daysAhead={0} schema={this.props.schema} />}
+                </Drawer.Screen>
+                <Drawer.Screen name='ProfileNew' options={{ title: 'Perfil' }}>
+                    {(props) => <ProfileEdit {...props} title='Perfil' daysAhead={0} schema={this.props.schema} />}
                 </Drawer.Screen>
             </Drawer.Navigator>
         )

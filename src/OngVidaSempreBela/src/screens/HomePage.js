@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
 
-import { ImageBackground, View, Text, StyleSheet } from 'react-native'
+import {
+    ImageBackground,
+    View,
+    Text,
+    StyleSheet
+} from 'react-native'
 
 import commonStyles from '../common/styles/commonStyles'
 import backgroundImage from '../../assets/imgs/logoOVSB.png'
@@ -9,8 +14,6 @@ import BtnOutline from '../components/btnComponent/BtnOutline'
 class HomePage extends Component {
 
     render() {
-        console.log('HomePage: ')
-
         const styles = StyleSheet.create({
             title: {
                 padding: 20,

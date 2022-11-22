@@ -23,19 +23,18 @@ class Main extends Component {
                 default: lightColors.platform.android,
                 ios: lightColors.platform.ios,
             }),
-            screenBackground: '#393534',
+            screenBackground: 'rgba(0, 0, 0, 0.7)',
             overlay: 'rgba(91, 91, 91, 0.5)',
             today: '#FF6B6B',
             tomorrow: '#FEF16B',
             week: '#C1FFA6',
             month: '#99B7FF',
             trash: 'red',
+            edit: '#9CBC87'
         },
     })
 
     render() {
-        console.log('index / Main : ')
-
         return (
             <ThemeProvider theme={this.theme}>
                 <NavigationContainer>

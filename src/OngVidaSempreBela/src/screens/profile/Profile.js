@@ -1,7 +1,6 @@
-import axios from 'axios'
-
 import React, { Component } from "react"
 
+import axios from 'axios'
 
 import { Text } from "@rneui/themed"
 
@@ -31,13 +30,13 @@ import { server, showError, showSuccess } from "../../common/configuration/commo
 
 import AsyncStorage from '@react-native-community/async-storage'
 
-
 const initialState = {
     name: '',
     ongID: 1,
     email: '',
     password: '',
     confirmPassword: '',
+    imageURL: '',
     stageNew: false
 }
 
@@ -48,13 +47,10 @@ class Profile extends Component {
     }
 
     componentDidMount = () => {
-        console.log('state2', this.props.route.params.stageNew)
         this.setState({ stageNew: this.props.route.params.stageNew })
     }
 
     render() {
-        console.log('Profile: ')
-
         const styles = StyleSheet.create({
             containerScreen: {
                 backgroundColor: this.props.schema.screenBackground
@@ -84,23 +80,22 @@ class Profile extends Component {
         // retorna false em validationsFom
         const validationsForm = validations.reduce((arrayFull, arrayAt) => arrayFull && arrayAt)
 
-
         signingOrSignup = () => {
-            console.log('state2', this.state)
             if (this.state.stageNew) {
                 signup()
             } else {
                 signin()
             }
         }
+
         signup = async () => {
-            console.log('state3', this.state)
             try {
                 await axios.post(`${server}/signup`, {
                     name: this.state.name,
                     email: this.state.email,
                     password: this.state.password,
                     confirmPassword: this.state.confirmPassword,
+                    imageURL: this.state.imageURL
                 })
 
                 showSuccess('Usuário cadastrado!')
@@ -119,7 +114,6 @@ class Profile extends Component {
 
                 AsyncStorage.setItem('userData', JSON.stringify(res.data))
                 axios.defaults.headers.common['Authorization'] = `bearer ${res.data.token}`
-
                 this.props.navigation.navigate('Agenda', res.data)
 
             } catch (e) {

@@ -14,13 +14,10 @@ import { Text } from "@rneui/themed"
 
 import Icon from "react-native-vector-icons/FontAwesome";
 
-import { Gravatar } from "react-native-gravatar";
-
-import logo from '../../assets/imgs/logo.png'
+import { Image } from "react-native-elements";
 class Menu extends Component {
 
     render() {
-        console.log('Menu')
         const styles = StyleSheet.create({
             container: {
                 flex: 1,
@@ -102,13 +99,9 @@ class Menu extends Component {
                         </View>
                     </TouchableOpacity>
                     <View style={styles.containerHeader} >
-                        <Gravatar
+                        <Image
                             style={styles.avatar}
-                            className={logo}
-                            options={{
-                                email: this.props.email,
-                                secure: true
-                            }}
+                            source={this.props.imageURL}
                         />
                         <View style={styles.userInfo}>
                             <Text style={styles.name}>

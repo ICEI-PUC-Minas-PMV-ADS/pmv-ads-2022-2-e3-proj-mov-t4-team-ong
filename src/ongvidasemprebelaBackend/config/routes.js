@@ -14,6 +14,9 @@ module.exports = app => {
     app.route('/reminders/:id/toggle')
         .all(app.config.passport.authenticate())
         .put(app.api.reminder.toggleReminder)
-    
+
+    app.route('/users')
+        .all(app.config.passport.authenticate())
+        .put(app.api.user.update)   
     
 }
