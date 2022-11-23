@@ -28,11 +28,14 @@ import { useNavigation } from '@react-navigation/native';
 const Payment = ({ route }) => {
   const navigation = useNavigation();
 
+  const { item } = route.params ? route.params : {};
+
   const [tipo, setTipo] = React.useState('Pix');
   const [valor, setValor] = useState('');
   const [cpf, setCpf] = useState('');
   const [data, setData] = useState(moment(new Date()).format('DD/MM/YYYY'));
   const [visible, setVisible] = React.useState(false);
+
 
   const hideDialog = () => {
     setVisible(false);
@@ -96,7 +99,7 @@ const Payment = ({ route }) => {
             <Paragraph >Forma de pagamento: {tipo}</Paragraph>
             <Paragraph style={styles.paragraph}>Data: {data}</Paragraph>
           </Card.Content>
-          <Card.Cover source={{ uri: 'https://static.vakinha.com.br/uploads/vakinha/image/184507/IMG_5230.JPG?ims=700x410' }} />
+          <Card.Cover source={{ uri: item.img }} />
         </Card>
 
         <Button

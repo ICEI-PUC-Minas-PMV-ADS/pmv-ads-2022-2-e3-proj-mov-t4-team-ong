@@ -7,6 +7,7 @@ import Profile from "./screens/profile/Profile";
 import DrawerNavigator from "./navigator/DrawerNavigator";
 import AuthOrApp from "./navigator/AuthOrApp";
 import Payment from "./screens/payment/Payment";
+import Ong from "./screens/ong/Ong";
 
 const Stack = createStackNavigator()
 
@@ -21,7 +22,7 @@ class AppNavigator extends Component {
     return (
       <Stack.Navigator
         screenOptions={stackNavigatorOptions}
-        initialRouteName='AuthOrApp'
+        initialRouteName='Ong'
       >
         <Stack.Screen name='AuthOrApp'>
           {(props) => <AuthOrApp {...props} schema={this.props.schema} />}
@@ -40,6 +41,9 @@ class AppNavigator extends Component {
         </Stack.Screen>
         <Stack.Screen name='Payment'>
           {(props) => <Payment {...props} schema={this.props.schema} stateNew={false}/>}
+        </Stack.Screen>
+        <Stack.Screen name='Ong'>
+          {(props) => <Ong {...props} schema={this.props.schema} stateNew={false}/>}
         </Stack.Screen>
       </Stack.Navigator>
     )
