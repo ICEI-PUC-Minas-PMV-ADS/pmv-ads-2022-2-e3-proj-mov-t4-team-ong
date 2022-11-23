@@ -7,6 +7,7 @@ import backgroundImage from '../../assets/imgs/logoAjustada.png'
 import BtnOutline from '../components/btnComponent/BtnOutline'
 
 
+
 class HomePage extends Component {
 
     render() {
@@ -20,7 +21,8 @@ class HomePage extends Component {
                 fontSize: 25,
                 fontWeight: 'bold',
             },
-        })
+        });
+
 
         return (
             <View style={commonStyles.container}>
@@ -43,6 +45,7 @@ class HomePage extends Component {
                                     { stageNew: true })}
                                 title='Quero me cadastrar'
                             />
+
                         </View>
                     </View>
                 </ImageBackground>
@@ -51,4 +54,4 @@ class HomePage extends Component {
     }
 }
 
-export default HomePage
+export default HomePage;

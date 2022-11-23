@@ -24,8 +24,6 @@ import Body from '../../components/paymentComponent/Body';
 import Input from '../../components/paymentComponent/Input';
 import moment from 'moment';
 import { useNavigation } from '@react-navigation/native';
-import commonStyles from "../../common/styles/commonStyles";
-import { server, showError, showSuccess } from "../../common/configuration/common"
 
 const Payment = ({ route }) => {
   const navigation = useNavigation();

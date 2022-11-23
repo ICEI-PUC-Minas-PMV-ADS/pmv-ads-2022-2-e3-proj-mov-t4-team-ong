@@ -15,6 +15,12 @@ import { name as appName } from './app.json'
 
 import AppNavigator from "./src/AppNavigator";
 
+import { Amplify } from 'aws-amplify';
+import config from './aws-exports';
+
+Amplify.configure(config);
+
+
 
 class Main extends Component {
     render() {
