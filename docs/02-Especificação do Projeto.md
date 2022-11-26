@@ -10,25 +10,25 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 <p align="justify">As personas levantadas durante o processo de entendimento do problema são apresentadas a seguir.</p>
 
-|| Alisson Guedes<br><br> Idade: 28 anos<br>Estado Civil: Casado<br>Naturalidade: Belo Horizonte<br>Tipo de moradia atual: Casa alugada<br>Cidade em que reside atualmente: Belo Horizonte<br>Formação: Graduação Licenciatura Física<br>Ocupação: Product Owner | Aplicativos:<br><br> <ul><li>Twitter</li><li>Youtube</li><li>Google</li><li>Facebook</li><li>Instagram </li><li>WhatsApp</li></ul>
+|<img src=https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-team-ong/main/docs/img/image%20(1).jpg width=270 heigth=270>| Alisson Guedes<br><br> Idade: 28 anos<br>Estado Civil: Casado<br>Naturalidade: Belo Horizonte<br>Tipo de moradia atual: Casa alugada<br>Cidade em que reside atualmente: Belo Horizonte<br>Formação: Graduação Licenciatura Física<br>Ocupação: Product Owner | Aplicativos:<br><br> <ul><li>Twitter</li><li>Youtube</li><li>Google</li><li>Facebook</li><li>Instagram </li><li>WhatsApp</li></ul>
 |:----------------|:--------------------|:----------------|
 |**Motivações:**<br><br><ul><li>Tem vontade de ajudar outras pessoas, especialmente as que se encontram em situações de vulnerabilidade</li></ul>|**Frustrações:**<br><br><ul><li> Não ter clareza de onde o dinheiro doado será empregado pelas instituições</li><li> Dificuldade em localizar ONG, instituições ou famílias que necessitam de doações</li></ul>|**Hobbies e História:**<br><br><ul><li>Viajar, andar de bicicleta, jogar vídeo game, ler mangás, brincar com os gatos, fazer trilha e cachoeira</li></ul>|
 
 </br>
 
-|| Maria Marta<br><br> Idade: 68 anos<br>Estado Civil: Separada judicialmente<br>Naturalidade: Belo Horizonte<br>Tipo de moradia atual: Casa própria<br>Cidade em que reside atualmente: Belo Horizonte<br>Formação: Grau Técnico<br>Ocupação: Aposentada | Aplicativos:<br><br> <ul><li>Globoplay</li><li>WhatsApp</li><li>Uber</li><li>Bancos</li><li>Facebook </li><li>Youtube</li></ul>
+|<img src=https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-team-ong/main/docs/img/image%20(3).jpg width=270 heigth=270>| Maria Marta<br><br> Idade: 68 anos<br>Estado Civil: Separada judicialmente<br>Naturalidade: Belo Horizonte<br>Tipo de moradia atual: Casa própria<br>Cidade em que reside atualmente: Belo Horizonte<br>Formação: Grau Técnico<br>Ocupação: Aposentada | Aplicativos:<br><br> <ul><li>Globoplay</li><li>WhatsApp</li><li>Uber</li><li>Bancos</li><li>Facebook </li><li>Youtube</li></ul>
 |:----------------|:--------------------|:----------------|
 |**Motivações:**<br><br><ul><li>Costuma realizar doações em dinheiro mensalmente para instituições de caridade</li><li>Gosta de ajudar as pessoas mais necessitadas</li><li>Não gosta de passar seus dados por telefone, pois tem medo de golpes</li></ul>|**Frustrações:**<br><br><ul><li> Ter que ficar aguardando o recolhimento da doação, o que a impede de realizar outras atividades</li><li>Ligações constantes de várias instituições solicitando doações</li><li>Ter que informar seus dados a terceiros por telefone, como cpf e dados bancários</li></ul>|**Hobbies e História:**<br><br><ul><li>Colecionar suculentas, cuidar de plantas, fazer caminhada e viajar.</li></ul>|
 
 </br>
 
-|| Ana Karolina<br><br> Idade: 33 anos<br>Estado Civil: Solteira<br>Naturalidade: Belo Horizonte<br>Tipo de moradia atual: Casa própria<br>Cidade em que reside atualmente: Belo Horizonte<br>Formação: Ensino Superior Completo <br>Ocupação: Jornalista e fundadora da ONG Um Lar para Sol | Aplicativos:<br><br> <ul><li>WhatsApp</li><li>Instagram</li><li>Sites de Notícias</li><li>Bancos</li><li>Pinterest</li><li>Linkedin</li><li>Globoplay</li></ul>
+|<img src=https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-team-ong/main/docs/img/image%20(4).jpg width=270 heigth=270>| Ana Karolina<br><br> Idade: 33 anos<br>Estado Civil: Solteira<br>Naturalidade: Belo Horizonte<br>Tipo de moradia atual: Casa própria<br>Cidade em que reside atualmente: Belo Horizonte<br>Formação: Ensino Superior Completo <br>Ocupação: Jornalista e fundadora da ONG Um Lar para Sol | Aplicativos:<br><br> <ul><li>WhatsApp</li><li>Instagram</li><li>Sites de Notícias</li><li>Bancos</li><li>Pinterest</li><li>Linkedin</li><li>Globoplay</li></ul>
 |:----------------|:--------------------|:----------------|
 |**Motivações:**<br><br><ul><li>Resgatou uma gata em 2019, Felv+, que recebeu o nome de Sol. Após ter tido dificuldades para encontrar um lar para ela devido a sua condição, decidiu iniciar um trabalho de resgate de animais em condições vulneráveis. </li><li>Devido a ONG ser recente, tem poucos seguidores nas suas redes sociais, o que dificulta a divulgação de animais disponíveis para adoção. </li><li>Necessidade de arrecadar recursos como ração e remédios, para os animais.  </li></ul>|**Frustrações:**<br><br><ul><li> Dificuldade em conseguir doações para manter os animais da ONG</li><li>Dificuldade em conseguir lares temporários ou adotantes para os animais</li><li>Falta de apoio dos órgãos competentes para ações de resgate e cuidados com os animais</li></ul>|**Hobbies e História:**<br><br><ul><li>Fotografar, viajar, fazer passeios que envolvam contato com a natureza, sair para comer.</li></ul>|
 
 </br>
 
-|| ONG Salvando Vidas<br><br> Idade: 42 anos<br>Estado Civil: Casada<br>Naturalidade: Belo Horizonte<br>Tipo de moradia atual: Casa própria<br>Cidade em que reside atualmente: Belo Horizonte<br>Formação: Ensino Superior Completo <br>Ocupação: Professora e uma das fundadoras da ONG Salvando Vidas | Aplicativos:<br><br> <ul><li>WhatsApp</li><li>Instagram</li><li>Linkedin </li><li>Netflix</li><li>Google Classrrom</li></ul>
+|<img src=https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-team-ong/main/docs/img/wdpEtrGib9.png width=370 heigth=370>| ONG Salvando Vidas<br><br> Idade: 42 anos<br>Estado Civil: Casada<br>Naturalidade: Belo Horizonte<br>Tipo de moradia atual: Casa própria<br>Cidade em que reside atualmente: Belo Horizonte<br>Formação: Ensino Superior Completo <br>Ocupação: Professora e uma das fundadoras da ONG Salvando Vidas | Aplicativos:<br><br> <ul><li>WhatsApp</li><li>Instagram</li><li>Linkedin </li><li>Netflix</li><li>Google Classroom</li></ul>
 |:----------------|:--------------------|:----------------|
 |**Motivações:**<br><br><ul><li>Vontade de ajudar as famílias de alunos que passam por necessidades </li><li>Necessidade de arrecadar doações e donativos para as famílias </li></ul>|**Frustrações:**<br><br><ul><li> Dificuldade em conseguir doações e donativos para as famílias </li><li>Dificuldade e altos custos para recolher os donativos nas casas das pessoas </li></ul>|**Hobbies e História:**<br><br><ul><li>Viajar, ler e assistir documentários</li></ul>|
 
@@ -50,15 +50,13 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Fundador de ONG  | Cadastrar minha ONG no aplicativo         | Facilitar a captação de recursos financeiros               |
-|Fundador de ONG  | Atualizar os dados cadastrais de minha organização          | Corrigir possíveis erros de cadastro               |
-|Fundador de ONG  | Fazer login no aplicativo         | Administrar e divulgar os projetos de minha organização               |
-|Fundador de ONG  | Recuperar minha senha de acesso        | Ter acesso ao aplicativo               |
-|Fundador de ONG  | Alterar minha senha de acesso         | Manter a segurança de minha conta no aplicativo           |
-|Fundador de ONG  | Publicar histórias e projetos         | Divulgar o trabalho feito pela ONG              |
-|Fundador de ONG  | Definir uma meta de arrecadação para cada projeto          | Os doadores ficarem cientes das arrecadações feitas pela ONG               |
-|Possível doador  | Visualizar as ong's cadastradas no aplicativo          | Conhecer as histórias dos projetos               |
-|Possível doador       | Fazer buscas por filtros como nome e categoria               | Encontrar projetos de maneira mais eficiente |
+|Doador| Fazer o meu cadastro no aplicativo| Conseguir realizar o login no aplicativo |
+|Doador| Fazer o login no aplicativo | Conseguir acessar os projetos do meu interesse |
+|Doador| Atualizar os meus dados cadastrais | Manter meus dados atualizados |
+|Doador| Alterar minha senha de acesso| Manter a segurança de minha conta no aplicativo|
+|Doador| Visualizar as ONGs e os projetos cadastradas no aplicativo | Conhecer as histórias dos projetos disponíveis para doação |
+|Doador| Fazer buscas por filtros como nome e categoria| Encontrar projetos de maneira mais eficiente |
+|Doador| Realizar o pagamento da doação por PIX ou Boleto| Conseguir finalizar a doação de maneira mais simplificada |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
@@ -108,23 +106,15 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-01| O aplicativo deve permitir o cadastro de usuários do tipo ONG | ALTA | 
-|RF-02| O aplicativo deve permitir a atualização do cadastro de usuários do tipo ONG | MÉDIA |
+|RF-01| O aplicativo deve permitir o cadastro de usuários doadores| ALTA | 
+|RF-02| O aplicativo deve permitir a atualização do cadastro de usuários doadores | MÉDIA |
 |RF-03| O usuário deve conseguir realizar o login no aplicativo utilizando as informações de usuário e senha previamente cadastrados | ALTA |
-|RF-04| O usuário deve conseguir recuperar a senha de acesso | MÉDIA |
-|RF-05| O usuário deve conseguir alterar a senha de acesso | MÉDIA |
-|RF-06| O aplicativo deve permitir a criação e a publicação de histórias/projetos pelas ONGs cadastradas | ALTA |
-|RF-07| As ONGs devem conseguir cadastrar um título, uma descrição e as fotos para cada história/projeto  | ALTA |
-|RF-08| As ONGs devem conseguir cadastrar para cada história/projeto uma meta de arrecadação em reais | ALTA |
-|RF-09| Os usuários do aplicativo devem conseguir visualizar as histórias/projetos vinculados à cada ONG | MÉDIA |
-|RF-10| O aplicativo deve permitir a busca de ONG's por filtros (categoria, palavras-chave etc.) | ALTA |
-|RF-11| Os usuários devem conseguir visualizar a meta de arrecadação e o valor atual arrecadado para cada história/projeto (em reais e percentual) | ALTA |
-|RF-12| Ao selecionar uma determinada história/projeto, o usuário deve conseguir visualizar os detalhes do projeto: descrição, fotos etc. | ALTA |
-|RF-13| O aplicativo deve permitir que os usuários façam doações por meio de transferência bancária (Pix),  boleto ou donativos. | ALTA |
-|RF-14| O aplicativo deve emitir recibo, caso o usuário deseje. | MÉDIA |
-|RF-15| O aplicativo deve listar os donativos que a ONG aceita. | ALTA |
-|RF-16| O aplicativo deve emitir um código de doação, em caso de donativos. | ALTA |
-|RF-17| O aplicativo deve emitir boleto bancário, caso o usuário selecione essa opção. | ALTA |
+|RF-04| O usuário deve conseguir alterar a senha de acesso | MÉDIA |
+|RF-05| Os usuários do aplicativo devem conseguir visualizar as histórias/projetos vinculados à cada ONG | MÉDIA |
+|RF-06| O aplicativo deve permitir a busca de ONG's por filtros (categoria, palavras-chave etc.) | BAIXA |
+|RF-07| Os usuários devem conseguir visualizar a meta de arrecadação e o valor atual arrecadado para cada história/projeto | ALTA |
+|RF-08| Ao selecionar uma determinada história/projeto, o usuário deve conseguir visualizar os detalhes do projeto: descrição, fotos etc. | ALTA |
+|RF-09| O aplicativo deve permitir que os usuários façam doações por meio de transferência bancária (Pix) e boleto | ALTA |
 
 
 ### Requisitos não Funcionais
@@ -132,7 +122,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-01| O aplicativo deve ser implementado utilizando a tecnologia React Native e a linguagem JavaScript | ALTA | 
-|RNF-02| A persistência dos dados será feita através da ferramenta JSON server |  ALTA | 
+|RNF-02| A persistência dos dados será feita através do banco de dados PostgreSQL |  ALTA | 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
@@ -156,7 +146,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
