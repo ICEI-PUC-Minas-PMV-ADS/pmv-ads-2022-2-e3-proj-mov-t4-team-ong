@@ -75,7 +75,7 @@ Assim, quando maior a nota, maior a facilidade de uso para o usuário.
 |---|---|
 |Objetivo do Teste | Verificar se as CTA (_call to action_) e fluxo de manutenção dos dados cadastrais são claros para o usuário |
 |Passos | 1.	Fazer login app; <br>	2.	Selecionar um projeto para realizar a doação; <br>3.	Inserir as informações da doação (valor, CPF e forma de pagamento); <br> 4.	Clicar em 'Finalizar doação'|
-|Critérios de Êxito | • A pessoa conseguiu executar a tareda sem ajuda  <br> • Fica claro para o usuário que a doação foi realizada com sucesso|
+|Critérios de Êxito | • A pessoa conseguiu executar a tarefa sem ajuda  <br> • Fica claro para o usuário que a doação foi realizada com sucesso|
 
 As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
 
