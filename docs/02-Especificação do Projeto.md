@@ -111,8 +111,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-03| O usuário deve conseguir realizar o login no aplicativo utilizando as informações de usuário e senha previamente cadastrados | ALTA |
 |RF-04| O usuário deve conseguir alterar a senha de acesso | MÉDIA |
 |RF-05| Os usuários do aplicativo devem conseguir visualizar as histórias/projetos vinculados à cada ONG | MÉDIA |
-|RF-06| O aplicativo deve permitir a busca de ONG's por filtros (categoria, palavras-chave etc.) | BAIXA |
-|RF-07| Os usuários devem conseguir visualizar a meta de arrecadação e o valor atual arrecadado para cada história/projeto | ALTA |
+|RF-06| O aplicativo deve permitir a busca de ONG's e projetos por filtros (categoria, palavras-chave etc.) | BAIXA |
+|RF-07| Os usuários devem conseguir visualizar a meta de arrecadação para cada história/projeto | ALTA |
 |RF-08| Ao selecionar uma determinada história/projeto, o usuário deve conseguir visualizar os detalhes do projeto: descrição, fotos etc. | ALTA |
 |RF-09| O aplicativo deve permitir que os usuários façam doações por meio de transferência bancária (PIX) ou Boleto | ALTA |
 
