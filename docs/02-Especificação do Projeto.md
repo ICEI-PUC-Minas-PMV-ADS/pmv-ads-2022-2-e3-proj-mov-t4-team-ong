@@ -12,7 +12,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 |<img src=https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-team-ong/main/docs/img/image%20(1).jpg width=270 heigth=270>| Alisson Guedes<br><br> Idade: 28 anos<br>Estado Civil: Casado<br>Naturalidade: Belo Horizonte<br>Tipo de moradia atual: Casa alugada<br>Cidade em que reside atualmente: Belo Horizonte<br>Formação: Graduação Licenciatura Física<br>Ocupação: Product Owner | Aplicativos:<br><br> <ul><li>Twitter</li><li>Youtube</li><li>Google</li><li>Facebook</li><li>Instagram </li><li>WhatsApp</li></ul>
 |:----------------|:--------------------|:----------------|
-|**Motivações:**<br><br><ul><li>Tem vontade de ajudar outras pessoas, especialmente as que se encontram em situações de vulnerabilidade</li></ul>|**Frustrações:**<br><br><ul><li> Não ter clareza de onde o dinheiro doado será empregado pelas instituições</li><li> Dificuldade em localizar ONG, instituições ou famílias que necessitam de doações</li></ul>|**Hobbies e História:**<br><br><ul><li>Viajar, andar de bicicleta, jogar vídeo game, ler mangás, brincar com os gatos, fazer trilha e cachoeira</li></ul>|
+|**Motivações:**<br><br><ul><li>Tem vontade de ajudar outras pessoas, especialmente as que se encontram em situações de vulnerabilidade</li></ul>|**Frustrações:**<br><br><ul><li> Não ter clareza sobre como o dinheiro doado será empregado pelas instituições</li><li> Dificuldade em localizar ONG, instituições ou famílias que necessitam de doações</li></ul>|**Hobbies e História:**<br><br><ul><li>Viajar, andar de bicicleta, jogar vídeo game, ler mangás, brincar com os gatos, fazer trilha e cachoeira</li></ul>|
 
 </br>
 
@@ -114,7 +114,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-06| O aplicativo deve permitir a busca de ONG's por filtros (categoria, palavras-chave etc.) | BAIXA |
 |RF-07| Os usuários devem conseguir visualizar a meta de arrecadação e o valor atual arrecadado para cada história/projeto | ALTA |
 |RF-08| Ao selecionar uma determinada história/projeto, o usuário deve conseguir visualizar os detalhes do projeto: descrição, fotos etc. | ALTA |
-|RF-09| O aplicativo deve permitir que os usuários façam doações por meio de transferência bancária (Pix) e boleto | ALTA |
+|RF-09| O aplicativo deve permitir que os usuários façam doações por meio de transferência bancária (PIX) ou Boleto | ALTA |
 
 
 ### Requisitos não Funcionais
