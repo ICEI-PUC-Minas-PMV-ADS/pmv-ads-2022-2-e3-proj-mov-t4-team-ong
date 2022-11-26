@@ -26,7 +26,7 @@ Caso de Teste | CT-04: Realizar o pagamento de uma doação
 ---|---
 Requisitos Associados | RF-09: O aplicativo deve permitir que os usuários façam doações por meio de transferência bancária (PIX) ou Boleto
 Objetivo do Teste | Verificar se o usuário é capaz de realizar o pagamento da doação
-Passos | 1.	Executar o aplicativo; <br>2.	Clicar no botão 'Já sou cadastrado'; <br>3.	Preencher formulário com as informações de usuário e senha; <br>4. Clicar em 'Entrar'; <br>5. Escolher um projeto para o qual deseja efetuar a doação e clicar em 'Doar'; <br>5. Preecher o valor da doação e o CPF do doador; <br>6. Escolher a forma de pagamento;<br>7. Clicar em 'Finalizar doação'
+Passos | 1.	Executar o aplicativo; <br>2.	Clicar no botão 'Já sou cadastrado'; <br>3.	Preencher formulário com as informações de usuário e senha; <br>4. Clicar em 'Entrar'; <br>5. Escolher um projeto para o qual deseja efetuar a doação e clicar em 'Doar'; <br>6. Preecher o valor da doação e o CPF do doador; <br>7. Escolher a forma de pagamento;<br>8. Clicar em 'Finalizar doação'
 Critérios de Êxito | •	Uma mensagem de sucesso deve ser apresentada ao usuário
  
 ## Ferramentas de Testes (Opcional)
