@@ -57,7 +57,7 @@ Assim, quando maior a nota, maior a facilidade de uso para o usuário.
 |---|---|
 | Objetivo do Teste | Verificar se as CTA (_call to action_) e fluxo de inserção de dados no sistema são claros para o usuário |
 | Passos | 1.	Acessar o app <br>2.	Clicar no botão 'Quero me cadastrar';<br>3.	Inserir as informações cadastrais solicitadas; <br>4.	Clicar em 'Cadastrar' |
-| Critérios de Êxito | •	A pessoa conseguiu executar a tarefa sem ajuda <br> • É claro para o usuário qual o perfil de pessoa (Funcionário da ONG /Doador) está sendo cadastrado  <br> •	Fica claro para o usuário que a inclusão foi realizada com sucesso |
+| Critérios de Êxito | •	A pessoa conseguiu executar a tarefa sem ajuda <br> •	Fica claro para o usuário que a inclusão foi realizada com sucesso |
 
 | **Caso de Teste** | **CX-02: Login de usuário**|
 |---|---|
