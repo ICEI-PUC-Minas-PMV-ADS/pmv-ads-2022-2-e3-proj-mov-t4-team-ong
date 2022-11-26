@@ -53,38 +53,19 @@ Assim, quando maior a nota, maior a facilidade de uso para o usuário.
 
 ## Testes de Usabilidade
 
-| **Caso de Teste** | **CX-01: Cadastro de usuário (ONG)**|
-|---|---|
-| Objetivo do Teste | Verificar se as CTA (_call to action_) e fluxo de inserção de dados no sistema são claros para o usuário |
-| Passos | 1.	Acessar o app <br>2.	Clicar no botão 'Quero me cadastrar';<br>3.	Inserir as informações cadastrais solicitadas; <br>4.	Clicar em 'Cadastrar' |
-| Critérios de Êxito | •	A pessoa conseguiu executar a tarefa sem ajuda. <br> • É claro para o usuário qual o perfil de pessoa (funcionário da ONG /cliente) está sendo cadastrado  <br> •	Fica claro para o usuário que a inclusão foi realizada com sucesso |
-
-| **Caso de Teste** | **CX-02: Login de usuário (ONG)**|
-|---|---|
-|Objetivo do Teste | Verificar se as CTA (_call to action_) e fluxo de acesso ao sistema são claros para o usuário|
-|Passos | 1.	Acessar o app; <br>2.	Clicar no botão 'Quero entrar'; <br>3.	Preencher os dados de acesso; <br>4.	Clicar em 'Entrar';|
-|Critérios de Êxito | •	A pessoa conseguiu realizar o login sem ajuda|
-
-
-| **Caso de Teste** | **CX-03: Cadastro de usuário (Doador)**|
+| **Caso de Teste** | **CX-01: Cadastro de usuário (Doador)**|
 |---|---|
 | Objetivo do Teste | Verificar se as CTA (_call to action_) e fluxo de inserção de dados no sistema são claros para o usuário |
 | Passos | 1.	Acessar o app <br>2.	Clicar no botão 'Quero me cadastrar';<br>3.	Inserir as informações cadastrais solicitadas; <br>4.	Clicar em 'Cadastrar' |
 | Critérios de Êxito | •	A pessoa conseguiu executar a tarefa sem ajuda <br> • É claro para o usuário qual o perfil de pessoa (Funcionário da ONG /Doador) está sendo cadastrado  <br> •	Fica claro para o usuário que a inclusão foi realizada com sucesso |
 
-| **Caso de Teste** | **CX-04: Login de usuário (Doador)**|
+| **Caso de Teste** | **CX-02: Login de usuário (Doador)**|
 |---|---|
 |Objetivo do Teste | Verificar se as CTA (_call to action_) e fluxo de acesso ao sistema são claros para o usuário|
 |Passos | 1.	Acessar o app; <br>2.	Clicar no botão 'Quero entrar'; <br>3.	Preencher os dados de acesso; <br>4.	Clicar em 'Entrar';|
 |Critérios de Êxito | •	A pessoa conseguiu realizar o login sem ajuda|
 
-| **Caso de Teste** | **CX-05: Cadastro de ONG**|
-|---|---|
-| Objetivo do Teste | Verificar se as CTA (_call to action_) e fluxo de inserção de dados no sistema são claros para o usuário |
-| Passos | 1.	Acessar o app <br>2.	Clicar no botão 'Quero cadastrar a minha ONG';<br>3.	Inserir as informações cadastrais solicitadas; <br>4.	Clicar em 'Cadastrar' |
-| Critérios de Êxito | •	A pessoa conseguiu executar a tarefa sem ajuda <br> •	Fica claro para o usuário que a inclusão foi realizada com sucesso |
-
-| **Caso de Teste** | **CX-06: Atualização de dados cadastrais (ONG)**|
+| **Caso de Teste** | **CX-03: Atualização de dados cadastrais (Doador)**|
 |---|---|
 |Objetivo do Teste | Verificar se as CTA (_call to action_) e fluxo de manutenção dos dados cadastrais são claros para o usuário |
 |Passos | 1.	Fazer login app; <br>	2.	Selecionar a opção 'Alteraçaõ de dados cadastrais'; <br>3.	Inserir as novas informações a serem alteradas; <br> 4.	Clicar em 'Confirmar'|
