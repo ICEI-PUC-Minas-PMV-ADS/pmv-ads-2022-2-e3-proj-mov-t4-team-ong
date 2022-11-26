@@ -1,25 +1,25 @@
 # Plano de Testes de Software
 
-Caso de Teste | CT-01: Cadastro usuário do tipo ONG
+Caso de Teste | CT-01: Cadastro de usuário - Doador
 ---|---
-Requisitos Associados | RF-01: O aplicativo deve permitir o cadastro de usuários do tipo ONG
+Requisitos Associados | RF-01: O aplicativo deve permitir o cadastro de usuários do tipo Doador
 Objetivo do Teste | Verificar se a função de cadastro de usuário está funcionando adequadamente
-Passos | 1.	Executar o aplicativo; <br>2.	Clicar no botão 'cadastrar ong'; <br>3.	Preencher formulário com as informações de cadastro; <br>4. Clicar em 'cadastrar'.
+Passos | 1.	Executar o aplicativo; <br>2.	Clicar no botão 'Quero me cadastrar'; <br>3.	Preencher o formulário com as informações de cadastro; <br>4. Clicar em 'Cadastrar'.
 Critérios de Êxito | •	As informações cadastradas devem ser inseridas no banco de dados <br> •	Uma mensagem de sucesso deve ser exibida ao usuário
 
-Caso de Teste | CT-02: Login usuário do tipo ONG
+Caso de Teste | CT-02: Login usuário - Doador
 ---|---
 Requisitos Associados | RF-03: O usuário deve conseguir realizar o login no aplicativo utilizando as informações de usuário e senha previamente cadastrados
 Objetivo do Teste | Verificar se a função de login está funcionando adequadamente
-Passos | 1.	Executar o aplicativo; <br>2.	Clicar no botão 'entrar'; <br>3.	Preencher formulário com as informações de usuário e senha; <br>4. Clicar em 'entrar'.
+Passos | 1.	Executar o aplicativo; <br>2.	Clicar no botão 'Já sou cadastrado'; <br>3.	Preencher o formulário com as informações de usuário e senha; <br>4. Clicar em 'Entrar'.
 Critérios de Êxito | •	As informações cadastradas devem ser resgatadas no banco de dados <br> •	Se as informações estiverem corretas, o usuário deve ser direcionado à página inicial do aplicativo <br> • Se as informações estiverem incorretas, uma mensagem de erro deverá ser exibida.
 
 
-Caso de Teste | CT-02: Atualização de dados cadastrais
+Caso de Teste | CT-03: Atualização de dados cadastrais - Doador
 ---|---
-Requisitos Associados | RF-02: O aplicativo deve permitir a atualização do cadastro de usuários do tipo ONG
+Requisitos Associados | RF-02: O aplicativo deve permitir a atualização do cadastro de usuários do tipo Doador
 Objetivo do Teste | Verificar se o usuário é capaz de alterar seus dados de cadastro
-Passos | 1.	Executar o aplicativo; <br>2.	Clicar no botão 'entrar'; <br>3.	Preencher formulário com as informações de usuário e senha; <br>4. Clicar em 'entrar'; <br>5. Escolher a opção de 'alteração de dados cadastrais'; <br>5. Alterar os dados do formulário; <br>6. Clicar em 'ok'
+Passos | 1.	Executar o aplicativo; <br>2.	Clicar no botão 'Já sou cadastrado'; <br>3.	Preencher formulário com as informações de usuário e senha; <br>4. Clicar em 'Entrar'; <br>5. Escolher a opção de 'Alteração de dados cadastrais'; <br>5. Alterar os dados do formulário; <br>6. Clicar em 'ok'
 Critérios de Êxito | •	As informações cadastradas devem ser atualizadas no banco de dados
  
 ## Ferramentas de Testes (Opcional)
