@@ -8,6 +8,8 @@ import Menu from '../navigator/Menu'
 import ReminderNavigator from './ReminderNavigator';
 import ProfileEdit from '../screens/profile/ProfileEdit'
 import HomePage from '../screens/HomePage'
+import OngList from '../screens/ong/OngList'
+import ProjectList from '../screens/project/ProjectsList';
 
 LogBox.ignoreLogs(['Reanimated 2']);
 
@@ -40,6 +42,9 @@ class DrawerNavigator extends Component {
                 </Drawer.Screen>
                 <Drawer.Screen name='ProfileNew' options={{ title: 'Perfil' }}>
                     {(props) => <ProfileEdit {...props} title='Perfil' daysAhead={0} schema={this.props.schema} />}
+                </Drawer.Screen>
+                <Drawer.Screen name='Ong' options={{ title: 'Ongs' }}>
+                    {(props) => <OngList {...props} title='Ongs' schema={this.props.schema} />}
                 </Drawer.Screen>
             </Drawer.Navigator>
         )
