@@ -28,6 +28,21 @@ Requisitos Associados | RF-09: O aplicativo deve permitir que os usuários faça
 Objetivo do Teste | Verificar se o usuário é capaz de realizar o pagamento da doação
 Passos | 1.	Executar o aplicativo; <br>2.	Clicar no botão 'Já sou cadastrado'; <br>3.	Preencher formulário com as informações de usuário e senha; <br>4. Clicar em 'Entrar'; <br>5. Escolher um projeto para o qual deseja efetuar a doação e clicar em 'Doar'; <br>6. Preecher o valor da doação e o CPF do doador; <br>7. Escolher a forma de pagamento;<br>8. Clicar em 'Finalizar doação'
 Critérios de Êxito | •	Uma mensagem de sucesso deve ser apresentada ao usuário
+
+Caso de Teste | CT-05: Listagem de Ongs
+---|---
+Requisitos Associados | RF-06: O aplicativo deve permitir a busca de ONG's e projetos por filtros (categoria, palavras-chave etc.)
+Objetivo do Teste | Verificar se o usuário é capaz de visualizar as Ongs cadastradas e filtra-las
+Passos | 1.	Executar o aplicativo; <br>2.	Clicar no botão 'Já sou cadastrado'; <br>3.	Preencher formulário com as informações de usuário e senha; <br>4. Clicar em 'Entrar'; <br>5. Visualizar a lista de Ongs em formato de Lista'; <br>6. Digitar palavras ou fragmentos de palavras para filtrar a lista e retornar informações mais relevantes
+Critérios de Êxito | •	Sucesso no carregamento e filtro dos dados.
+
+Caso de Teste | CT-06:Projetos das Ongs
+---|---
+Requisitos Associados | RF-05: Os usuários do aplicativo devem conseguir visualizar as histórias/projetos vinculados à cada ONG
+Objetivo do Teste | Visualizar as histórias e projetos de cada Ong e disponibilizar link para doação
+Passos | 1.	Executar o aplicativo; <br>2.	Clicar no botão 'Já sou cadastrado'; <br>3.	Preencher formulário com as informações de usuário e senha; <br>4. Clicar em 'Entrar'; <br>5. Visualizar a lista de Ongs em formato de Lista'; <br>6. Selecionar uma Ong; <br>7. Escolher um projeto para o qual deseja efetuar a doação e clicar em 'Doar'
+Critérios de Êxito | •	Sucesso no carregamento dos projetos cadastrados na base de dados e funcionamento adequado do link 'Doar'
+
  
 ## Ferramentas de Testes (Opcional)
 
