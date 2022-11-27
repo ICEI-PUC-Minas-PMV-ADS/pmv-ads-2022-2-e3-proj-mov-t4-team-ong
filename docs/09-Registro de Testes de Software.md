@@ -8,6 +8,68 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 
 Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
 
+### CT-01: Cadastro de usuário - Doador
+
+**Objetivo:** Verificar se a função de cadastro de usuário está funcionando adequadamente
+
+**Passos:** 
+1. Executar o aplicativo;
+2. Clicar no botão 'Quero me cadastrar';
+3. Preencher o formulário com as informações de cadastro;
+4. Clicar em 'Cadastrar'.
+
+**Critério de êxito:** <br>
+• As informações cadastradas devem ser inseridas no banco de dados
+• Uma mensagem de sucesso deve ser exibida ao usuário
+
+**Resultado do teste:** *Passou*
+
+**Evidências:**
+
+------------------------------------------------------------------------------
+
+### CT-02: Login usuário - Doador
+
+**Objetivo:** Verificar se a função de login está funcionando adequadamente
+
+**Passos:** 
+1. Executar o aplicativo;
+2. Clicar no botão 'Já sou cadastrado';
+3. Preencher o formulário com as informações de usuário e senha;
+4. Clicar em 'Entrar'.
+
+**Critério de êxito:** <br>
+• As informações cadastradas devem ser resgatadas no banco de dados
+• Se as informações estiverem corretas, o usuário deve ser direcionado à página inicial do aplicativo
+• Se as informações estiverem incorretas, uma mensagem de erro deverá ser exibida.
+
+**Resultado do teste:** *Passou*
+
+**Evidências:**
+
+------------------------------------------------------------------------------
+
+### CT-03: Atualização de dados cadastrais - Doador
+
+**Objetivo:** Verificar se o usuário é capaz de alterar seus dados de cadastro
+
+**Passos:** 
+1. Executar o aplicativo;
+2. Clicar no botão 'Já sou cadastrado';
+3. Preencher formulário com as informações de usuário e senha;
+4. Clicar em 'Entrar';
+5. Escolher a opção de 'Alteração de dados cadastrais';
+5. Alterar os dados do formulário;
+6. Clicar em 'ok'
+
+**Critério de êxito:** <br>
+• As informações cadastradas devem ser atualizadas no banco de dados
+
+**Resultado do teste:** *Passou*
+
+**Evidências:**
+
+------------------------------------------------------------------------------
 
 ### CT-04: Realizar o pagamento de uma doação
 
@@ -23,7 +85,8 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 7.	Escolher a forma de pagamento
 8.	Clicar em 'Finalizar doação'
 
-**Critério de êxito:** Uma mensagem de sucesso deve ser apresentada ao usuário
+**Critério de êxito:** <br>
+• Uma mensagem de sucesso deve ser apresentada ao usuário
 
 **Resultado do teste:** *Passou*
 
@@ -67,6 +130,51 @@ Pontos a melhorar
 
 1) Se as informações obrigatórias não forem preenchidas o aplicativo deve fornecer um retorno ao usuário, indicando que é necessário o preenchimento de todas as informações obrgatórias para conclusão da doação.
 </br>
+
+------------------------------------------------------------------------------
+
+### CT-05: Listagem de Ongs
+
+**Objetivo:** Verificar se o usuário é capaz de visualizar as Ongs cadastradas e filtra-las
+
+**Passos:** 
+1. Executar o aplicativo;
+2. Clicar no botão 'Já sou cadastrado';
+3. Preencher formulário com as informações de usuário e senha;
+4. Clicar em 'Entrar';
+5. Visualizar a lista de Ongs em formato de Lista';
+6. Digitar palavras ou fragmentos de palavras para filtrar a lista e retornar informações mais relevantes
+
+**Critério de êxito:** <br>
+• Sucesso no carregamento e filtro dos dados.
+
+**Resultado do teste:** *Passou*
+
+**Evidências:**
+
+------------------------------------------------------------------------------
+
+### CT-06: Projetos das Ongs
+
+**Objetivo:** Visualizar as histórias e projetos de cada Ong e disponibilizar link para doação
+
+**Passos:** 
+1. Executar o aplicativo;
+2. Clicar no botão 'Já sou cadastrado';
+3. Preencher formulário com as informações de usuário e senha;
+4. Clicar em 'Entrar';
+5. Visualizar a lista de Ongs em formato de Lista';
+6. Selecionar uma Ong;
+7. Escolher um projeto para o qual deseja efetuar a doação e clicar em 'Doar'
+
+**Critério de êxito:** <br>
+• Sucesso no carregamento dos projetos cadastrados na base de dados e funcionamento adequado do link 'Doar'
+
+**Resultado do teste:** *Passou*
+
+**Evidências:**
+
+------------------------------------------------------------------------------
 
 > **Links Úteis**:
 > - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
