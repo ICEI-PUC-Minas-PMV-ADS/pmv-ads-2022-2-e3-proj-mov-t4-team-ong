@@ -1,11 +1,15 @@
-import { Text } from "@rneui/themed"
+import { SearchBar, Text } from "@rneui/themed"
 import axios from "axios"
 import React, { Component } from "react"
 import { FlatList, ScrollView, StyleSheet, View } from "react-native"
 import { server, showError } from "../../common/configuration/common"
+import commonStyles from "../../common/styles/commonStyles"
+import Ong from "../../components/screen/Ong"
 
 initialState = {
-    ongs: []
+    args: '',
+    ongs: [],
+    filterOngs: []
 }
 
 class OngList extends Component {
@@ -19,22 +23,34 @@ class OngList extends Component {
 
     loadOngs = async () => {
         try {
+            console.log(`${server}/ongs`)
             const res = await axios.get(`${server}/ongs`)
-            this.setState({ ongs: res.data })
-            console.log('loadOngs', this.state.ongs)
+            this.setState({ ongs: res.data }, this.filterOngs)
         } catch (e) {
             showError(e)
         }
+    }
+
+    filterOngs = (args) => {
+        let filterOngs = null
+        console.log('args', args)
+        if (args) {
+            const pending = ongs => ongs.nameExtended.includes(args)
+            filterOngs = this.state.ongs.filter(pending)
+
+        } else {
+            filterOngs = [...this.state.ongs]
+        }
+
+        this.setState({ filterOngs })
     }
 
     render() {
         console.log('OngList')
 
         styles = StyleSheet.create({
-            Wrap: {
-                flex: 1,
-                width: '100%',
-                backgroundColor: '#393534'
+            wrap: {
+                backgroundColor: this.props.schema.screenBackground
             },
             inputContainer: {
                 flex: 1,
@@ -44,7 +60,6 @@ class OngList extends Component {
                 margin: 10
             },
             sub: {
-                flex: 1,
                 alignSelf: 'center',
                 margin: 10,
                 fontSize: 36,
@@ -66,7 +81,8 @@ class OngList extends Component {
                 width: 50,
                 height: 50,
                 alignSelf: 'center',
-                fontWeight: 'bold'
+                fontWeight: 'bold',
+                color: this.props.schema.white
             },
             itemsBtn: {
                 borderRadius: 1,
@@ -75,23 +91,26 @@ class OngList extends Component {
         });
 
         return (
-            <View style={styles.Wrap}>
+            <View style={[commonStyles.container, styles.wrap]}>
 
                 <View>
                     <Text style={styles.sub}>Ongs Parceiras</Text>
 
+                    <SearchBar
+                        placeholder="Encontre sua ong"
+                        value={this.state.args}
+                        onChangeText={args => this.setState({ args }, this.filterOngs(args))}
+                        round={true}
+                    />
+
                     <FlatList
-                        data={this.state.ongs}
-                        keyExtractor={ong => `${ong.id}`}
-                        renderItem={({ ong }) => {
-                            <View style={styles.items}>
-                                <Text style={styles.itemsText}>{ong.nameExtended}</Text>
-                                <View style={styles.itemsBtn}>
-                                    
-                                </View>
-                            </View>
-                        }
-                        }
+                        data={this.state.filterOngs}
+                        keyExtractor={item => `${item.id}`}
+                        renderItem={({ item }) => <Ong
+                            {...this.props}
+                            {...item}
+                            schema={this.props.schema}
+                        />}r
                     />
                 </View>
 

@@ -22,4 +22,8 @@ module.exports = app => {
     app.route('/ongs')
         .all(app.config.passport.authenticate())
         .get(app.api.ong.getOngs)   
+    
+    app.route('/projects/:ongId')
+        .all(app.config.passport.authenticate())
+        .get(app.api.projects.getProjects)
 }

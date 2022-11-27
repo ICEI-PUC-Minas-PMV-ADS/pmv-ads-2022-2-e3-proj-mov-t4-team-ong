@@ -24,7 +24,7 @@ import tomorrowImage from '../../../assets/imgs/tomorrowList.png'
 import weekImage from '../../../assets/imgs/weekList.png'
 import monthImage from '../../../assets/imgs/monthList.png'
 
-import Reminder from '../../components/reminder/Reminder'
+import Reminder from '../../components/screen/Reminder'
 import ReminderAdd from '../reminder/ReminderAdd'
 
 import commonStyles from "../../common/styles/commonStyles"
@@ -121,7 +121,7 @@ class ReminderList extends Component {
             this.loadReminders()
         } catch (e) {
             showError(e)
-            
+
         }
     }
 
