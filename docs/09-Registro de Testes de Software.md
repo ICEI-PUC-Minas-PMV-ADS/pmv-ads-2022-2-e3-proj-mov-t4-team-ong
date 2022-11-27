@@ -19,7 +19,7 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 4. Clicar em 'Cadastrar'.
 
 **Critério de êxito:** <br>
-• As informações cadastradas devem ser inseridas no banco de dados
+• As informações cadastradas devem ser inseridas no banco de dados <br>
 • Uma mensagem de sucesso deve ser exibida ao usuário
 
 **Resultado do teste:** *Passou*
@@ -39,8 +39,8 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 4. Clicar em 'Entrar'.
 
 **Critério de êxito:** <br>
-• As informações cadastradas devem ser resgatadas no banco de dados
-• Se as informações estiverem corretas, o usuário deve ser direcionado à página inicial do aplicativo
+• As informações cadastradas devem ser resgatadas no banco de dados <br>
+• Se as informações estiverem corretas, o usuário deve ser direcionado à página inicial do aplicativo <br>
 • Se as informações estiverem incorretas, uma mensagem de erro deverá ser exibida.
 
 **Resultado do teste:** *Passou*
