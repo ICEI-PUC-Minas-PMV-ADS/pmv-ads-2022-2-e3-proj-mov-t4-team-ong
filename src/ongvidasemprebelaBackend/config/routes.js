@@ -18,6 +18,10 @@ module.exports = app => {
     app.route('/users')
         .all(app.config.passport.authenticate())
         .put(app.api.user.update)   
+   
+    app.route('/users/:email')
+        .all(app.config.passport.authenticate())
+        .put(app.api.user.getUser)   
     
     app.route('/ongs')
         .all(app.config.passport.authenticate())
@@ -26,4 +30,12 @@ module.exports = app => {
     app.route('/projects/:ongId')
         .all(app.config.passport.authenticate())
         .get(app.api.projects.getProjects)
+    
+    app.route('/payments/:userId')
+        .all(app.config.passport.authenticate())
+        .get(app.api.payments.getPayments)
+
+    app.route('/payments')
+        .all(app.config.passport.authenticate())
+        .post(app.api.payments.save)
 }

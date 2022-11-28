@@ -45,7 +45,7 @@ class Ong extends Component {
             <View style={commonStyles.container}>
                 <TouchableOpacity 
                     onPress={() => this.props.navigation.navigate('Projetos',
-                        { ongId: this.props.id, nomeOng: this.props.nameExtended })}
+                        { ...this.props, ongId: this.props.id, nomeOng: this.props.nameExtended })}
                 >
                     <Card >
                         <Card.Title style={styles.title}>{this.props.nameExtended}</Card.Title>

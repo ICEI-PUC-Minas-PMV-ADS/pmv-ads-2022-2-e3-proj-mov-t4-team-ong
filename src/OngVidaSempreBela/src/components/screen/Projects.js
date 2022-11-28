@@ -16,7 +16,7 @@ class Projects extends Component {
                 color: this.props.schema.black
             },
         })
-        console.log(this.props.id, ' ', this.props.ongId)
+        
         return (
             <Card style={{ marginBottom: 12 }}>
                 <Card.Content >
@@ -26,7 +26,15 @@ class Projects extends Component {
                 </Card.Content>
                 <Card.Cover source={{ uri: 'https://static1.patasdacasa.com.br/articles/2/37/52/@/15124-cachorro-de-rua-pode-ficar-agressivo-com-articles_media_mobile-2.jpg' }} />
                 <Card.Actions>
-                    <Button onPress={() => this.props.navigation.navigate('Payment', { item })}>Doar</Button>
+                    <Button onPress={() =>
+                        this.props.navigation.navigate('Payment',
+                            {
+                                ...this.props,
+                                nome: this.props.name,
+                                projectId: this.props.id,
+                                schema: this.props.schema
+                            }
+                        )}>Doar</Button>
                     <Button>fotos</Button>
                 </Card.Actions>
             </Card>

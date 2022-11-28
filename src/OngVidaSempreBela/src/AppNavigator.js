@@ -9,6 +9,7 @@ import AuthOrApp from "./navigator/AuthOrApp";
 import ProjectsList from "./screens/project/ProjectsList";
 import Payment from "./screens/payment/Payment";
 
+
 const Stack = createStackNavigator()
 
 const stackNavigatorOptions = {
@@ -41,8 +42,9 @@ class AppNavigator extends Component {
         </Stack.Screen>
         <Stack.Screen name='Projetos'>
           {(props) => <ProjectsList {...props} schema={this.props.schema} />}
+        </Stack.Screen>
         <Stack.Screen name='Payment'>
-          {(props) => <Payment {...props} schema={this.props.schema} stateNew={false}/>}
+          {(props) => <Payment {...props} schema={this.props.schema} />}
         </Stack.Screen>
       </Stack.Navigator>
     )

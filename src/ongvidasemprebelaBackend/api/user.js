@@ -30,5 +30,13 @@ module.exports = app => {
         })
     }
     
-    return { save, update }
+    const getUser = (req, res) => {
+    console.log('UserPayment')
+        app.db('users')
+            .where({ email: req.params.email })
+            .then(users => res.json(users))
+            .catch(err => res.status(400).json(err))
+    }
+
+    return { save, update, getUser }
 }

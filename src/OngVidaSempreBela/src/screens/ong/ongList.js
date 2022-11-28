@@ -1,7 +1,7 @@
 import { SearchBar, Text } from "@rneui/themed"
 import axios from "axios"
 import React, { Component } from "react"
-import { FlatList, ScrollView, StyleSheet, View } from "react-native"
+import { FlatList, StyleSheet, View } from "react-native"
 import { server, showError } from "../../common/configuration/common"
 import commonStyles from "../../common/styles/commonStyles"
 import Ong from "../../components/screen/Ong"

@@ -24,7 +24,8 @@ module.exports = app => {
                     name: user.name,
                     email: user.email,
                     token: jwt.encode(payload, authSecret),
-                    imageURL: user.imageURL
+                    imageURL: user.imageURL,
+                    id: user.id
                 })
             })
             console.log('loged')
