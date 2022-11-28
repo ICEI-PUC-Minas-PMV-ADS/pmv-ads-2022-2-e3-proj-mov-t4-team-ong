@@ -7,9 +7,10 @@ import {
     StyleSheet
 } from 'react-native'
 
-import commonStyles from '../common/styles/commonStyles'
 import backgroundImage from '../../assets/imgs/logoAjustada.png'
-import BtnOutline from '../components/btnComponent/BtnOutline'
+
+import BtnOutline from '../common/components/BtnOutline'
+import commonStyles from '../common/styles/commonStyles'
 
 class HomePage extends Component {
 

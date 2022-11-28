@@ -2,7 +2,10 @@ import React, { Component } from "react"
 
 import { StyleSheet, TouchableOpacity, View } from "react-native"
 
-import { DrawerContentScrollView, DrawerItemList } from "@react-navigation/drawer"
+import {
+    DrawerContentScrollView,
+    DrawerItemList
+} from "@react-navigation/drawer"
 
 import AsyncStorage from '@react-native-community/async-storage'
 

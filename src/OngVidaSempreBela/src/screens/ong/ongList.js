@@ -1,10 +1,16 @@
-import { SearchBar, Text } from "@rneui/themed"
-import axios from "axios"
 import React, { Component } from "react"
+
+import { SearchBar, Text } from "@rneui/themed"
+
+import axios from "axios"
+
 import { FlatList, StyleSheet, View } from "react-native"
+
 import { server, showError } from "../../common/configuration/common"
+
 import commonStyles from "../../common/styles/commonStyles"
-import Ong from "../../components/screen/Ong"
+
+import Ong from "../../common/components/Ong"
 
 initialState = {
     args: '',
@@ -23,7 +29,6 @@ class OngList extends Component {
 
     loadOngs = async () => {
         try {
-            console.log(`${server}/ongs`)
             const res = await axios.get(`${server}/ongs`)
             this.setState({ ongs: res.data }, this.filterOngs)
         } catch (e) {
@@ -33,11 +38,9 @@ class OngList extends Component {
 
     filterOngs = (args) => {
         let filterOngs = null
-        console.log('args', args)
         if (args) {
             const pending = ongs => ongs.nameExtended.includes(args)
             filterOngs = this.state.ongs.filter(pending)
-
         } else {
             filterOngs = [...this.state.ongs]
         }
@@ -46,7 +49,6 @@ class OngList extends Component {
     }
 
     render() {
-        console.log('OngList')
 
         styles = StyleSheet.create({
             wrap: {
@@ -110,10 +112,9 @@ class OngList extends Component {
                             {...this.props}
                             {...item}
                             schema={this.props.schema}
-                        />}r
+                        />}
                     />
                 </View>
-
             </View>
         )
     }

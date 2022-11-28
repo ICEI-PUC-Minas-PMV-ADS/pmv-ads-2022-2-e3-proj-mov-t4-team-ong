@@ -1,14 +1,15 @@
 import React, { Component } from "react"
 
-import Container from '../../components/common/Container'
-import Header from '../../components/common/Header'
-import Body from '../../components/common/Body'
-import { FlatList, StyleSheet } from "react-native"
+import { FlatList } from "react-native"
+
 import axios from "axios"
+
+import Body from '../../common/components/Body'
+import Container from '../../common/components/Container'
+import Header from '../../common/components/Header'
+import Projects from '../../common/components/Projects'
+
 import { server, showError } from "../../common/configuration/common"
-import { Card } from "react-native-elements"
-import { Button, Paragraph, Title } from "react-native-paper"
-import Projects from '../../components/screen/Projects'
 
 initialState = {
     projects: [],
@@ -31,11 +32,11 @@ class ProjectsList extends Component {
     }
 
     loadProjects = async () => {
-        
+
         try {
             const res = await axios.get(`${server}/projects/${this.state.ongId}`);
             this.setState({ projects: res.data })
-            
+
         } catch (e) {
             showError(e)
         }

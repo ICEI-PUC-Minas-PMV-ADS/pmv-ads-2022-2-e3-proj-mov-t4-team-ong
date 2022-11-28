@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import {
   View,
   StyleSheet,
@@ -17,16 +18,20 @@ import {
   Provider,
 } from 'react-native-paper';
 
-
-import Header from '../../components/common/Header';
-import Container from '../../components/common/Container';
-import Body from '../../components/common/Body';
-import BtnInput from '../../components/btnComponent/BtnInput';
-import moment from 'moment';
-import AsyncStorage from '@react-native-community/async-storage';
 import axios from 'axios';
+
+import AsyncStorage from '@react-native-community/async-storage';
+
+import moment from 'moment';
+
+import Body from '../../common/components/Body';
+import Container from '../../common/components/Container';
+import Header from '../../common/components/Header';
+
 import { server, showError } from '../../common/configuration/common';
-import BtnOutline from '../../components/btnComponent/BtnOutline';
+
+import BtnOutline from '../../common/components/BtnOutline';
+import BtnInput from '../../common/components/BtnInput';
 
 initialState = {
   typePayment: 'Pix',
@@ -45,10 +50,7 @@ class Payment extends Component {
   componentDidMount = async () => {
     const userData = await AsyncStorage.getItem('userData')
     const savedState = JSON.parse(userData) || initialState
-    this.setState({ userId: savedState.id })
-    console.log('UserData', this.state.userId)
-
-    this.setState({ datePayment: moment(this.state.date).format('DD/MM/YYYY') })
+    this.setState({ userId: savedState.id, datePayment: moment(this.state.date).format('DD/MM/YYYY') })
   }
 
   hideDialog = () => {
@@ -58,7 +60,6 @@ class Payment extends Component {
 
   showDialog = async () => {
     try {
-      console.log('state', this.state)
       await axios.post(`${server}/payments`, {
         typePayment: this.state.typePayment,
         valuePayment: this.state.valuePayment,
@@ -67,7 +68,7 @@ class Payment extends Component {
         projectId: this.props.route.params.projectId,
         userId: this.state.userId
       })
-    
+
       this.setState({ visible: true });
 
     } catch (e) {
@@ -75,7 +76,6 @@ class Payment extends Component {
     }
   }
 
-  
   render() {
     styles = StyleSheet.create({
       containerRadio: {
@@ -126,8 +126,6 @@ class Payment extends Component {
       }
     });
 
-
-    console.log('props ', this.props.route.params.projectId)
     return (
       <ScrollView>
         <Container>

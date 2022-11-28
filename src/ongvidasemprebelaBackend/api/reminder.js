@@ -5,6 +5,7 @@ module.exports = app => {
     const getReminders = (req, res) => {
         const date = req.query.date ? req.query.date
             : moment().endOf('day').toDate()
+        console.log(date)
 
         app.db('reminders')
             .where({ userId: req.user.id })
