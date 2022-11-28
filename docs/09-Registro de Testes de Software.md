@@ -26,6 +26,46 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 
 **Evidências:**
 
+Aqui é apresentada a tela vazia de cadastro com campos requeridos.
+</br></br>
+<p align="center">
+  
+![Login1](https://user-images.githubusercontent.com/91227083/204170863-591d2e1f-8f02-4b23-bee9-e15d33033b60.jpeg)
+  
+</p>
+<p align="center"> Evidência 1 - Homepage com as opções de cadastro e login </p>
+</br>
+
+Campos preenchidos
+</br></br>
+<p align="center">
+  
+![Login2](https://user-images.githubusercontent.com/91227083/204170926-593d7291-40d7-455e-b2f4-3f33cae227d7.jpeg)
+  
+</p>
+<p align="center"> Evidência 1 - Homepage com as opções de cadastro e login </p>
+</br>
+
+Tela de "Throw" com mensagem de sucesso
+</br></br>
+<p align="center">
+  
+![Login3](https://user-images.githubusercontent.com/91227083/204171054-8aeaffaf-d74d-4a03-820a-4aebfaf627c5.jpeg)
+  
+</p>
+<p align="center"> Evidência 1 - Homepage com as opções de cadastro e login </p>
+</br>
+
+Apresentação dos dados persistidos no Postgres
+</br></br>
+<p align="center">
+  
+![Login4](https://user-images.githubusercontent.com/91227083/204171111-4f194489-b63c-4a5e-9e50-be6a7790d367.jpeg)
+  
+</p>
+<p align="center"> Evidência 1 - Homepage com as opções de cadastro e login </p>
+</br>
+
 ------------------------------------------------------------------------------
 
 ### CT-02: Login usuário - Doador
@@ -46,6 +86,36 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 **Resultado do teste:** *Passou*
 
 **Evidências:**
+
+Aqui é apresentada a tela vazia de login de usuário.
+</br></br>
+<p align="center">
+  
+![Login5](https://user-images.githubusercontent.com/91227083/204171322-52bec127-5012-409c-a08a-c8ecc45224fb.jpeg)
+  
+</p>
+<p align="center"> Evidência 1 - Homepage com as opções de cadastro e login </p>
+</br>
+
+Aqui é apresentada a tela preenchida de login de usuário.
+</br></br>
+<p align="center">
+  
+![Login6](https://user-images.githubusercontent.com/91227083/204171381-bc08fcb5-2d0a-4c24-b59a-26e9efa069d4.jpeg)
+  
+</p>
+<p align="center"> Evidência 1 - Homepage com as opções de cadastro e login </p>
+</br>
+
+Menu Drawer com login autenticado
+</br></br>
+<p align="center">
+  
+![Login7](https://user-images.githubusercontent.com/91227083/204171476-c0a2275e-6dfd-4aa5-aeec-412f30b770e1.jpeg)
+  
+</p>
+<p align="center"> Evidência 1 - Homepage com as opções de cadastro e login </p>
+</br>
 
 ------------------------------------------------------------------------------
 
@@ -68,6 +138,56 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 **Resultado do teste:** *Passou*
 
 **Evidências:**
+
+Menu de atualização de cadastro vazio
+</br></br>
+<p align="center">
+  
+![Atualizacao1](https://user-images.githubusercontent.com/91227083/204171661-caebae6e-583d-477c-87d2-01fa2659375c.jpeg)
+  
+</p>
+<p align="center"> Evidência 1 - Homepage com as opções de cadastro e login </p>
+</br>
+
+Menu de atualização de cadastro preenchido
+</br></br>
+<p align="center">
+  
+![Atualizacao2](https://user-images.githubusercontent.com/91227083/204171690-d6746f55-6f01-4752-90d2-ef366bbe70f1.jpeg)
+  
+</p>
+<p align="center"> Evidência 1 - Homepage com as opções de cadastro e login </p>
+</br>
+
+Tela de "Throw" com mensagem de sucesso
+</br></br>
+<p align="center">
+  
+![Atualizacao3](https://user-images.githubusercontent.com/91227083/204171732-ef333c94-128d-4be2-9204-e26879a2719f.jpeg)
+  
+</p>
+<p align="center"> Evidência 1 - Homepage com as opções de cadastro e login </p>
+</br>
+
+Usuario alterado no menu Drawer
+</br></br>
+<p align="center">
+  
+![Atualizacao4](https://user-images.githubusercontent.com/91227083/204171847-4bb42adb-815d-40eb-a4fa-b19fe8d88194.jpeg)
+  
+</p>
+<p align="center"> Evidência 1 - Homepage com as opções de cadastro e login </p>
+</br>
+
+Dados persistidos no Postgres
+</br></br>
+<p align="center">
+  
+![Atualizacao5](https://user-images.githubusercontent.com/91227083/204171863-18f3869b-6d15-49a3-8298-741f7b7437df.jpeg)
+  
+</p>
+<p align="center"> Evidência 1 - Homepage com as opções de cadastro e login </p>
+</br>
 
 ------------------------------------------------------------------------------
 
