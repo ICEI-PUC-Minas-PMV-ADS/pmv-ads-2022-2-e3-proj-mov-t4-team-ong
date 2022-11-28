@@ -81,13 +81,13 @@ Apresente aqui uma descrição da sua proposta abordando seus limites e suas lig
 
 Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
 
-![Processo 1](img/02-bpmn-proc1.png)
+![Modelagem1](https://user-images.githubusercontent.com/91227083/204169740-ae41406f-659f-432a-908b-6627ae34e790.jpeg)
 
 ### Processo 2 – NOME DO PROCESSO
 
 Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
 
-![Processo 2](img/02-bpmn-proc2.png)
+![Modelagem2](https://user-images.githubusercontent.com/91227083/204169757-b9cee30e-72e0-40ee-b62d-cdcc62d032a9.jpeg)
 
 ## Indicadores de Desempenho
 
