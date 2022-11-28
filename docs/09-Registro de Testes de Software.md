@@ -223,7 +223,7 @@ Após a execução do aplicativo, a homepage é apresentada ao usuário:
 Após efetuar o login e selecionar um projeto para doação, a tela para realizar o pagamento é apresentada:
 </br></br>
 <p align="center">
-<img src=https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-team-ong/main/docs/img/Tela%20de%20doacao.jpeg width=270 heigth=270>
+<img src=https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-team-ong/main/docs/img/Tela%20de%20pagamento.jpg width=270 heigth=270>
 </p>
 <p align="center"> Evidência 2 - Tela para realizar o pagamento da doação </p>
 </br>
@@ -231,7 +231,7 @@ Após efetuar o login e selecionar um projeto para doação, a tela para realiza
 Informando o valor da doação, o CPF e a forma de pagamento:
 </br></br>
 <p align="center">
-<img src=https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-team-ong/main/docs/img/Dados%20da%20doacao.jpeg width=270 heigth=270>
+<img src=https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-team-ong/main/docs/img/Tela%20preenchida.jpg width=270 heigth=270>
 </p>
 <p align="center"> Evidência 3 - Preenchimento das informações de pagamento </p>
 </br>
@@ -239,7 +239,7 @@ Informando o valor da doação, o CPF e a forma de pagamento:
 Após clicar em 'Finalizar doação', a mensagem de sucesso é apresentada ao usuário:
 </br></br>
 <p align="center">
-<img src=https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-team-ong/main/docs/img/Doacao%20finalizada.jpeg width=270 heigth=270>
+<img src=https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-team-ong/main/docs/img/Finaliza%C3%A7%C3%A3o%20doa%C3%A7%C3%A3o.jpg width=270 heigth=270>
 </p>
 <p align="center"> Evidência 4 - Mensagem de sucesso apresentada </p>
 </br></br>
