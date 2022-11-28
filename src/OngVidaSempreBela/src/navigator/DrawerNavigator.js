@@ -8,8 +8,8 @@ import Menu from '../navigator/Menu'
 import ReminderNavigator from './ReminderNavigator';
 import ProfileEdit from '../screens/profile/ProfileEdit'
 import HomePage from '../screens/HomePage'
-import OngList from '../screens/ong/OngList'
-import ProjectList from '../screens/project/ProjectsList';
+import OngList from '../screens/ong/ongList'
+
 
 LogBox.ignoreLogs(['Reanimated 2']);
 

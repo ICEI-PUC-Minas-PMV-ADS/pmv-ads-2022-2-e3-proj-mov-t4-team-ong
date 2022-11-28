@@ -54,6 +54,7 @@ class ProjectsList extends Component {
                         keyExtractor={(item) => item.id}
                         renderItem={({ item }) =>
                             <Projects
+                                {...this.props}
                                 {...item}
                                 schema={this.props.schema}
                             />
