@@ -8,7 +8,6 @@ module.exports = app => {
     }
 
     const save = (req, res) => {
-    console.log('saving', req.body.name)
         getHash(req.body.password, hash => { 
             const password = hash
             app.db('users')
@@ -19,7 +18,6 @@ module.exports = app => {
     }
 
     const update = (req, res) => {
-        console.log('updating', req.body.imageURL.uri)
         getHash(req.body.password, hash => {
             const password = hash
             app.db('users')
@@ -31,7 +29,6 @@ module.exports = app => {
     }
     
     const getUser = (req, res) => {
-    console.log('UserPayment')
         app.db('users')
             .where({ email: req.params.email })
             .then(users => res.json(users))

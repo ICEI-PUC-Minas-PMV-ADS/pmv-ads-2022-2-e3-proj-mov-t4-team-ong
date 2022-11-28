@@ -1,7 +1,6 @@
 const bcrypt = require('bcrypt-nodejs')
 
 module.exports = app => {
-    console.log('payments')
     const getPayments = (req, res) => {
         app.db('payments')
             .where({ userId: req.params.userId })

@@ -61,7 +61,6 @@ class ReminderList extends Component {
             const res = await axios.get(`${server}/reminders?date=${maxDate}`)
             this.setState({ reminders: res.data }, this.filterReminders)
         } catch (e) {
-            console.log(e)
             showError(e)
         }
     }
@@ -76,7 +75,6 @@ class ReminderList extends Component {
     }
 
     toggleFilter = () => {
-        console.log('toggleFilter', this.state.showDoneReminders)
         this.setState({ showDoneReminders: !this.state.showDoneReminders }, this.filterReminders)
     }
 
