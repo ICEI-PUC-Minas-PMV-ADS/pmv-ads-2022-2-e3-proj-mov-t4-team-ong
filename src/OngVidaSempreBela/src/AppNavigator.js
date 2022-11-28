@@ -43,7 +43,7 @@ class AppNavigator extends Component {
         <Stack.Screen name='Projetos'>
           {(props) => <ProjectsList {...props} schema={this.props.schema} />}
         </Stack.Screen>
-        <Stack.Screen name='Payment'>
+        <Stack.Screen name='Doações'>
           {(props) => <Payment {...props} schema={this.props.schema} />}
         </Stack.Screen>
       </Stack.Navigator>

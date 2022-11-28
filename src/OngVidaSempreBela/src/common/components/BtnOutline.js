@@ -15,13 +15,12 @@ class BtnOutline extends Component {
                 padding: 10,
                 paddingHorizontal: 50,
                 alignItems: 'center',
-                backgroundColor: this.props.bg ? this.props.bg : ''
+                backgroundColor: this.props.bg && this.props.bg 
             },
             buttonText: {
                 color: this.props.schema.white,
                 fontWeight: 'bold',
                 fontSize: 15,
-
             },
             disabled: {
                 backgroundColor: this.props.disabled
@@ -37,14 +36,11 @@ class BtnOutline extends Component {
                     type='clear'
                     buttonStyle={styles.button}
                     titleStyle={styles.buttonText}
-
                     disabledStyle={styles.disabled}
                 />
             </View>
         )
     }
 }
-
-
 
 export default BtnOutline

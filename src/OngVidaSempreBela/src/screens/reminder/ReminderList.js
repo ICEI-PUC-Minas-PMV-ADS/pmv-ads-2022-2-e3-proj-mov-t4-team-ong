@@ -19,12 +19,12 @@ import AsyncStorage from "@react-native-community/async-storage"
 
 import axios from 'axios'
 
+import monthImage from '../../../assets/imgs/monthList.png'
 import todayImage from '../../../assets/imgs/todayList.png'
 import tomorrowImage from '../../../assets/imgs/tomorrowList.png'
 import weekImage from '../../../assets/imgs/weekList.png'
-import monthImage from '../../../assets/imgs/monthList.png'
 
-import Reminder from '../../components/screen/Reminder'
+import Reminder from '../../common/components/Reminder'
 import ReminderAdd from '../reminder/ReminderAdd'
 
 import commonStyles from "../../common/styles/commonStyles"
@@ -46,12 +46,11 @@ class ReminderList extends Component {
 
     componentDidMount = async () => {
         const stateString = await AsyncStorage.getItem('reminderState')
-        console.log('stateString', stateString)
         const savedState = JSON.parse(stateString) || initialState
+        this.loadReminders()
         this.setState({
             showDoneReminders: savedState.showDoneReminders
         }, this.filterReminders)
-        this.loadReminders()
     }
 
     loadReminders = async () => {
@@ -70,7 +69,6 @@ class ReminderList extends Component {
     toggleReminder = async reminderId => {
         try {
             await axios.put(`${server}/reminders/${reminderId}/toggle`)
-            console.log('toggleReminder')
             this.loadReminders()
         } catch (e) {
             showError(e)
@@ -84,8 +82,7 @@ class ReminderList extends Component {
 
     filterReminders = () => {
         let visibleReminders = null
-
-        console.log('showDoneReminders 3', this.state.showDoneReminders)
+  
         if (this.state.showDoneReminders) {
             visibleReminders = [...this.state.reminders]
         } else {
@@ -146,8 +143,6 @@ class ReminderList extends Component {
     }
 
     render() {
-        console.log('ReminderList ')
-
         const today = moment().locale('pt-br').format('ddd, D [de] MMMM')
 
         const styles = StyleSheet.create({

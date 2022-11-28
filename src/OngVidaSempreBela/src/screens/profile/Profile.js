@@ -20,19 +20,18 @@ import {
     isValidEmail,
     isValidField,
     msgError
-} from "../../common/error/commonMsgError"
-
-import BtnInput from "../../components/btnComponent/BtnInput"
-import BtnOutline from "../../components/btnComponent/BtnOutline"
-import BtnLink from "../../components/btnComponent/BtnLink"
+} from "../../common/validator/validators"
 
 import { server, showError, showSuccess } from "../../common/configuration/common"
 
 import AsyncStorage from '@react-native-community/async-storage'
 
+import BtnOutline from "../../common/components/BtnOutline"
+import BtnInput from "../../common/components/BtnInput"
+import BtnLink from "../../common/components/BtnLink"
+
 const initialState = {
     name: '',
-    ongID: 1,
     email: '',
     password: '',
     confirmPassword: '',

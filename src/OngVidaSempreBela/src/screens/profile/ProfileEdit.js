@@ -23,10 +23,8 @@ import {
     isValidConfirm,
     isValidField,
     msgError
-} from "../../common/error/commonMsgError"
+} from "../../common/validator/validators"
 
-import BtnInput from "../../components/btnComponent/BtnInput"
-import BtnOutline from "../../components/btnComponent/BtnOutline"
 import editImage from "../../../assets/imgs/editOVSB.png"
 
 import { server, showError, showSuccess } from "../../common/configuration/common"
@@ -34,6 +32,9 @@ import { server, showError, showSuccess } from "../../common/configuration/commo
 import AsyncStorage from '@react-native-community/async-storage'
 
 import { Image } from "react-native-elements"
+
+import BtnOutline from "../../common/components/BtnOutline"
+import BtnInput from "../../common/components/BtnInput"
 
 const initialState = {
     name: '',

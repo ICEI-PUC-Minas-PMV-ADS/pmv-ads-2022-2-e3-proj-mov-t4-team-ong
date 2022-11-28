@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import {
     View,
     ActivityIndicator,
@@ -8,11 +9,10 @@ import {
 import { CommonActions } from '@react-navigation/native';
 
 import axios from 'axios'
+
 import AsyncStorage from '@react-native-community/async-storage'
 
 class AuthOrApp extends Component {
-
-
 
     componentDidMount = async () => {
         const userDataJson = await AsyncStorage.getItem('userData')

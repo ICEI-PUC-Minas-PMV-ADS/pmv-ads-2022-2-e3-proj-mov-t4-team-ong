@@ -4,11 +4,11 @@ import { LogBox } from "react-native"
 
 import { createDrawerNavigator } from "@react-navigation/drawer"
 
-import Menu from '../navigator/Menu'
-import ReminderNavigator from './ReminderNavigator';
-import ProfileEdit from '../screens/profile/ProfileEdit'
 import HomePage from '../screens/HomePage'
+import Menu from '../navigator/Menu'
 import OngList from '../screens/ong/ongList'
+import ProfileEdit from '../screens/profile/ProfileEdit'
+import ReminderNavigator from './ReminderNavigator';
 
 
 LogBox.ignoreLogs(['Reanimated 2']);

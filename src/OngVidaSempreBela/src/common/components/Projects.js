@@ -27,7 +27,7 @@ class Projects extends Component {
                 <Card.Cover source={{ uri: 'https://static1.patasdacasa.com.br/articles/2/37/52/@/15124-cachorro-de-rua-pode-ficar-agressivo-com-articles_media_mobile-2.jpg' }} />
                 <Card.Actions>
                     <Button onPress={() =>
-                        this.props.navigation.navigate('Payment',
+                        this.props.navigation.navigate('Doações',
                             {
                                 ...this.props,
                                 nome: this.props.name,

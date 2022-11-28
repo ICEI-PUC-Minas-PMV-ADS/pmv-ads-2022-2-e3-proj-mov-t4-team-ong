@@ -13,8 +13,6 @@ import { Text } from "@rneui/themed";
 
 import commonStyles from "../../common/styles/commonStyles";
 
-import BtnInput from "../../components/btnComponent/BtnInput";
-import BtnOutline from "../../components/btnComponent/BtnOutline";
 
 import DateTimePicker from "@react-native-community/datetimepicker";
 
@@ -25,7 +23,10 @@ import Icon from "react-native-vector-icons/FontAwesome"
 import {
     isValidField,
     msgError
-} from "../../common/error/commonMsgError"
+} from "../../common/validator/validators"
+
+import BtnOutline from "../../common/components/BtnOutline";
+import BtnInput from "../../common/components/BtnInput";
 
 const initialState = {
     desc: '',
