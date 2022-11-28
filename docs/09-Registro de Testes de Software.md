@@ -272,6 +272,18 @@ Pontos a melhorar
 
 **Evidências:**
 
+Lista de Ongs recuperadas da base de dados
+</br></br>
+<p align="center">
+  
+![Lista1](https://user-images.githubusercontent.com/91227083/204174268-c8bcde7c-bab3-449f-ba24-1b431bf65223.jpeg)
+  
+![Lista2](https://user-images.githubusercontent.com/91227083/204174276-227ac1f1-7ddd-4be7-8518-b73fee5118e6.jpeg)
+  
+</p>
+<p align="center"> Evidência </p>
+</br>
+
 ------------------------------------------------------------------------------
 
 ### CT-06: Projetos das Ongs
@@ -293,6 +305,16 @@ Pontos a melhorar
 **Resultado do teste:** *Passou*
 
 **Evidências:**
+
+Cards de projetos relacionados à Ong escolhida
+</br></br>
+<p align="center">
+ 
+![Projeto1](https://user-images.githubusercontent.com/91227083/204174324-f121ef66-341b-4059-aa92-6ab612801ea0.jpeg)
+ 
+</p>
+<p align="center"> Evidência </p>
+</br>
 
 ------------------------------------------------------------------------------
 
