@@ -28,7 +28,6 @@ module.exports = app => {
                     id: user.id
                 })
             })
-            console.log('loged')
         } else {
             res.status(400).send('Usuário não cadastrado!')
         }
