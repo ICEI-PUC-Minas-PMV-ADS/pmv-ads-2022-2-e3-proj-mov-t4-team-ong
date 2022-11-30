@@ -10,7 +10,7 @@ Assim, intencionando atender as demandas observadas em um mundo cada vez mais di
 
 ## Problema
 
-A aplicação se propõe a resolver, mesmo que de maneira incipiente, a difuldade de comunicação entre as ONGs e a sociedade. Pretende-se viabilizar um canal de comunicação simplificado, escalável e de alto alcance que facilite a divulgação de projetos e também a interação entre as instituições e seus doadores. 
+A aplicação se propõe a resolver, mesmo que de maneira incipiente, a dificuldade de comunicação entre as ONGs e a sociedade. Pretende-se viabilizar um canal de comunicação simplificado, escalável e de alto alcance que facilite a divulgação de projetos e também a interação entre as instituições e seus doadores. 
 
 > **Links Úteis**:
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
