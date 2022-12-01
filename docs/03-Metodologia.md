@@ -44,9 +44,11 @@ etiquetas:
 
 A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe está organizada da seguinte maneira:
 
-- Scrum Master: Alex Galdino;
+- Tech Lead: Alex Galdino;
+- Scrum Master: Ciro Watanabe;
 - Product Owner: Pedro Braga;
-- Equipe de Desenvolvimento: Ciro Artiga, Rafaela;
+- Tester (QA): Rafaela Oliveira;
+- Equipe de Desenvolvimento: Alex Galdino, Ciro Watanabe, Maxwell Ferreira, Pedro Braga e Rafaela Oliveira;
 - Equipe de Design: Maxwell Ferreira.
 
 ### Processo
