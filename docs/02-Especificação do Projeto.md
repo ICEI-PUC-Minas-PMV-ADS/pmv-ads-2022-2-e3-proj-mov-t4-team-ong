@@ -57,6 +57,7 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 |Doador| Visualizar as ONGs e os projetos cadastradas no aplicativo | Conhecer as histórias dos projetos disponíveis para doação |
 |Doador| Fazer buscas por filtros como nome e categoria| Encontrar projetos de maneira mais eficiente |
 |Doador| Realizar o pagamento da doação por PIX ou Boleto| Conseguir finalizar a doação de maneira mais simplificada |
+|Doador| Ter uma agenda online para cadastrar e acompanhar as minhas tarefas| Acompanhar de forma otimizada os meus compromissos |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
@@ -106,6 +107,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-07| Os usuários devem conseguir visualizar a meta de arrecadação para cada história/projeto | ALTA |
 |RF-08| Ao selecionar uma determinada história/projeto, o usuário deve conseguir visualizar os detalhes do projeto: descrição, fotos etc. | ALTA |
 |RF-09| O aplicativo deve permitir que os usuários façam doações por meio de transferência bancária (PIX) ou Boleto | ALTA |
+|RF-10| O usuário deve conseguir incluir, visualizar e concluir tarefas no aplicativo | ALTA |
 
 
 ### Requisitos não Funcionais
