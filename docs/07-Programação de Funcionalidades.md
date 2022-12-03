@@ -13,14 +13,14 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 
 ### Cadastro de usuário
 
-**Requisito: RF-01 O aplicativo deve permitir o cadastro de usuários doadores**
+`Requisito` **RF-01 O aplicativo deve permitir o cadastro de usuários doadores**
 
 - Validação do preenchimento de campos obrigatórios
 - Registro do usuário no banco de dados
 
 ### Login de usuário
 
-**Requisito: RF-03 O usuário deve conseguir realizar o login no aplicativo utilizando as informações de usuário e senha previamente cadastrados**
+`Requisito` **RF-03 O usuário deve conseguir realizar o login no aplicativo utilizando as informações de usuário e senha previamente cadastrados**
 
 - Validação do preenchimento de campos obrigatórios
 - Registro do usuário no banco de dados
@@ -31,43 +31,43 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 
 ### Agenda
 
-**Requisito: RF-10 O usuário deve conseguir incluir, visualizar e concluir tarefas no aplicativo**
+`Requisito` **RF-10 O usuário deve conseguir incluir, visualizar e concluir tarefas no aplicativo**
 
 - Apresentação das tarefas cadastradas pelo usuário
 - É possível adicionar novas tarefas e concluir uma tarefa cadastrada
 
 ### Perfil
 
-**Requisito: RF-02 O aplicativo deve permitir a atualização do cadastro de usuários doadores**
-**Requisito: RF-04 O usuário deve conseguir alterar a senha de acesso**
+`Requisito` **RF-02 O aplicativo deve permitir a atualização do cadastro de usuários doadores**
+`Requisito` **RF-04 O usuário deve conseguir alterar a senha de acesso**
 
 - Usuário pode editar as informações da conta, como o nome e a senha
 - Também é possível escolher uma foto a partir da galeria do dispositivo ou tirar uma foto utilizando a câmera
 
 ### Apresentação das ONGs
 
-**Requisito: RF-06 O aplicativo deve permitir a busca de ONG's e projetos por filtros (categoria, palavras-chave etc.)**
+`Requisito` **RF-06 O aplicativo deve permitir a busca de ONG's e projetos por filtros (categoria, palavras-chave etc.)**
 
 - Apresentação dinâmica da lista de ONGs inseridas no banco de dados
 - Filtro das ONGs de acordo com o termo inserido pelo usuário no input de pesquisa
 
 ### Projetos vinculados à ONG
 
-**Requisito: RF-05 Os usuários do aplicativo devem conseguir visualizar as histórias/projetos vinculados à cada ONG**
-**Requisito: RF-07 Os usuários devem conseguir visualizar a meta de arrecadação para cada história/projeto**
+`Requisito` **RF-05 Os usuários do aplicativo devem conseguir visualizar as histórias/projetos vinculados à cada ONG**
+`Requisito` **RF-07 Os usuários devem conseguir visualizar a meta de arrecadação para cada história/projeto**
 
 - Apresentação dinâmica da lista de projetos vinculados a cada ONG apresentada na tela anterior
 - O usuário tem as opções de visualizar as fotos disponíveis para o projeto e realizar a doação
 
 ### Detalhes do projeto
 
-**Requisito: RF-08 Ao selecionar uma determinada história/projeto, o usuário deve conseguir visualizar os detalhes do projeto: descrição, fotos etc.**
+`Requisito` **RF-08 Ao selecionar uma determinada história/projeto, o usuário deve conseguir visualizar os detalhes do projeto: descrição, fotos etc.**
 
 - 
 
 ### Pagamento da doação
 
-**Requisito: RF-09 O aplicativo deve permitir que os usuários façam doações por meio de transferência bancária (PIX) ou Boleto**
+`Requisito` **RF-09 O aplicativo deve permitir que os usuários façam doações por meio de transferência bancária (PIX) ou Boleto**
 
 - Validação do preenchimento de campos obrigatórios
 - Registro da doação no banco de dados
