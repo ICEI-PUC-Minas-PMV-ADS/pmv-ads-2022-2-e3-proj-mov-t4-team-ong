@@ -107,7 +107,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-07| Os usuários devem conseguir visualizar a meta de arrecadação para cada história/projeto | ALTA |
 |RF-08| Ao selecionar uma determinada história/projeto, o usuário deve conseguir visualizar os detalhes do projeto: descrição, fotos etc. | ALTA |
 |RF-09| O aplicativo deve permitir que os usuários façam doações por meio de transferência bancária (PIX) ou Boleto | ALTA |
-|RF-10| O usuário deve conseguir incluir, visualizar e concluir tarefas no aplicativo | ALTA |
+|RF-10| O usuário deve conseguir incluir, visualizar e concluir tarefas no aplicativo | BAIXA |
 
 
 ### Requisitos não Funcionais
