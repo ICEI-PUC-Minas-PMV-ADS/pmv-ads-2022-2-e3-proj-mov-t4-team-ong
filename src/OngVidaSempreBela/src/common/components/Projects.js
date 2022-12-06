@@ -16,7 +16,7 @@ class Projects extends Component {
                 color: this.props.schema.black
             },
         })
-        
+
         return (
             <Card style={{ marginBottom: 12 }}>
                 <Card.Content >
@@ -35,7 +35,15 @@ class Projects extends Component {
                                 schema: this.props.schema
                             }
                         )}>Doar</Button>
-                    <Button>fotos</Button>
+                    <Button onPress={() =>
+                        this.props.navigation.navigate('Fotos',
+                            {
+                                ...this.props,
+                                nome: this.props.name,
+                                projectId: this.props.id,
+                                schema: this.props.schema
+                            })
+                    }>fotos</Button>
                 </Card.Actions>
             </Card>
         )

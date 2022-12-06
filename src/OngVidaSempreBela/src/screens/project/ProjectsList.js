@@ -44,6 +44,7 @@ class ProjectsList extends Component {
 
     render() {
 
+        console.log('Projetos')
         return (
 
             <Container>

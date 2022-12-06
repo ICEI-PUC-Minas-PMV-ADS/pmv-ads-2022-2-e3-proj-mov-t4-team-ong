@@ -50,6 +50,8 @@ class OngList extends Component {
 
     render() {
 
+        console.log("Ongs")
+
         styles = StyleSheet.create({
             wrap: {
                 backgroundColor: this.props.schema.screenBackground
