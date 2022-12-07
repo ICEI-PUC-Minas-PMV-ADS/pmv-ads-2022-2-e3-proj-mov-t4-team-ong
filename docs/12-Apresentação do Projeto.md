@@ -4,6 +4,10 @@
 
 Conjunto de slides em um arquivo PowerPoint ou PDF com a apresentação do projeto contemplando todos os itens trabalhados nos demais artefatos.
 
+A apresentação do projeto em PDF está disponível em:
+
+> - [Apresentação do projeto](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-team-ong/blob/main/presentation/Apresenta%C3%A7%C3%A3o%20final.pdf)
+
 ## Título do Projeto
 
 Nome e marca do projeto
