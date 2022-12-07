@@ -41,7 +41,7 @@ class DrawerNavigator extends Component {
                     {(props) => <ReminderNavigator {...props} title='Hoje' daysAhead={0} schema={this.props.schema} />}
                 </Drawer.Screen>
                 <Drawer.Screen name='ProfileNew' options={{ title: 'Perfil' }}>
-                    {(props) => <ProfileEdit {...props} title='Perfil' daysAhead={0} schema={this.props.schema} />}
+                    {(props) => <ProfileEdit {...props} title='Perfil' schema={this.props.schema} />}
                 </Drawer.Screen>
                 <Drawer.Screen name='Ong' options={{ title: 'Ongs' }}>
                     {(props) => <OngList {...props} title='Ongs' schema={this.props.schema} />}

@@ -141,6 +141,7 @@ class ReminderList extends Component {
     }
 
     render() {
+        console.log('Agenda')
         const today = moment().locale('pt-br').format('ddd, D [de] MMMM')
 
         const styles = StyleSheet.create({

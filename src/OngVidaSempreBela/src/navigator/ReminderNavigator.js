@@ -8,7 +8,7 @@ import ReminderList from '../screens/reminder/ReminderList'
 
 class ReminderNavigator extends Component {
     render() {
-
+        
         const Tab = createBottomTabNavigator()
 
         const tabOptions = {

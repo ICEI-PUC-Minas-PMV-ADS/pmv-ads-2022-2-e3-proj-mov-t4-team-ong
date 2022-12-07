@@ -30,7 +30,7 @@ class AppNavigator extends Component {
           {(props) => <AuthOrApp {...props} schema={this.props.schema} />}
         </Stack.Screen>
         <Stack.Screen name='Agenda'>
-          {(props) => <DrawerNavigator {...props} schema={this.props.schema} />}
+          {(props) => <DrawerNavigator {...props} schema={this.props.schema} daysAhead={0} />}
         </Stack.Screen>
         <Stack.Screen name='Principal' >
           {(props) => <HomePage {...props} schema={this.props.schema} />}
